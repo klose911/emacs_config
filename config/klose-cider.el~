@@ -1,0 +1,4 @@
+(add-to-list 'load-path "~/.emacs.d/elisp/cider") 
+(add-to-list 'load-path "~/.emacs.d/elisp/clojure-mode")
+(require 'clojure-mode)
+(require 'cider) 
