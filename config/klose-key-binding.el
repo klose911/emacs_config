@@ -15,3 +15,8 @@
 (global-set-key [(meta down)] 'goto-line) 
 (global-set-key [(meta left)] 'backward-sexp) 
 (global-set-key [(meta right)] 'forward-sexp) 
+
+(global-set-key (kbd "C-c m") 'comment-region)
+(global-set-key (kbd "C-c u") 'uncomment-region)
+
+	      

@@ -1,5 +1,5 @@
 (add-to-list 'load-path "~/.emacs.d/elisp/emms/lisp")
-(add-to-list 'exec-path "d:/util/mplayer/") 
+(add-to-list 'exec-path "/usr/bin/mplayer") 
 (require 'emms-setup)
 (require 'emms-info-libtag)
 (emms-standard)
@@ -12,7 +12,7 @@
 ;; auto-save and import last playlist
 (require 'emms-history)
 ;;set default play directory 
-(setq emms-source-file-default-directory "d:/My Documents/My Music")
+(setq emms-source-file-default-directory "~/Music")
 
 ;; my customizable playlist format
 (defun bigclean-emms-info-track-description (track)
@@ -70,8 +70,8 @@
 (global-set-key (kbd "C-c e o") 'emms-score-show-playing)
 
 ;; coding settings
-(setq emms-info-mp3info-coding-system 'gbk
-      emms-cache-file-coding-system 'gbk
-      emms-i18n-default-coding-system '(gbk . gbk) 
-      default-process-coding-system '(gbk . gbk)
+(setq emms-info-mp3info-coding-system 'utf-8
+      emms-cache-file-coding-system 'utf-8
+      emms-i18n-default-coding-system '(utf-8 . utf-8) 
+      default-process-coding-system '(utf-8 . utf-8)
       )
