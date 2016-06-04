@@ -1,0 +1,6 @@
+.emacs.bmk
+.session
+/auto-save-list/*
+/emms/*
+/games/*
+/image-dired/*
