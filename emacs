@@ -1,7 +1,7 @@
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 ;;; Hans Ve Joanphan's dotemacs file
 ;;; Last modified time 
-;;; Time-stamp: <klose 06/04/2016 0002M02S>
+;;; Time-stamp: <klose 06/04/2016 2102M02S>
 ;;; Life is a box of chocalates,
 ;;; you never know what you're gonna get.
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
@@ -33,6 +33,7 @@
 (load "~/.emacs.d/config/klose-function")
 (load "~/.emacs.d/config/klose-folding")
 ;;(load "~/.emacs.d/config/klose-vim")
+(load "~/.emacs.d/config/klose-git")
 (load "~/.emacs.d/config/klose-org-mode")
 (load "~/.emacs.d/config/klose-wiki")
 (load "~/.emacs.d/config/klose-browser-kill-ring")
