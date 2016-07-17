@@ -23,8 +23,6 @@
 (add-hook 'org-mode-hook 
 	  (lambda ()
 	    (setq truncate-lines nil)
-	    ;; turn on flyspell-mode by default
-	    (flyspell-mode 1) 
 	    ;; C-TAB for expanding
 	    (local-set-key (kbd "C-<tab>")
 			   'yas/expand-from-trigger-key)

@@ -1,10 +1,18 @@
 (add-to-list 'load-path "~/.emacs.d/elisp/emms/lisp")
-(add-to-list 'exec-path "/usr/bin/mplayer") 
+;;(add-to-list 'exec-path "/usr/bin/mpv") 
 (require 'emms-setup)
 (require 'emms-info-libtag)
 (emms-standard)
-(emms-default-players)
+;;(emms-default-players)
 
+
+(setq emms-player-mpg321-command-name "mpg123" 
+      emms-player-list '(emms-player-mpg321 
+			 emms-player-mplayer 
+			 emms-player-mplayer-playlist)) 
+;;debug players
+(emms-player-for '(*track* (type . file)
+                           (name . "myfile.pls")))
 (require 'emms-score)
 (emms-score 1)
 ;;autodetect musci files id3 tags encodeing
