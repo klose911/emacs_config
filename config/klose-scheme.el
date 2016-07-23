@@ -4,7 +4,10 @@
 (autoload 'run-scheme "cmuscheme" "Switch to interactive Scheme buffer." t) 
 
 ;;(setq scheme-program-name "plt-r5rs.exe") 
-(setq scheme-program-name "mit-scheme") 
+(if *win* 
+    (setq scheme-program-name "mzscheme.exe")
+    (setq scheme-program-name "mit-scheme"))
+
 ;;(setq scheme-program-name "D:/Program Files/Scheme 48/Scheme 48 1.9/scheme48vm.exe") 
 ;;(setq scheme-program-name "D:/Program Files/MIT-GNU Scheme/bin/bchscheme.exe") 
 ;;(setenv "MITSCHEME_LIBRARY_PATH" "D:/Program Files/MIT-Scheme/lib") 

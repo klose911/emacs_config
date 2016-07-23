@@ -20,13 +20,12 @@
 ;; auto-save and import last playlist
 (require 'emms-history)
 ;;set default play directory 
-(setq emms-source-file-default-directory "~/Music")
+;;(setq emms-source-file-default-directory "~/Music")
 
 ;; my customizable playlist format
 (defun bigclean-emms-info-track-description (track)
   "Return a description of the current track."
   (let ((artist (emms-track-get track 'info-artist))
-	(title (emms-track-get track 'info-title))
 	(album (emms-track-get track 'info-album))
 	(ptime (emms-track-get track 'info-playing-time)))
     (if title 

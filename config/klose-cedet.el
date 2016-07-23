@@ -1,4 +1,4 @@
-(load-file "~/.emacs.d/elisp/cedet-1.0.1/common/cedet.el")
+(load-file "~/.emacs.d/elisp/cedet-1.1/common/cedet.el")
 ;;(require 'cedet)
 
 (semantic-load-enable-code-helpers)
