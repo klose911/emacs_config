@@ -1,13 +1,14 @@
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 ;;; Hans Ve Joanphan's dotemacs file
 ;;; Last modified time 
-;;; Time-stamp: <klose 06/04/2016 2102M02S>
+;;; Time-stamp: <klose 07/23/2016 2002M02S>
 ;;; Life is a box of chocalates,
 ;;; you never know what you're gonna get.
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 ;;以上是我得time stamp，在后面将有详细讲解
 ;;设置你的全名和邮件，在发邮件时可以用到
 (setq *win* (eq system-type 'windows-nt))
+(setq *linux* (eq system-type 'gnu/linux))
 (setq user-full-name "Wu, Shanliang")
 (setq user-mail-address "klose911@gmail.com")
 ;;设置你的书签文件，默认是~/.emacs.bmk，我喜欢把有关emacs的文件尽量放在一个文件夹，所以就修改了。
@@ -33,7 +34,6 @@
 (load "~/.emacs.d/config/klose-ido")
 (load "~/.emacs.d/config/klose-function")
 (load "~/.emacs.d/config/klose-folding")
-;;(load "~/.emacs.d/config/klose-vim")
 (load "~/.emacs.d/config/klose-git")
 (load "~/.emacs.d/config/klose-org-mode")
 (load "~/.emacs.d/config/klose-wiki")
@@ -46,16 +46,16 @@
 (load "~/.emacs.d/config/klose-erc")
 (load "~/.emacs.d/config/klose-gnus") 
 (load "~/.emacs.d/config/klose-emms")
-(load "~/.emacs.d/config/klose-w3m")
+;;(load "~/.emacs.d/config/klose-w3m")
 (load "~/.emacs.d/config/klose-clisp")
 (load "~/.emacs.d/config/klose-scheme")
 (load "~/.emacs.d/config/klose-clojure")
 (load "~/.emacs.d/config/klose-clojure-cider.el")
 (load "~/.emacs.d/config/klose-ctypes")
-;;(load "~/.emacs.d/config/klose-cedet")
-;;(load "~/.emacs.d/config/klose-ecb")
+(load "~/.emacs.d/config/klose-cedet")
+(load "~/.emacs.d/config/klose-ecb")
 (load "~/.emacs.d/config/klose-cc")
-(load "~/.emacs.d/config/klose-android")
+;;(load "~/.emacs.d/config/klose-android")
 (load "~/.emacs.d/config/klose-cflow")
 (load "~/.emacs.d/config/klose-auctex")
 (load "~/.emacs.d/config/klose-js")
