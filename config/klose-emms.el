@@ -22,35 +22,6 @@
 ;;set default play directory 
 ;;(setq emms-source-file-default-directory "~/Music")
 
-;; my customizable playlist format
-(defun bigclean-emms-info-track-description (track)
-  "Return a description of the current track."
-  (let ((artist (emms-track-get track 'info-artist))
-	(album (emms-track-get track 'info-album))
-	(ptime (emms-track-get track 'info-playing-time)))
-    (if title 
-	(format 
-	 "%-35s %-40s %-35s %5s:%-5s"
-	 (if artist artist "")
-	 (if title title "")
-	 (if album album "")
-	 (/ ptime 60)
-	 (% ptime 60)))))
-(setq emms-track-description-function
-      'bigclean-emms-info-track-description)
-
-;; format current track,only display title in mode line
-(defun bigclean-emms-mode-line-playlist-current ()
-  "Return a description of the current track."
-  (let* ((track (emms-playlist-current-selected-track))
-	 (type (emms-track-type track))
-	 (title (emms-track-get track 'info-title)))
-    (format "[ %s ]"
-	    (cond ((and title)
-		   title)))))
-(setq emms-mode-line-mode-line-function
-      'bigclean-emms-mode-line-playlist-current)
-
 ;; global key-map
 ;; all global keys prefix is C-c e
 ;; compatible with emms-playlist mode keybindings

@@ -1,7 +1,7 @@
-(load-file "~/.emacs.d/elisp/cedet-1.1/common/cedet.el")
+(load-file "~/.emacs.d/elisp/cedet/cedet-devel-load.el") 
 ;;(require 'cedet)
-
-(semantic-load-enable-code-helpers)
+(semantic-mode 1)
+(global-ede-mode 1)
 
 (setq semanticdb-project-roots 
       (list
@@ -35,7 +35,7 @@
         )
       )
 
-(global-semantic-tag-folding-mode 1)
+;; (global-semantic-tag-folding-mode 1)
 
 ;; Key bindings
 ;;(defun my-cedet-hook ()

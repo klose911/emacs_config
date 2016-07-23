@@ -7,6 +7,7 @@
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 ;;以上是我得time stamp，在后面将有详细讲解
 ;;设置你的全名和邮件，在发邮件时可以用到
+(setq *win* (eq system-type 'windows-nt))
 (setq user-full-name "Wu, Shanliang")
 (setq user-mail-address "klose911@gmail.com")
 ;;设置你的书签文件，默认是~/.emacs.bmk，我喜欢把有关emacs的文件尽量放在一个文件夹，所以就修改了。

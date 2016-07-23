@@ -147,9 +147,10 @@
 (setq dired-recursive-copies 'top)
 (setq dired-recursive-deletes 'top)
 
-(custom-set-variables
-  '(browse-url-browser-function (quote browse-url-generic))
-  '(browse-url-generic-program "D:/Program Files/Mozilla Firefox/firefox.exe"))
+;; (setq browse-url-browser-function 'browse-url-generic)
+;; (setq browse-url-generic-program  (cond (eq ) "D:/Program Files/Mozilla Firefox/firefox.exe"
+;; 	    *linux* "/usr/bin/google-chrome-stable"
+;; 	    t nil))
 
 (autoload 'thumbs "thumbs" "Preview images in a directory." t)
 (autoload 'table-insert "table" "WYGIWYS table editor")
