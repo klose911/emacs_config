@@ -3,37 +3,37 @@
 (semantic-mode 1)
 (global-ede-mode 1)
 
-(setq semanticdb-project-roots 
-      (list
-       (expand-file-name "/")))
+;; (setq semanticdb-project-roots 
+;;       (list
+;;        (expand-file-name "/")))
 
-(defun my-indent-or-complete ()
-  (interactive)
-  (if (looking-at "\\>")
-      (hippie-expand nil)
-    (indent-for-tab-command))
-  )
+;; (defun my-indent-or-complete ()
+;;   (interactive)
+;;   (if (looking-at "\\>")
+;;       (hippie-expand nil)
+;;     (indent-for-tab-command))
+;;   )
 
-(global-set-key [(control tab)] 'my-indent-or-complete)
+;; (global-set-key [(control tab)] 'my-indent-or-complete)
 
-(autoload 'senator-try-expand-semantic "senator")
+;; (autoload 'senator-try-expand-semantic "senator")
 
-(setq hippie-expand-try-functions-list
-      '(
-	senator-try-expand-semantic
-	try-expand-dabbrev
-	try-expand-dabbrev-visible
-	try-expand-dabbrev-all-buffers
-	try-expand-dabbrev-from-kill
-	try-expand-list
-	try-expand-list-all-buffers
-	try-expand-line
-        try-expand-line-all-buffers
-        try-complete-file-name-partially
-        try-complete-file-name
-        try-expand-whole-kill
-        )
-      )
+;; (setq hippie-expand-try-functions-list
+;;       '(
+;; 	senator-try-expand-semantic
+;; 	try-expand-dabbrev
+;; 	try-expand-dabbrev-visible
+;; 	try-expand-dabbrev-all-buffers
+;; 	try-expand-dabbrev-from-kill
+;; 	try-expand-list
+;; 	try-expand-list-all-buffers
+;; 	try-expand-line
+;;         try-expand-line-all-buffers
+;;         try-complete-file-name-partially
+;;         try-complete-file-name
+;;         try-expand-whole-kill
+;;         )
+;;       )
 
 ;; (global-semantic-tag-folding-mode 1)
 
