@@ -2,7 +2,6 @@
 
 (setq locale-env (if  *win* 'Chinese-GBK 'utf-8))  
 (setq locale-code (if *win* 'gb2312 'utf-8)) 
-(setq locale-clip-code 'utf-8) 
 
 (set-language-environment locale-env)
 (set-keyboard-coding-system locale-code)
@@ -14,5 +13,5 @@
 (setq default-process-coding-system  (cons locale-code locale-code))
 (setq-default pathname-coding-system locale-code)
 (set-file-name-coding-system locale-code)
-(set-clipboard-coding-system locale-clip-code)
+(set-clipboard-coding-system locale-code)
 (setq ansi-color-for-comint-mode t)
