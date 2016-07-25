@@ -2,7 +2,7 @@
   (progn
   	(setq inferior-lisp-program "D:/util/clisp/clisp.exe")
 	(setq temporary-file-directory "C:/Documents and Settings/klose.wu/Local Settings/Temp"))
-  (setq inferior-lisp-program "/usr/bin/clisp")) 
+  (setq inferior-lisp-program "clisp")) 
 
 (add-to-list 'load-path "~/.emacs.d/elisp/slime")
 (require 'slime)

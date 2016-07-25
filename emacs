@@ -1,7 +1,7 @@
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 ;;; Hans Ve Joanphan's dotemacs file
 ;;; Last modified time 
-;;; Time-stamp: <klose.wu 07/25/2016 1102M02S>
+;;; Time-stamp: <klose 07/25/2016 2102M02S>
 ;;; Life is a box of chocalates,
 ;;; you never know what you're gonna get.
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
@@ -9,6 +9,7 @@
 ;;设置你的全名和邮件，在发邮件时可以用到
 (setq *win* (eq system-type 'windows-nt))
 (setq *linux* (eq system-type 'gnu/linux))
+(setq *mac* (eq system-type 'darwin))
 (setq user-full-name "Wu, Shanliang")
 (setq user-mail-address "klose911@gmail.com")
 ;;设置你的书签文件，默认是~/.emacs.bmk，我喜欢把有关emacs的文件尽量放在一个文件夹，所以就修改了。
@@ -19,8 +20,6 @@
 (setq load-path (cons "~/.emacs.d/elisp" load-path))
 ;;设置info的路径，也可通过Shell的全局变量$INFOPATH设置
 (add-to-list 'Info-default-directory-list "~/local/info/")
-(if *win*
-    (setq exec-path (append exec-path '("d:/util/cygwin/bin"))))
 ;;由菜单修改配置的东西将会保存在custom-file里，这里我设置他在我的elisp的集中营里
 ;;(setq custom-file "~/.emacs.d/elisp/klose-custom.el")
 ;;设置gnus启动的文件。默认是为~/.gnus.el
@@ -45,8 +44,9 @@
 (load "~/.emacs.d/config/klose-setnu")
 (load "~/.emacs.d/config/klose-mew")
 (load "~/.emacs.d/config/klose-erc")
-(load "~/.emacs.d/config/klose-gnus") 
-(load "~/.emacs.d/config/klose-emms")
+(load "~/.emacs.d/config/klose-gnus")
+(if (not *mac*) 
+    (load "~/.emacs.d/config/klose-emms"))
 (load "~/.emacs.d/config/klose-clisp")
 (load "~/.emacs.d/config/klose-scheme")
 (load "~/.emacs.d/config/klose-clojure")

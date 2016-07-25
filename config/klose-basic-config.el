@@ -22,6 +22,20 @@
 	     '("melpa" . "http://melpa.org/packages/") t)
 (package-initialize) 
 
+(cond (*win*
+       (progn
+	 (setenv "PATH" (concat (getenv "PATH") ":d:/util/cygwin/bin"))
+	 (setq exec-path (append exec-path '("d:/util/cygwin/bin")))))
+      (*mac*
+       (progn
+	 (setenv "PATH" (concat (getenv "PATH") ":/opt/local/bin:/Users/klose/Bin:/usr/local/texlive/2015/bin/x86_64-darwin"))
+	 (setq exec-path (append exec-path '("/opt/local/bin" "/Users/klose/Bin" "/usr/local/texlive/2015/bin/x86_64-darwin")))))
+      (*linux*
+       (progn
+	 (setenv "PATH" (concat (getenv "PATH") ":/home/klose/binh"))
+	 (setq exec-path (append exec-path '("/home/klose/bin")))))
+      (t nil))
+
 ;;备份设置
 ;;emacs还有一个自动保存功能，默认在~/.emacs.d/auto-save-list里，这个非常有用，我这里没有改动，具体可以参见Sams teach yourself emacs in 24hours(我简称为sams24)
 ;;启用版本控制，即可以备份多次
@@ -148,9 +162,10 @@
 (setq dired-recursive-deletes 'top)
 
 (setq browse-url-browser-function 'browse-url-generic) 
-(if *win* 
-    (setq browse-url-generic-program  "D:/Program Files/Mozilla Firefox/firefox.exe") 
-  (setq  browse-url-generic-program "/usr/bin/google-chrome-stable")) 
+(cond (*win* (setq browse-url-generic-program  "D:/Program Files/Mozilla Firefox/firefox.exe"))
+      (*linux* (setq  browse-url-generic-program "/usr/bin/google-chrome-stable"))
+      (*mac* (setq  browse-url-generic-program "/Applications/Google Chrome.app/Contents/MacOS/Google Chrome"))
+      (t nil))
 
 
 (autoload 'thumbs "thumbs" "Preview images in a directory." t)

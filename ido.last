@@ -1,0 +1,65 @@
+;;; -*- coding: utf-8 -*-
+
+;; ----- ido-last-directory-list -----
+(
+ ("/Users/klose/.emacs.d/" . "config/")
+ ("/Users/klose/.emacs.d.bak/" . "config/")
+ ("/Users/klose/Documents/programming/scheme/" . "The Little Scheme/")
+ ("/Users/klose/Documents/" . "programming/")
+ ("/Users/klose/" . "Documents/")
+ ("/Users/klose/Documents/programming/" . "scheme/")
+)
+
+;; ----- ido-work-directory-list -----
+(
+ "/Users/klose/.emacs.d/config/"
+ "/Users/klose/Documents/programming/scheme/"
+ "/Users/klose/.emacs.d.bak/config/"
+ "/Users/klose/"
+ "/Users/klose/Documents/programming/scheme/The Little Scheme/"
+ "/Users/klose/Documents/programming/python/"
+ "/Users/klose/Documents/programming/C/"
+)
+
+;; ----- ido-work-file-list -----
+(
+ "klose-basic-config.el"
+ "continuation.scm"
+ "klose-scheme.el"
+ "klose-clisp.el"
+ ".emacs.bak"
+ "test.scm"
+ ".emacs"
+ "test.py"
+ "linpack.c"
+)
+
+;; ----- ido-dir-file-cache -----
+(
+ ("/Users/klose/.emacs.d/config/" (22422 5230 0 0) "klose-wiki.el" "klose-w3m.el" "klose-vim.el" "klose-tabbar.el" "klose-swbuff.el" "klose-sina.el" "klose-setnu.el" "klose-session.el" "klose-scheme.el" "klose-ruby.el" "klose-rect-mark.el" "klose-python.el" "klose-org-mode.el" "klose-nxml.el" "klose-muse.el" "klose-mew.el" "klose-language.el" "klose-key-binding.el" "klose-js.el" "klose-ido.el" "klose-ibuffer.el" "klose-gnus.el" "klose-git.el" "klose-function.el" "klose-font.el" "klose-folding.el" "klose-eshell.el" "klose-erc.el" "klose-emms.el" "klose-ecb.el" "klose-ctypes.el" "klose-clojure.el" "klose-clojure-cider.el" "klose-clisp.el" "klose-cider.el" "klose-cflow.el" "klose-cedet.el" "klose-cc.el" "klose-calendar.el" "klose-browser-kill-ring.el" "klose-basic-config.el" "klose-auctex.el" "klose-android.el" "../" "./")
+
+ ("/Users/klose/.emacs.d/" (22422 5164 0 0) "srecode-map.el" "src/" "README.md" "ido.last" "eshell/" "emacs" "elpa/" "elisp/" "ede-projects.el" "config/" "auto-save-list/" ".session" ".gitignore" ".git/" "../" "./")
+
+ ("/Users/klose/.emacs.d.bak/config/" (22422 4167 0 0) "klose-wiki.el" "klose-web.el" "klose-w3m.el" "klose-vim.el" "klose-tabbar.el" "klose-swbuff.el" "klose-sina.el" "klose-setnu.el" "klose-session.el" "klose-scheme.el" "klose-rect-mark.el" "klose-org-mode.el" "klose-nxml.el" "klose-mew.el" "klose-language.el" "klose-key-binding.el" "klose-js.el" "klose-ido.el" "klose-ibuffer.el" "klose-googlemap.el" "klose-gnus.el" "klose-git.el" "klose-function.el" "klose-font.el" "klose-folding.el" "klose-eshell.el" "klose-erc.el" "klose-emms.el" "klose-ecb.el" "klose-ctypes.el" "klose-clojure.el" "klose-clojure-cider.el" "klose-clisp.el" "klose-cflow.el" "klose-cedet.el" "klose-cc.el" "klose-calendar.el" "klose-browser-kill-ring.el" "klose-basic-config.el" "klose-auctex.el" "klose-android.el" "../" "./")
+
+ ("/Users/klose/.emacs.d.bak/" (22401 10034 0 0) "url/" "src/" "image-dired/" "ido.last" "games/" "eshell/" "emms/" "elpa/" "elisp/" "config/" "auto-save-list/" ".session" ".org-id-locations" ".emacs.bmk" "../" "./")
+
+ ("/Users/klose/Documents/programming/scheme/The Little Scheme/" (22297 52073 0 0) "test.scm" ".DS_Store" "../" "./")
+
+ ("/Users/klose/Documents/" (22369 20270 0 0) "workspace/" "work/" "project/" "programming/" "NoMachine/" "Microsoft 用户数据/" "idea/" "desktop.rdp" "book/" ".localized" ".DS_Store" "../" "./")
+
+ ("/Users/klose/Documents/programming/scheme/" (22297 52073 0 0) "The Little Scheme/" "sicp/" "continuation.scm" ".DS_Store" "../" "./")
+
+ ("/Users/klose/Documents/programming/" (22422 4294 0 0) "scheme/" "python/" "net/" "lisp/" "latex/" "java/" "design_pattern/" "clojure/" "C/" ".DS_Store" "../" "./")
+
+ ("/Users/klose/Documents/programming/python/" (22422 4294 0 0) "test.py" "../" "./")
+
+ ("/Users/klose/Documents/programming/C/" (22297 51635 0 0) "The C Programming Language/" "tablegen.pl" "minix/" "linpack.c" ".DS_Store" "../" "./")
+
+ ("/Users/" (22314 7622 0 0) "wu/" "Shared/" "klose/" "fabian/" ".localized" "../" "./")
+
+ ("/Users/klose/" (22422 4167 0 0) "Tmp/" "Public/" "Pictures/" "Music/" "Movies/" "Library/" "Downloads/" "Documents/" "Desktop/" "Bin/" "Applications/" ".vimrc" ".viminfo" ".vim/" ".Trash/" ".texlive2015/" ".tenpaycert/" ".subversion/" ".ssh/" ".sogouinput/" ".slime/" ".semanticdb/" ".qt/" ".profile" ".oracle_jre_usage/" ".npm/" ".node-gyp/" ".mplayer/" ".m2/" ".lldb/" ".lesshst" ".lein/" ".jspm/" ".gitconfig" ".emacs.tmp/" ".emacs.d.bak/" ".emacs.d/" ".emacs.bak" ".emacs" ".DS_Store" ".config/" ".CFUserTextEncoding" ".bashrc" ".bash_sessions/" ".bash_history" "../" "./")
+)
+
+;; ----- ido-unc-hosts-cache -----
+t
