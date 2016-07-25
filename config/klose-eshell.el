@@ -33,7 +33,7 @@
     ad-do-it))
 
 ;; 自定义提示符
-(setq klose-emacs-name "GNU Emacs-22.1")
+(setq klose-emacs-name "GNU Emacs-24.1")
 (defun klose-eshell-prompt ()
   "An Eshell prompt looks very cool."
   (let ((user (or (getenv "USER") user-login-name "ted"))

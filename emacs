@@ -1,29 +1,31 @@
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 ;;; Hans Ve Joanphan's dotemacs file
 ;;; Last modified time 
-;;; Time-stamp: <klose 07/23/2016 2002M02S>
+;;; Time-stamp: <klose.wu 07/25/2016 1102M02S>
 ;;; Life is a box of chocalates,
 ;;; you never know what you're gonna get.
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
-;;ä»¥ä¸Šæ˜¯æˆ‘å¾—time stampï¼Œåœ¨åé¢å°†æœ‰è¯¦ç»†è®²è§£
-;;è®¾ç½®ä½ çš„å…¨åå’Œé‚®ä»¶ï¼Œåœ¨å‘é‚®ä»¶æ—¶å¯ä»¥ç”¨åˆ°
+;;ÒÔÉÏÊÇÎÒµÃtime stamp£¬ÔÚºóÃæ½«ÓĞÏêÏ¸½²½â
+;;ÉèÖÃÄãµÄÈ«ÃûºÍÓÊ¼ş£¬ÔÚ·¢ÓÊ¼şÊ±¿ÉÒÔÓÃµ½
 (setq *win* (eq system-type 'windows-nt))
 (setq *linux* (eq system-type 'gnu/linux))
 (setq user-full-name "Wu, Shanliang")
 (setq user-mail-address "klose911@gmail.com")
-;;è®¾ç½®ä½ çš„ä¹¦ç­¾æ–‡ä»¶ï¼Œé»˜è®¤æ˜¯~/.emacs.bmkï¼Œæˆ‘å–œæ¬¢æŠŠæœ‰å…³emacsçš„æ–‡ä»¶å°½é‡æ”¾åœ¨ä¸€ä¸ªæ–‡ä»¶å¤¹ï¼Œæ‰€ä»¥å°±ä¿®æ”¹äº†ã€‚
+;;ÉèÖÃÄãµÄÊéÇ©ÎÄ¼ş£¬Ä¬ÈÏÊÇ~/.emacs.bmk£¬ÎÒÏ²»¶°ÑÓĞ¹ØemacsµÄÎÄ¼ş¾¡Á¿·ÅÔÚÒ»¸öÎÄ¼ş¼Ğ£¬ËùÒÔ¾ÍĞŞ¸ÄÁË¡£
 (setq bookmark-default-file "~/.emacs.d/.emacs.bmk")
-;;è®¾ç½®ç¼©ç•¥è¯çš„æ–‡ä»¶ï¼Ÿä¸å¤§è®°å¾—äº†
+;;ÉèÖÃËõÂÔ´ÊµÄÎÄ¼ş£¿²»´ó¼ÇµÃÁË
 (setq abbrev-file-name "~/.emacs.d/.abbrev_defs")
-;;load-pathå°±åŒbashä¸­çš„$PATHç›¸ä¼¼ï¼Œemacsæ‰€éœ€è¦çš„ElispåŒ…éƒ½å¾—åœ¨load-pathé‡Œçš„æ–‡ä»¶å¤¹ä¸­ï¼Œ~/.emacs.d/elispæ˜¯æˆ‘è‡ªå·±æ·»åŠ çš„ElispåŒ…
+;;load-path¾ÍÍ¬bashÖĞµÄ$PATHÏàËÆ£¬emacsËùĞèÒªµÄElisp°ü¶¼µÃÔÚload-pathÀïµÄÎÄ¼ş¼ĞÖĞ£¬~/.emacs.d/elispÊÇÎÒ×Ô¼ºÌí¼ÓµÄElisp°ü
 (setq load-path (cons "~/.emacs.d/elisp" load-path))
-;;è®¾ç½®infoçš„è·¯å¾„ï¼Œä¹Ÿå¯é€šè¿‡Shellçš„å…¨å±€å˜é‡$INFOPATHè®¾ç½®
+;;ÉèÖÃinfoµÄÂ·¾¶£¬Ò²¿ÉÍ¨¹ıShellµÄÈ«¾Ö±äÁ¿$INFOPATHÉèÖÃ
 (add-to-list 'Info-default-directory-list "~/local/info/")
-;;ç”±èœå•ä¿®æ”¹é…ç½®çš„ä¸œè¥¿å°†ä¼šä¿å­˜åœ¨custom-fileé‡Œï¼Œè¿™é‡Œæˆ‘è®¾ç½®ä»–åœ¨æˆ‘çš„elispçš„é›†ä¸­è¥é‡Œ
+(if *win*
+    (setq exec-path (append exec-path '("d:/util/cygwin/bin"))))
+;;ÓÉ²Ëµ¥ĞŞ¸ÄÅäÖÃµÄ¶«Î÷½«»á±£´æÔÚcustom-fileÀï£¬ÕâÀïÎÒÉèÖÃËûÔÚÎÒµÄelispµÄ¼¯ÖĞÓªÀï
 ;;(setq custom-file "~/.emacs.d/elisp/klose-custom.el")
-;;è®¾ç½®gnuså¯åŠ¨çš„æ–‡ä»¶ã€‚é»˜è®¤æ˜¯ä¸º~/.gnus.el
+;;ÉèÖÃgnusÆô¶¯µÄÎÄ¼ş¡£Ä¬ÈÏÊÇÎª~/.gnus.el
 ;;(setq gnus-init-file "~/.emacs.d/elisp/klose-gnus.el")
-;;ç”±äºæˆ‘çš„é…ç½®æ–‡ä»¶å¾ˆé•¿ï¼Œæ‰€ä»¥æŒ‰ç…§åˆ†ç±»åˆ†åˆ«æ”¾åœ¨ä¸åŒçš„æ–‡ä»¶é‡Œï¼Œæ–¹ä¾¿ç®¡ç†
+;;ÓÉÓÚÎÒµÄÅäÖÃÎÄ¼şºÜ³¤£¬ËùÒÔ°´ÕÕ·ÖÀà·Ö±ğ·ÅÔÚ²»Í¬µÄÎÄ¼şÀï£¬·½±ã¹ÜÀí
 (load "~/.emacs.d/config/klose-basic-config")
 (load "~/.emacs.d/config/klose-language")
 (load "~/.emacs.d/config/klose-font")
@@ -36,7 +38,6 @@
 (load "~/.emacs.d/config/klose-folding")
 (load "~/.emacs.d/config/klose-git")
 (load "~/.emacs.d/config/klose-org-mode")
-(load "~/.emacs.d/config/klose-wiki")
 (load "~/.emacs.d/config/klose-browser-kill-ring")
 (load "~/.emacs.d/config/klose-swbuff")
 (load "~/.emacs.d/config/klose-tabbar")
@@ -46,7 +47,6 @@
 (load "~/.emacs.d/config/klose-erc")
 (load "~/.emacs.d/config/klose-gnus") 
 (load "~/.emacs.d/config/klose-emms")
-;;(load "~/.emacs.d/config/klose-w3m")
 (load "~/.emacs.d/config/klose-clisp")
 (load "~/.emacs.d/config/klose-scheme")
 (load "~/.emacs.d/config/klose-clojure")
@@ -55,14 +55,14 @@
 (load "~/.emacs.d/config/klose-cedet")
 (load "~/.emacs.d/config/klose-ecb")
 (load "~/.emacs.d/config/klose-cc")
-;;(load "~/.emacs.d/config/klose-android")
-(load "~/.emacs.d/config/klose-cflow")
-(load "~/.emacs.d/config/klose-auctex")
+(load "~/.emacs.d/config/klose-cflow") 
 (load "~/.emacs.d/config/klose-js")
 (load "~/.emacs.d/config/klose-key-binding")
-;;è¿™ä¸ªä¸œè¥¿å¿…é¡»æ”¾åœ¨æœ€å
-;;desktop.elæ˜¯ä¸€ä¸ªå¯ä»¥ä¿å­˜ä½ ä¸Šæ¬¡emacså…³é—­æ—¶çš„çŠ¶æ€ï¼Œä¸‹ä¸€æ¬¡å¯åŠ¨æ—¶æ¢å¤ä¸ºä¸Šæ¬¡å…³é—­çš„çŠ¶æ€ã€‚å°±å’Œvmwareçš„suspendä¸€æ ·ã€‚
-;;å› ä¸ºæˆ‘è¦ä½¿ç”¨sawfish-mode,wiki-mode,html-helper-modeï¼Œæ”¾åœ¨è¿™é‡Œæ‰èƒ½ä¿è¯ä¸‹æ¬¡å¯åŠ¨æ—¶èƒ½æ­£ç¡®è¾¨è®¤æ–‡ä»¶éœ€è¦çš„æ¨¡å¼ã€‚
+(if (not *win*) 
+(load "~/.emacs.d/config/klose-auctex"))  
+;;Õâ¸ö¶«Î÷±ØĞë·ÅÔÚ×îºó
+;;desktop.elÊÇÒ»¸ö¿ÉÒÔ±£´æÄãÉÏ´Îemacs¹Ø±ÕÊ±µÄ×´Ì¬£¬ÏÂÒ»´ÎÆô¶¯Ê±»Ö¸´ÎªÉÏ´Î¹Ø±ÕµÄ×´Ì¬¡£¾ÍºÍvmwareµÄsuspendÒ»Ñù¡£
+;;ÒòÎªÎÒÒªÊ¹ÓÃsawfish-mode,wiki-mode,html-helper-mode£¬·ÅÔÚÕâÀï²ÅÄÜ±£Ö¤ÏÂ´ÎÆô¶¯Ê±ÄÜÕıÈ·±æÈÏÎÄ¼şĞèÒªµÄÄ£Ê½¡£
 (load "desktop")
 (desktop-load-default) 
 (desktop-read) 

@@ -7,7 +7,7 @@
 (tool-bar-mode 0)
 ;;去掉菜单栏，我将F10绑定为显示菜单栏，万一什么东西忘了，需要菜单栏了可以摁F10调出，再摁F10就去掉菜单
 (if (equal window-system nil)
-  (menu-bar-mode nil))
+    (menu-bar-mode nil))
 ;;(menu-bar-mode nil)
 ;;不要滚动栏，现在都用滚轴鼠标了，可以不用滚动栏了
 (scroll-bar-mode 0)
@@ -16,10 +16,10 @@
 (require 'redo)
 (require 'package)  
 (add-to-list 'package-archives  
-        ;;'("marmalade" . "http://marmalade-repo.org/packages/"))  
-       ;; '("gnu" . "http://elpa.gnu.org/packages/"))
-      ;; '("melpa-stable" . "https://stable.melpa.org/packages/") t)
-'("melpa" . "http://melpa.org/packages/") t)
+	     ;;'("marmalade" . "http://marmalade-repo.org/packages/"))  
+	     ;; '("gnu" . "http://elpa.gnu.org/packages/"))
+	     ;; '("melpa-stable" . "https://stable.melpa.org/packages/") t)
+	     '("melpa" . "http://melpa.org/packages/") t)
 (package-initialize) 
 
 ;;备份设置
@@ -42,19 +42,19 @@
 ;;特别有意思的是 try-expand-line，它可以帮你补全整整一行文字。我很多时后有两行文字大致相同，只有几个字不一样，但是我懒得去拷贝粘贴以下。那么我就输入这行文字的前面几个字。然后多按几下 M-/ 就能得到那一行。
 (global-set-key [(meta ?/)] 'hippie-expand)
 (setq hippie-expand-try-functions-list
-	  '(try-expand-line
-		 try-expand-line-all-buffers
-		 try-expand-list
-		 try-expand-list-all-buffers
-		 try-expand-dabbrev
-		 try-expand-dabbrev-visible
-		 try-expand-dabbrev-all-buffers
-		 try-expand-dabbrev-from-kill
-		 try-complete-file-name
-		 try-complete-file-name-partially
-		 try-complete-lisp-symbol
-		 try-complete-lisp-symbol-partially
-		 try-expand-whole-kill))
+      '(try-expand-line
+	try-expand-line-all-buffers
+	try-expand-list
+	try-expand-list-all-buffers
+	try-expand-dabbrev
+	try-expand-dabbrev-visible
+	try-expand-dabbrev-all-buffers
+	try-expand-dabbrev-from-kill
+	try-complete-file-name
+	try-complete-file-name-partially
+	try-complete-lisp-symbol
+	try-complete-lisp-symbol-partially
+	try-expand-whole-kill))
 
 ;;时间戳设置(time-stamp)，设定文档上次保存的信息
 ;;只要里在你得文档里有Time-stamp:的设置，就会自动保存时间戳
@@ -114,8 +114,8 @@
 (setq visible-bell nil)
 ;;滚动页面时比较舒服，不要整页的滚动
 (setq scroll-step 1
-	  scroll-margin 3
-	  scroll-conservatively 10000)
+      scroll-margin 3
+      scroll-conservatively 10000)
 ;;设定句子结尾，主要是针对中文设置
 (setq sentence-end "\\([¡££¡£¿]\\|¡ ¡ \\|[.?!][]\"')}]*\\($\\|[ \t]\\)\\)[ \t\n]*")
 (setq sentence-end-double-space nil)
@@ -147,10 +147,11 @@
 (setq dired-recursive-copies 'top)
 (setq dired-recursive-deletes 'top)
 
-;; (setq browse-url-browser-function 'browse-url-generic)
-;; (setq browse-url-generic-program  (cond (eq ) "D:/Program Files/Mozilla Firefox/firefox.exe"
-;; 	    *linux* "/usr/bin/google-chrome-stable"
-;; 	    t nil))
+(setq browse-url-browser-function 'browse-url-generic) 
+(if *win* 
+    (setq browse-url-generic-program  "D:/Program Files/Mozilla Firefox/firefox.exe") 
+  (setq  browse-url-generic-program "/usr/bin/google-chrome-stable")) 
+
 
 (autoload 'thumbs "thumbs" "Preview images in a directory." t)
 (autoload 'table-insert "table" "WYGIWYS table editor")
