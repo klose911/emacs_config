@@ -11,3 +11,21 @@ ls
 cd 
 ls 
 cd Documents/programming/scheme/
+ls 
+ls 
+git status 
+ls 
+cd Documents/programming/latex/
+ls 
+cd cv/
+ls 
+git status 
+ls 
+cd Documents/programming/latex/cv/
+ls 
+cd org
+ls 
+cd material/
+ls 
+ls 
+rm *.html 
