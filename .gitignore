@@ -1,6 +1,9 @@
 .emacs.bmk
 .session
-/auto-save-list/*
-/emms/*
-/games/*
-/image-dired/*
+auto-save-list/
+emms/
+games/
+image-dired/
+eshell/
+ido.last
+srecode-map.el
