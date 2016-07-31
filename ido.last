@@ -2,8 +2,12 @@
 
 ;; ----- ido-last-directory-list -----
 (
+ ("/home/klose/Documents/programming/lisp/onlisp/" . "application/")
+ ("/home/klose/Documents/programming/lisp/" . "onlisp/")
+ ("/home/klose/Documents/programming/latex/cv/" . "material/")
+ ("/home/klose/.emacs.d/" . "config/")
  ("/home/klose/Documents/programming/python/" . "rabbitmq/")
- ("/home/klose/Documents/programming/" . "python/")
+ ("/home/klose/Documents/programming/" . "scheme/")
  ("/home/klose/Documents/" . "programming/")
  ("/Users/klose/.emacs.d/" . "config/")
  ("/Users/klose/.emacs.d.bak/" . "config/")
@@ -15,9 +19,14 @@
 
 ;; ----- ido-work-directory-list -----
 (
- "/home/klose/Documents/programming/latex/cv/material/"
- "/home/klose/Documents/programming/python/rabbitmq/"
+ "/home/klose/Documents/programming/lisp/onlisp/"
+ "/home/klose/Documents/programming/lisp/onlisp/application/"
  "/home/klose/Documents/programming/scheme/"
+ "/home/klose/Documents/programming/latex/cv/material/"
+ "/home/klose/Documents/programming/ruby/basic/"
+ "/home/klose/.emacs.d/config/"
+ "/home/klose/.emacs.d/"
+ "/home/klose/Documents/programming/python/rabbitmq/"
  "/Users/klose/.emacs.d/config/"
  "/Users/klose/Documents/programming/scheme/"
  "/Users/klose/.emacs.d.bak/config/"
@@ -29,21 +38,39 @@
 
 ;; ----- ido-work-file-list -----
 (
- "java.html"
- "org.css"
- "concurrency.html"
- "concurrency.org"
- "java.org"
- "database.html"
- "emit_log.py"
+ "onlisp.lisp"
+ "amb.scm"
+ "continuation.org"
  "continuation.scm"
- "klose-basic-config.el"
- "klose-scheme.el"
+ "continuation.lisp"
+ "thread.lisp"
+ "concurrency.html"
+ "database.html"
+ "database.org"
+ "java.html"
 )
 
 ;; ----- ido-dir-file-cache -----
 (
- ("/home/klose/Documents/programming/latex/cv/material/" (22423 33503 0 0) "gc_scan.png" "java.html" "org.css" "database.org" "java.org" "mark_compact.png" "gc_generation.png" "cluster.jpg" "introduction.txt" "concurrency.org" "jvm.png" "org-mode-unicorn.png" "memory.png" "../" "./")
+ ("/home/klose/Documents/programming/lisp/onlisp/application/" (22428 48284 0 0) "thread.lisp" "amb.lisp" "amb.scm" "continuation.lisp" "closure/" "../" "./")
+
+ ("/home/klose/.emacs.d/" (22427 30510 0 0) "auto-save-list/" ".session" ".emacs.bmk" "eshell/" "config/" "image-dired/" ".gitignore" "ede-projects.el" "ido.last" "srecode-map.el" "README.md" "games/" "emacs" "elisp/" "emms/" "elpa/" ".git/" "src/" "../" "./")
+
+ ("/home/klose/.emacs.d/config/" (22427 23778 0 0) "klose-rect-mark.el" "klose-nxml.el" "klose-clojure.el" "klose-vim.el" "klose-js.el" "klose-org-mode.el" "klose-cc.el" "klose-clisp.el" "klose-w3m.el" "klose-gnus.el" "klose-mew.el" "klose-cedet.el" "klose-ctypes.el" "klose-muse.el" "klose-basic-config.el" "klose-ido.el" "klose-git.el" "klose-erc.el" "klose-eshell.el" "klose-ecb.el" "klose-font.el" "klose-setnu.el" "klose-session.el" "klose-ibuffer.el" "klose-key-binding.el" "klose-function.el" "klose-folding.el" "klose-tabbar.el" "klose-emms.el" "klose-ruby.el" "klose-sina.el" "klose-swbuff.el" "klose-python.el" "klose-calendar.el" "klose-language.el" "klose-cider.el" "klose-clojure-cider.el" "klose-browser-kill-ring.el" "klose-scheme.el" "klose-auctex.el" "klose-android.el" "klose-wiki.el" "klose-cflow.el" "../" "./")
+
+ ("/home/klose/Documents/programming/ruby/basic/" (22423 35960 0 0) "hello.rb" "../" "./")
+
+ ("/home/klose/Documents/programming/latex/cv/material/" (22424 48917 0 0) "gc_scan.png" "org.css" "database.org" "java.org" "mark_compact.png" "gc_generation.png" "cluster.jpg" "introduction.txt" "concurrency.org" "jvm.png" "org-mode-unicorn.png" "memory.png" "../" "./")
+
+ ("/home/klose/" (22427 31350 0 0) ".mutt.alias" ".fonts.cache-1" ".mailcap" ".git-credentials" ".emacs.d/" ".session" ".lesshst" ".node_repl_history" ".libreoffice/" ".macromedia/" ".emacs.tmp/" "Downloads/" ".xfce4-session.verbose-log.last" ".IntelliJIdea2016.1/" ".fontconfig/" ".fbtermrc" ".subversion/" ".remmina/" ".viper" ".vimrc" ".toprc" ".slime/" ".pulse/" ".metar/" ".local/" ".recentf" ".irssi/" ".oracle_jre_usage/" ".icons/" ".gnupg/" ".gnome/" ".foxrc/" ".gconf/" ".fehbg" ".emacs" ".cache/" ".adobe/" ".nnmail-cache" ".ido.last" ".ucimf.conf" ".conkyrc" ".xinitrc" ".Xresources" ".pulse-cookie" ".irb-history" ".profile" ".gegl-0.0/" ".mime.types" "Templates/" ".Xauthority" ".thumbnails/" ".xscreensaver" ".newsrc.eld" "VirtualBox VMs/" ".gstreamer-0.10/" ".openoffice/" ".xinput.d/" ".msgid.cache" ".bash_history" ".rubberband.wisdom.d" ".esd_auth" ".mysql_history" ".xdvirc" "Desktop/" ".viminfo" ".android/" ".procmailrc" ".fvwm-crystal/" ".themes/" ".gitconfig" ".screen/" ".ucimf-log" ".purple/" ".ICEauthority" ".gtk-bookmarks" ".procmaillog" "Applications/" ".bash_completion.d/" ".muttrc" ".newsrc" ".bash_logout" ".newsrc-dribble" "Series/" ".node-gyp/" ".texlive2008/" ".fetchids" ".msmtprc" "Public/" ".semanticdb/" ".gconfd/" ".eshell/" ".mozilla/" ".mplayer/" ".serverauth.4233" ".asadmintruststore" ".config/" ".ccache/" ".fetchmailrc" ".bashrc" "Video/" "Photo/" "Music/" "Movie/" ".sqldeveloper/" ".xfce4-session.verbose-log" "Games/" ".ooo3/" ".lftp/" ".lein/" ".java/" ".gvfs/" ".fvwm/" ".dbus/" ".texlive/" ".atom/" "Pictures/" "Documents/" "News/" "Mail/" ".vim/" ".ssh/" ".rvm/" ".w3m/" ".pki/" ".moc/" ".gem/" ".AMD/" "tmp/" "bin/" ".IdeaIC2016.1/" ".qt/" ".nx/" ".mc/" ".m2/" "../" "./")
+
+ ("/home/klose/Documents/programming/lisp/" (22424 48661 0 0) "onlisp/" "Land of LISP/" "ansi_common_lisp/" "practical_common_lisp/" "../" "./")
+
+ ("/home/klose/Documents/programming/lisp/onlisp/" (22411 35263 0 0) "onlisp.lisp" "application/" "README.md" "function/" "macro/" ".git/" "../" "./")
+
+ ("/home/klose/Documents/programming/lisp/onlisp/macro/" (22411 34309 0 0) "pattern_match.lisp" "retFunc_macro.lisp" "multiple_evaluate.lisp" "retMacro_macro.lisp" "global_variables.lisp" "why_macro.lisp" "anaphor_macro.lisp" "destructing-macro.lisp" "read_macro.lisp" "compile_computaion.lisp" "var_capture.lisp" "macro.lisp" "classic-macro.lisp" "../" "./")
+
+ ("/home/klose/Documents/programming/latex/" (22420 54918 0 0) "thesis/" "moderncv/" "unix/" "cv/" "../" "./")
 
  ("/home/klose/Documents/programming/latex/cv/" (22421 65508 0 0) "publications.bib" "resume.en.tex" "resume.de.tex" "moderncvthemeclassic.sty" "moderncv.cls" "material/" "example/" ".gitignore" "moderncvthemeempty.sty" "moderncvthemecasual.sty" "moderncvcompatibility.sty" "README.md" "resume.zh.tex" "res.cls" "Makefile" ".git/" "../" "./")
 
@@ -56,8 +83,6 @@
  ("/home/klose/Documents/programming/" (22362 8947 0 0) "android/" "scheme/" "python/" "practise/" "latex/" "ruby/" "lisp/" "java/" "html/" "clojure/" "asm/" "os/" "c/" "../" "./")
 
  ("/home/klose/Documents/" (22390 38309 0 0) "netbeans/" ".privacy/" "docker/" "workspace/" "programming/" "study/" "proxy/" "work/" "wiki/" "book/" "lib/" "os/" "../" "./")
-
- ("/home/klose/" (22422 6411 0 0) ".mutt.alias" ".fonts.cache-1" ".mailcap" ".git-credentials" ".emacs.d/" ".session" ".lesshst" ".node_repl_history" ".libreoffice/" ".macromedia/" ".emacs.tmp/" "Downloads/" ".xfce4-session.verbose-log.last" ".IntelliJIdea2016.1/" ".fontconfig/" ".fbtermrc" ".subversion/" ".remmina/" ".viper" ".vimrc" ".toprc" ".slime/" ".pulse/" ".metar/" ".local/" ".recentf" ".irssi/" ".oracle_jre_usage/" ".icons/" ".gnupg/" ".gnome/" ".foxrc/" ".gconf/" ".fehbg" ".emacs" ".cache/" ".adobe/" ".nnmail-cache" ".ido.last" ".ucimf.conf" ".conkyrc" ".xinitrc" ".Xresources" ".pulse-cookie" ".irb-history" ".profile" ".gegl-0.0/" ".mime.types" "Templates/" ".Xauthority" ".thumbnails/" ".xscreensaver" ".newsrc.eld" "VirtualBox VMs/" ".gstreamer-0.10/" ".openoffice/" ".xinput.d/" ".msgid.cache" ".bash_history" ".rubberband.wisdom.d" ".esd_auth" ".mysql_history" ".xdvirc" "Desktop/" ".viminfo" ".android/" ".procmailrc" ".fvwm-crystal/" ".themes/" ".gitconfig" ".screen/" ".ucimf-log" ".purple/" ".ICEauthority" ".gtk-bookmarks" ".procmaillog" "Applications/" ".bash_completion.d/" ".muttrc" ".newsrc" ".bash_logout" ".newsrc-dribble" "Series/" ".node-gyp/" ".texlive2008/" ".fetchids" ".msmtprc" "Public/" ".semanticdb/" ".gconfd/" ".eshell/" ".mozilla/" ".mplayer/" ".serverauth.4093" ".asadmintruststore" ".config/" ".ccache/" ".fetchmailrc" ".bashrc" "Video/" "Photo/" "Music/" "Movie/" ".sqldeveloper/" ".xfce4-session.verbose-log" "Games/" ".ooo3/" ".lftp/" ".lein/" ".java/" ".gvfs/" ".fvwm/" ".dbus/" ".texlive/" ".atom/" "Pictures/" "Documents/" "News/" "Mail/" ".vim/" ".ssh/" ".rvm/" ".w3m/" ".pki/" ".moc/" ".gem/" ".AMD/" "tmp/" "bin/" ".IdeaIC2016.1/" ".qt/" ".nx/" ".mc/" ".m2/" "../" "./")
 
  ("/Users/klose/.emacs.d/config/" (22422 5230 0 0) "klose-wiki.el" "klose-w3m.el" "klose-vim.el" "klose-tabbar.el" "klose-swbuff.el" "klose-sina.el" "klose-setnu.el" "klose-session.el" "klose-scheme.el" "klose-ruby.el" "klose-rect-mark.el" "klose-python.el" "klose-org-mode.el" "klose-nxml.el" "klose-muse.el" "klose-mew.el" "klose-language.el" "klose-key-binding.el" "klose-js.el" "klose-ido.el" "klose-ibuffer.el" "klose-gnus.el" "klose-git.el" "klose-function.el" "klose-font.el" "klose-folding.el" "klose-eshell.el" "klose-erc.el" "klose-emms.el" "klose-ecb.el" "klose-ctypes.el" "klose-clojure.el" "klose-clojure-cider.el" "klose-clisp.el" "klose-cider.el" "klose-cflow.el" "klose-cedet.el" "klose-cc.el" "klose-calendar.el" "klose-browser-kill-ring.el" "klose-basic-config.el" "klose-auctex.el" "klose-android.el" "../" "./")
 

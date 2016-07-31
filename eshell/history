@@ -29,3 +29,55 @@ cd material/
 ls 
 ls 
 rm *.html 
+ls 
+cd ~/Documents/programming/
+ls 
+ls 
+cd ruby/
+ls 
+cd rails/
+ls 
+cd ..
+ls 
+cd ..
+ls 
+cd ruby/
+ls 
+mkdir basic
+cd basic/
+ls 
+ls 
+cd ..
+ls 
+cd rails/demo/
+ls 
+cd app/
+sl 
+ls 
+cd assets/
+sl 
+cd ..
+ls 
+cd controllers/
+ls 
+cd ..
+ls 
+cd ..
+ls 
+cd ..
+ls 
+cd ..
+ls 
+cd ..
+ls 
+cd ruby/
+ls 
+cd basic/
+ls 
+cd Documents/programming/
+ls 
+cd scheme/
+ls 
+ls 
+cp main.css ~/Documents/programming/latex/cv/material/
+ls 
