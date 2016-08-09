@@ -32,7 +32,7 @@
 	 (setq exec-path (append exec-path '("/opt/local/bin" "/Users/klose/Bin" "/usr/local/texlive/2015/bin/x86_64-darwin")))))
       (*linux*
        (progn
-	 (setenv "PATH" (concat (getenv "PATH") ":/home/klose/binh"))
+	 (setenv "PATH" (concat (getenv "PATH") ":/home/klose/bin"))
 	 (setq exec-path (append exec-path '("/home/klose/bin")))))
       (t nil))
 

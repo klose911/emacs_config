@@ -60,8 +60,7 @@
 (load "~/.emacs.d/config/klose-ruby") 
 (load "~/.emacs.d/config/klose-js")
 (load "~/.emacs.d/config/klose-key-binding")
-(if (not *win*) 
-(load "~/.emacs.d/config/klose-auctex"))  
+(load "~/.emacs.d/config/klose-auctex")  
 ;;这个东西必须放在最后
 ;;desktop.el是一个可以保存你上次emacs关闭时的状态，下一次启动时恢复为上次关闭的状态。就和vmware的suspend一样。
 ;;因为我要使用sawfish-mode,wiki-mode,html-helper-mode，放在这里才能保证下次启动时能正确辨认文件需要的模式。
