@@ -1,6 +1,6 @@
 (if *win*
      (add-to-list 'load-path
-		  "~/.emacs.d/elisp/auctex"))
+		  "~/.emacs.d/elisp/auctex/share/emacs/site-lisp/site-start.d"))
 
 (load "auctex.el" nil t t)
 ;;(load "preview-latex.el" nil t t)
