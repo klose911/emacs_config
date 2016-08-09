@@ -50,7 +50,7 @@
 (load "~/.emacs.d/config/klose-clisp")
 (load "~/.emacs.d/config/klose-scheme")
 (load "~/.emacs.d/config/klose-clojure")
-(load "~/.emacs.d/config/klose-clojure-cider.el")
+(load "~/.emacs.d/config/klose-clojure-cider")
 (load "~/.emacs.d/config/klose-ctypes")
 ;;(load "~/.emacs.d/config/klose-cedet")
 ;;(load "~/.emacs.d/config/klose-ecb")

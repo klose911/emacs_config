@@ -1,3 +1,7 @@
+(if *win*
+     (add-to-list 'load-path
+		  "~/.emacs.d/elisp/auctex"))
+
 (load "auctex.el" nil t t)
 ;;(load "preview-latex.el" nil t t)
 (setq TeX-auto-save t)

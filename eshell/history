@@ -1,83 +1,128 @@
+cd scheme/
 ls 
-cd Documents/programming/
-ls 
-cd C/
-sl 
+cd tutorial/
 ls 
 ls 
-cd 
-cd .emacs.d/config/
 ls 
-cd 
+ls -l 
+cd ..
 ls 
-cd Documents/programming/scheme/
+cd ..
+ls 
+cd latex/
+ls 
+cd thesis/
+ls 
+ls -l 
+cd ..
+ls 
+cd unix/
+ls 
+make 
 ls 
 ls 
-git status 
+make clean 
+cd ..
 ls 
-cd Documents/programming/latex/
+ls -l 
+cd ~/Documents/work
+ls 
+cd bright_ocean/
+ls 
+cd blocktel/
+ls 
+cd ..
+ls 
+cd shHis/
+ls 
+cd ..
+ls 
+cd smcc/
+ls 
+cd ..
+ls 
+cd webgis/
+ls 
+cd ..
+ls 
+cd ..
+s 
+ls 
+cd resume/
+ls 
+cd ..
+ls 
+rm -rf resume/ 
+ls 
+rm JD+-+Developer+Java+-+BHP+Billiton.pdf  
+ls 
+cd aquila/
+ls 
+cd salesplatform/
+ls 
+cd ..
+ls 
+cd ..
+ls 
+cd crack/
+ls 
+cd ..
+ls 
+cd java/
+ls 
+cd axis/
+ls 
+make clean 
+ls 
+make 
+ls 
+make clean 
+ls 
+ls 
+cd ~/Documents/work/java/axis/
+ls 
+cd ~/Documents/programming/latex/
 ls 
 cd cv/
 ls 
-git status 
-ls 
-cd Documents/programming/latex/cv/
-ls 
-cd org
-ls 
-cd material/
-ls 
-ls 
-rm *.html 
-ls 
-cd ~/Documents/programming/
-ls 
-ls 
-cd ruby/
-ls 
-cd rails/
 ls 
 cd ..
 ls 
-cd ..
+mv axis/ cv/ 
+cd cv/
 ls 
-cd ruby/
+cd axis/
 ls 
-mkdir basic
-cd basic/
+make clean 
 ls 
+rm -rf axis.out.bak 
 ls 
-cd ..
+rm WorkingWithApacheAxis.ppt 
 ls 
-cd rails/demo/
+rm -rf auto/ 
 ls 
-cd app/
-sl 
+ls -l 
+make clean 
+make 
 ls 
-cd assets/
-sl 
-cd ..
+open axis.pdf  
+evince axis.pdf  
+make clean 
+cd Documents/programming/
 ls 
-cd controllers/
+cd latex/cv/material/lambda/
 ls 
-cd ..
-ls 
-cd ..
-ls 
-cd ..
-ls 
-cd ..
+cd ~/Documents/programming/scheme/tutorial/
 ls 
 cd ..
 ls 
-cd ruby/
+mv tutorial/ exercise 
+cd exercise/
 ls 
-cd basic/
+cd ~/.emacs.d/config/
+ls 
 ls 
 cd Documents/programming/
 ls 
-cd scheme/
-ls 
-ls 
-cp main.css ~/Documents/programming/latex/cv/material/
+cd latex/cv/material/lambda/
 ls 
