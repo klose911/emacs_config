@@ -1,47 +1,3 @@
-cd scheme/
-ls 
-cd tutorial/
-ls 
-ls 
-ls 
-ls -l 
-cd ..
-ls 
-cd ..
-ls 
-cd latex/
-ls 
-cd thesis/
-ls 
-ls -l 
-cd ..
-ls 
-cd unix/
-ls 
-make 
-ls 
-ls 
-make clean 
-cd ..
-ls 
-ls -l 
-cd ~/Documents/work
-ls 
-cd bright_ocean/
-ls 
-cd blocktel/
-ls 
-cd ..
-ls 
-cd shHis/
-ls 
-cd ..
-ls 
-cd smcc/
-ls 
-cd ..
-ls 
-cd webgis/
 ls 
 cd ..
 ls 
@@ -126,3 +82,47 @@ cd Documents/programming/
 ls 
 cd latex/cv/material/lambda/
 ls 
+ls 
+cd Documents/programming/latex/cv/
+ls 
+cd material/lambda/
+ls 
+cd ~/Documents/programming/scheme/exercise/
+ls 
+ls 
+ls -l 
+ls 
+mv ~/Downloads/stat-spell.scm ./ 
+ls 
+less stat-spell.dat 
+ls 
+rm stat-spell.dat 
+ls 
+ls 
+mv ex1.scm operator.scm 
+mv ex2.scm list.scm 
+ls 
+mv ex3.scm func.scm 
+mv ex4.scm cond.scm 
+ls 
+mv ex6.scm loop.scm 
+mv ex7.scm higer_order_func.scm 
+mv ex9.scm io.scm 
+ls 
+mv io.scm assign.scm 
+mv ex8.scm io.scm 
+ls 
+mv ex10.scm string.scm 
+mv ex11.scm data_struc.scm 
+ls 
+ls 
+ls -l 
+cd ~/Documents/programming/lisp/onlisp/
+ls 
+cd function/
+cd ..
+ls 
+cd application/
+ls 
+ls 
+pwd
