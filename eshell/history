@@ -1,128 +1,128 @@
+cd Documents/programming/python/
+ls 
+ls 
+ls 
+cd Documents/book/
 ls 
 cd ..
 ls 
-cd ..
-s 
-ls 
-cd resume/
-ls 
-cd ..
-ls 
-rm -rf resume/ 
-ls 
-rm JD+-+Developer+Java+-+BHP+Billiton.pdf  
-ls 
-cd aquila/
-ls 
-cd salesplatform/
-ls 
-cd ..
-ls 
-cd ..
-ls 
-cd crack/
-ls 
-cd ..
+cd programming/
+sl 
 ls 
 cd java/
 ls 
-cd axis/
-ls 
-make clean 
-ls 
-make 
-ls 
-make clean 
-ls 
-ls 
-cd ~/Documents/work/java/axis/
-ls 
-cd ~/Documents/programming/latex/
-ls 
-cd cv/
-ls 
+cd concurrency/
 ls 
 cd ..
 ls 
-mv axis/ cv/ 
-cd cv/
+cd multiThread/
 ls 
-cd axis/
+cd src/
 ls 
-make clean 
-ls 
-rm -rf axis.out.bak 
-ls 
-rm WorkingWithApacheAxis.ppt 
-ls 
-rm -rf auto/ 
+cd multithread/
 ls 
 ls -l 
-make clean 
-make 
-ls 
-open axis.pdf  
-evince axis.pdf  
-make clean 
-cd Documents/programming/
-ls 
-cd latex/cv/material/lambda/
-ls 
-cd ~/Documents/programming/scheme/tutorial/
+cd ..
 ls 
 cd ..
 ls 
-mv tutorial/ exercise 
-cd exercise/
+cd ..
 ls 
+rm -rf HelloWorld/ 
+ls 
+rm -rf multiThread/ 
+ls 
+cd hashmap/
+ls 
+cd src/hashmap/
+ls 
+cd ..
+ls 
+cd ..
+ls 
+cd ..
+ls 
+rm -rf hashmap/ 
+ls 
+ls 
+cd ..
+ls 
+cd ..
+ls 
+cd ..
+ls 
+cd Documents/book/
+ls 
+cd java/Java\ Concurrency\ in\ Practice/
+ls 
+ls 
+ls 
+cd Documents/book/java
+ls 
+cd Java\ Concurrency\ in\ Practice/
+ls 
+ls -l 
+ls 
+ls 
+rm *.html 
+ls 
+ls -l 
+cd ~/Documents/programming/latex/
+cd cv/
+ls 
+ls -l 
+cd material/
+ls 
+cd jcip/
+ls 
+ls 
+cd ..
+ls 
+ls 
+cd jcip/
+ls 
+ls -l 
+pwd
+ls 
+cp -r ../css ./ 
+ls 
+ls -l 
+ls 
+mv jcip.org jcip.org.bak 
+ls 
+ls 
+mv jcip.org.bak jcip.org 
+ls 
+ls -l 
+ls -l 
+cat jcip.org 
+ls -l 
+enconv jcip.org 
+ls 
+ls 
+rm jcip.org 
+ls 
+rm jcip.html 
+ls 
+enca * 
+enconv * 
+enca * 
+ls -l 
+rm executor.html  
+rm executor.html  
+ls -l 
+ls 
+enca jcip.org 
+ls -l 
+enconv jcip.org 
 cd ~/.emacs.d/config/
 ls 
-ls 
-cd Documents/programming/
-ls 
-cd latex/cv/material/lambda/
+cd ~/.emacs.d/
 ls 
 ls 
-cd Documents/programming/latex/cv/
-ls 
-cd material/lambda/
-ls 
-cd ~/Documents/programming/scheme/exercise/
-ls 
-ls 
-ls -l 
-ls 
-mv ~/Downloads/stat-spell.scm ./ 
-ls 
-less stat-spell.dat 
-ls 
-rm stat-spell.dat 
-ls 
-ls 
-mv ex1.scm operator.scm 
-mv ex2.scm list.scm 
-ls 
-mv ex3.scm func.scm 
-mv ex4.scm cond.scm 
-ls 
-mv ex6.scm loop.scm 
-mv ex7.scm higer_order_func.scm 
-mv ex9.scm io.scm 
-ls 
-mv io.scm assign.scm 
-mv ex8.scm io.scm 
-ls 
-mv ex10.scm string.scm 
-mv ex11.scm data_struc.scm 
-ls 
-ls 
-ls -l 
-cd ~/Documents/programming/lisp/onlisp/
-ls 
-cd function/
 cd ..
+ls -l 
+cd themes/
 ls 
-cd application/
-ls 
-ls 
-pwd
+ls -l 
+grep laptop * 
