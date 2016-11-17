@@ -16,5 +16,5 @@
 ;; Load nxml-mode for files ending in .xml, .xsl, .rng, .xhtml
 ;;--
 (setq auto-mode-alist
-      (cons '("\\.\\(xml\\|xsl\\|rng\\|xhtml\\)\\'" . nxml-mode)
+      (cons '("\\.\\(xml\\|xsl\\|rng\\|xhtml\\|ftl\\)\\'" . nxml-mode)
             auto-mode-alist))

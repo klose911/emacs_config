@@ -47,8 +47,7 @@
 (global-set-key (kbd "C-c e o") 'emms-score-show-playing)
 
 ;; coding settings
-(setq emms-info-mp3info-coding-system 'utf-8
-      emms-cache-file-coding-system 'utf-8
-      emms-i18n-default-coding-system '(utf-8 . utf-8) 
-      default-process-coding-system '(utf-8 . utf-8)
-      )
+
+(setq emms-info-mp3info-coding-system locale-code
+      emms-cache-file-coding-system locale-code
+      emms-i18n-default-coding-system default-process-coding-system)

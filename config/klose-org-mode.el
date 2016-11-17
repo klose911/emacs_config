@@ -1,5 +1,6 @@
 (require 'org-install)
 (require 'htmlize) 
+(setq org-src-fontify-natively t)
 (defun org-insert-src-block (src-code-type)
   "Insert a `SRC-CODE-TYPE' type source code block in org-mode."
   (interactive
