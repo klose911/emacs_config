@@ -58,7 +58,7 @@
 ;;;;;;;;;;;;;;;;;;;;
 ;;   语言环境设定
 ;;;;;;;;;;;;;;;;;;;;
-(set-language-environment 'Chinese-GB)
+;;(set-language-environment 'Chinese-GB)
 (setq gnus-default-charset 'chinese-iso-8bit
       gnus-group-name-charset-group-alist '((".*" . cn-gb-2312))
       gnus-summary-show-article-charset-alist
