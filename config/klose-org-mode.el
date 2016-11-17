@@ -1,6 +1,8 @@
 (require 'org-install)
 (require 'htmlize) 
 (setq org-src-fontify-natively t)
+
+>>>>>>> refs/remotes/origin/master
 (defun org-insert-src-block (src-code-type)
   "Insert a `SRC-CODE-TYPE' type source code block in org-mode."
   (interactive
@@ -40,5 +42,3 @@
 	    (local-set-key (kbd "C-c s b")
 			   'org-iswitchb)
 	    ))
-
-
