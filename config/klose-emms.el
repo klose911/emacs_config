@@ -10,7 +10,10 @@
   (setq emms-player-mpg321-command-name "mpg123" 
 	emms-player-list '(emms-player-mpg321 
 			   emms-player-mplayer 
-			   emms-player-mplayer-playlist))) 
+			   emms-player-mplayer-playlist)))
+
+(setq emms-source-file-default-directory
+      (if *win* "d:/My Documents/My Music" "~/Music"))
 
 (require 'emms-score)
 (emms-score 1)
@@ -51,3 +54,4 @@
 (setq emms-info-mp3info-coding-system locale-code
       emms-cache-file-coding-system locale-code
       emms-i18n-default-coding-system default-process-coding-system)
+
