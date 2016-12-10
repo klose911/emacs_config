@@ -24,8 +24,8 @@
 
 (cond (*win*
        (progn
-	 (setenv "PATH" (concat (getenv "PATH") ":d:/util/gnu/GnuWin32/bin"))
-	 (setq exec-path (append exec-path '("d:/util/gnu/GnuWin32/bin")))))
+	 (setenv "PATH" (concat (getenv "PATH") ";d:\\util\\gnu\\GnuWin32\\bin;d:\\util\\mingw\\bin"))
+	 (setq exec-path (append exec-path '("d:\\util\\gnu\\GnuWin32\\bin" "d:\\util\\mingw\\bin")))))
       (*mac*
        (progn
 	 (setenv "PATH" (concat (getenv "PATH") ":/opt/local/bin:/Users/klose/Bin:/usr/local/texlive/2015/bin/x86_64-darwin"))
