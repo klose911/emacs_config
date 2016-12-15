@@ -20,7 +20,8 @@
     (previous-line 1)
     (org-edit-src-code)))
 
-(add-to-list 'auto-mode-alist '("\\.org\\'" . org-mode)) 
+(add-to-list 'auto-mode-alist '("\\.org\\'" . org-mode))
+(add-to-list 'auto-coding-alist '("\\.org\\'" . utf-8))
 (add-hook 'org-mode-hook 'turn-on-font-lock) ; not needed when global-font-lock-mode is on
 (add-hook 'org-mode-hook 
 	  (lambda ()
