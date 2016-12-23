@@ -1,7 +1,7 @@
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 ;;; Hans Ve Joanphan's dotemacs file
 ;;; Last modified time 
-;;; Time-stamp: <klose 12/08/2016 2202M02S>
+;;; Time-stamp: <klose.wu 12/23/2016 1502M02S>
 ;;; Life is a box of chocalates,
 ;;; you never know what you're gonna get.
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
@@ -60,6 +60,7 @@
 (load "~/.emacs.d/config/klose-python") 
 (load "~/.emacs.d/config/klose-ruby") 
 (load "~/.emacs.d/config/klose-js")
+(load "~/.emacs.d/config/klose-yaml")
 (load "~/.emacs.d/config/klose-key-binding")
 (load "~/.emacs.d/config/klose-auctex")  
 ;;这个东西必须放在最后
