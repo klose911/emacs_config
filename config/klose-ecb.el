@@ -1,4 +1,4 @@
-(add-to-list 'load-path "~/.emacs.d/elisp/ecb")
+;;(add-to-list 'load-path "~/.emacs.d/elisp/ecb")
 (require 'ecb)
 (custom-set-variables
  ;; custom-set-variables was added by Custom.

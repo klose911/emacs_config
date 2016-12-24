@@ -1,5 +1,5 @@
-(load-file "~/.emacs.d/elisp/cedet/cedet-devel-load.el") 
-;;(require 'cedet)
+;;(load-file "~/.emacs.d/elisp/cedet/cedet-devel-load.el") 
+(require 'cedet)
 (semantic-mode 1)
 (global-ede-mode 1)
 

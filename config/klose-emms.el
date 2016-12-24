@@ -1,4 +1,3 @@
-(add-to-list 'load-path "~/.emacs.d/elisp/emms/lisp")
 (require 'emms-setup)
 (require 'emms-info-libtag)
 (emms-standard)
