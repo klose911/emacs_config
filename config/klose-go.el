@@ -1,6 +1,6 @@
 (require 'go-mode)
-(with-eval-after-load 'go-mode
-  (require 'go-autocomplete))
+(require 'go-autocomplete)
+(require 'go-dlv)
 
 (cond (*win*
        (progn
