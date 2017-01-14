@@ -7,11 +7,7 @@
 	 (setq exec-path (append exec-path '("d:/util/go/bin") '("d:/util/go-projects/bin")))
 	 (setenv "GOPATH" "d:/util/go-projects")
 	 (add-to-list 'auto-coding-alist '("\\.go\\'" . utf-8))))
-      (t
-       (progn
-	 (setenv "GOPATH" "~/Documents/programming/go/goprojects/")
-	 (setq $exec-path (append exec-path '("~/Documents/programming/go/goprojects/bin"))))))
-
+      (t nil)) 
 (defun my-go-mode-hook ()
   ;; Use goimports instead of go-fmt
   (setq gofmt-command "goimports")
