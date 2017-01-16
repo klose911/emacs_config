@@ -1,22 +1,13 @@
 (require 'go-mode)
-(with-eval-after-load 'go-mode
-  (require 'go-autocomplete))
+(require 'go-autocomplete)
+(require 'go-dlv)
 
 (cond (*win*
        (progn
 	 (setq exec-path (append exec-path '("d:/util/go/bin") '("d:/util/go-projects/bin")))
 	 (setenv "GOPATH" "d:/util/go-projects")
 	 (add-to-list 'auto-coding-alist '("\\.go\\'" . utf-8))))
-      (*linux*
-       (progn
-	 (setenv "GOPATH" "/home/klose/Applications/goprojects/")
-	 (setq $exec-path (append exec-path '("/home/klose/Applications/goprojects/bin")))))
-      (*mac*
-       (progn
-	 (setenv "GOPATH" "/Users/klose/Bin/goprojects/")
-	 (setq exec-path (append exec-path '("/Users/klose/Bin/goprojects/bin")))))
-      (t nil))
-
+      (t nil)) 
 (defun my-go-mode-hook ()
   ;; Use goimports instead of go-fmt
   (setq gofmt-command "goimports")
