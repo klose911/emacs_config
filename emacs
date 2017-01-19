@@ -1,15 +1,24 @@
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 ;;; Hans Ve Joanphan's dotemacs file
 ;;; Last modified time 
-;;; Time-stamp: <klose.wu 12/23/2016 1502M02S>
+;;; Time-stamp: <klose.wu 01/16/2017 1702M02S>
 ;;; Life is a box of chocalates,
 ;;; you never know what you're gonna get.
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 ;;以上是我得time stamp，在后面将有详细讲解
 ;;设置你的全名和邮件，在发邮件时可以用到
+
+;; Added by Package.el.  This must come before configurations of
+;; installed packages.  Don't delete this line.  If you don't want it,
+;; just comment it out by adding a semicolon to the start of the line.
+;; You may delete these explanatory comments.
+(package-initialize)
+
 (setq *win* (eq system-type 'windows-nt))
 (setq *linux* (eq system-type 'gnu/linux))
 (setq *mac* (eq system-type 'darwin))
+(setq *cygwin* (eq system-type 'cygwin))
+
 (setq user-full-name "Wu, Shanliang")
 (setq user-mail-address "klose911@gmail.com")
 ;;设置你的书签文件，默认是~/.emacs.bmk，我喜欢把有关emacs的文件尽量放在一个文件夹，所以就修改了。

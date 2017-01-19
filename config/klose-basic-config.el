@@ -22,10 +22,20 @@
 	     '("melpa" . "http://melpa.org/packages/") t)
 (package-initialize) 
 
+(if *cygwin*
+    (progn 
+      (require 'windows-path)
+      (windows-path-activate)))
+
 (cond (*win*
        (progn
-	 (setenv "PATH" (concat (getenv "PATH") ";d:\\util\\gnu\\GnuWin32\\bin;d:\\util\\mingw\\bin"))
-	 (setq exec-path (append exec-path '("d:\\util\\gnu\\GnuWin32\\bin" "d:\\util\\mingw\\bin")))))
+	 (setenv "PATH" (concat (getenv "PATH") "d:\\util\\cygwin64\\bin;d:\\util\\gnu\\GnuWin32\\bin;d:\\util\\mingw\\bin"))
+	 (setq exec-path (append exec-path '("d:\\util\\cygwin64\\bin" "d:\\util\\gnu\\GnuWin32\\bin" "d:\\util\\mingw\\bin")))))
+      (*cygwin*
+       (progn
+	 (setenv "PATH" (concat (getenv "PATH") ":/bin"))
+	 (setq exec-path (append exec-path '("/bin")))
+	 (setq temporary-file-directory "/tmp")))
       (*mac*
        (progn
 	 (setenv "PATH" (concat (getenv "PATH") ":/opt/local/bin:/Users/klose/Bin:/usr/local/texlive/2015/bin/x86_64-darwin"))
@@ -152,7 +162,7 @@
 ;;使用narrow功能时的一个设置
 (put 'narrow-to-region 'disabled nil)
 ;;启动Emacs自动设置为两个窗口(上下各一个)
-(split-window-vertically)
+;;(split-window-vertically)
 ;;改变emacs标题栏的标题
 (setq frame-title-format "%b@klose.gentoo.org.cn")
 ;;允许emacs和外部其他程序的粘贴
@@ -163,6 +173,7 @@
 
 (setq browse-url-browser-function 'browse-url-generic) 
 (cond (*win* (setq browse-url-generic-program  "D:/Program Files/Mozilla Firefox/firefox.exe"))
+      (*cygwin* (setq browse-url-generic-program  "/cygdrive/d/Program Files/Mozilla Firefox/firefox.exe"))
       (*linux* (setq  browse-url-generic-program "/usr/bin/google-chrome-stable"))
       (*mac* (setq  browse-url-generic-program "/Applications/Google Chrome.app/Contents/MacOS/Google Chrome"))
       (t nil))
