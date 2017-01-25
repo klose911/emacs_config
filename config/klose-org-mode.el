@@ -20,8 +20,9 @@
     (previous-line 1)
     (org-edit-src-code)))
 
-(defvar klose-html-postamble
-"<p class=\"postamble\">Last Updated %C. Created by %a</p>
+(defun klose-html-postamble (info)
+  "Org-mode website HTML export preamble."
+  (format "
 <div id=\"uyan_frame\"></div>
 <script type=\"text/javascript\" src=\"http://v2.uyan.cc/code/uyan.js?uid=2124392\"></script>
 <script>
@@ -32,7 +33,8 @@
   ga('create', 'UA-90850421-1', 'auto');
   ga('send', 'pageview');
 </script>
-")
+"))
+
 
 (add-to-list 'auto-mode-alist '("\\.org\\'" . org-mode))
 (add-to-list 'auto-coding-alist '("\\.org\\'" . utf-8))
