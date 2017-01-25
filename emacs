@@ -1,7 +1,7 @@
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 ;;; Hans Ve Joanphan's dotemacs file
 ;;; Last modified time 
-;;; Time-stamp: <klose.wu 01/16/2017 1702M02S>
+;;; Time-stamp: <klose.wu 01/25/2017 1502M02S>
 ;;; Life is a box of chocalates,
 ;;; you never know what you're gonna get.
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
@@ -51,9 +51,9 @@
 (load "~/.emacs.d/config/klose-tabbar")
 (load "~/.emacs.d/config/klose-rect-mark")
 (load "~/.emacs.d/config/klose-setnu")
-(load "~/.emacs.d/config/klose-mew")
+;;(load "~/.emacs.d/config/klose-mew")
 (load "~/.emacs.d/config/klose-erc")
-(load "~/.emacs.d/config/klose-gnus")
+;;(load "~/.emacs.d/config/klose-gnus")
 (if (not *mac*) 
     (load "~/.emacs.d/config/klose-emms"))
 (load "~/.emacs.d/config/klose-clisp")
