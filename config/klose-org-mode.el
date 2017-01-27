@@ -23,8 +23,23 @@
 (defun klose-html-postamble (info)
   "Org-mode website HTML export preamble."
   (format "
-<div id=\"uyan_frame\"></div>
-<script type=\"text/javascript\" src=\"http://v2.uyan.cc/code/uyan.js?uid=2124392\"></script>
+     <br/>
+    <div class='ds-thread'></div>
+<script>
+var duoshuoQuery = {short_name:'klose911'};
+(function() {
+	 var dsThread = document.getElementsByClassName('ds-thread')[0];
+         dsThread.setAttribute('data-thread-key', document.title);
+         dsThread.setAttribute('data-title', document.title);
+         dsThread.setAttribute('data-url', window.location.href);
+	 var ds = document.createElement('script');
+	 ds.type = 'text/javascript';ds.async = true;
+	 ds.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') + '//static.duoshuo.com/embed.js';
+	 ds.charset = 'UTF-8';
+	 (document.getElementsByTagName('head')[0] 
+				       || document.getElementsByTagName('body')[0]).appendChild(ds);
+				       })();
+</script>
 <script>
   (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
   (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
@@ -34,6 +49,7 @@
   ga('send', 'pageview');
 </script>
 "))
+
 
 
 (add-to-list 'auto-mode-alist '("\\.org\\'" . org-mode))
