@@ -10,8 +10,8 @@
 
 (if *win* 
     (progn
-      (setq inferior-lisp-program "D:/util/clisp/clisp.exe")
-      (setq temporary-file-directory "C:\\Documents and Settings\\klose.wu\\Local Settings\\Temp") 
+      (setq inferior-lisp-program "D:/utils/clisp/clisp.exe")
+      (setq temporary-file-directory "C:/Users/klose.wu/AppData/Local/Temp") 
       (setq slime-net-coding-system 'utf-8-unix)) 
   (setq inferior-lisp-program "clisp"))  
 

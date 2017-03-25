@@ -29,8 +29,8 @@
 
 (cond (*win*
        (progn
-	 (setenv "PATH" (concat (getenv "PATH") "d:\\util\\cygwin64\\bin;d:\\util\\gnu\\GnuWin32\\bin;d:\\util\\mingw\\bin"))
-	 (setq exec-path (append exec-path '("d:\\util\\cygwin64\\bin" "d:\\util\\gnu\\GnuWin32\\bin" "d:\\util\\mingw\\bin")))))
+	 (setenv "PATH" (concat (getenv "PATH") "d:\\utils\\cygwin\\bin;d:\\utils\\gnu\\GnuWin32\\bin;d:\\utils\\mingw\\bin"))
+	 (setq exec-path (append exec-path '("d:\\utils\\cygwin\\bin" "d:\\utils\\gnu\\GnuWin32\\bin" "d:\\utils\\mingw\\bin")))))
       (*cygwin*
        (progn
 	 (setenv "PATH" (concat (getenv "PATH") ":/bin"))

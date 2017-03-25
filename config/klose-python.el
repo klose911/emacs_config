@@ -3,7 +3,6 @@
 (add-to-list 'auto-mode-alist '("\\.py\\'" . python-mode))
 (if *win*
     (progn 
-      (setq python-shell-interpreter "C:\\Anaconda2\\python.exe"
-	    python-shell-interpreter-args "-i C:\\Anaconda2\\Scripts\\ipython2-script.py console")
-      (add-to-list 'exec-path "c:\\Anaconda2") 
+      (setq python-shell-interpreter "D:/utils/python3/python.exe")
+      (add-to-list 'exec-path "D:/utils/python3") 
       (add-to-list 'interpreter-mode-alist '("python.exe" . python-mode))))  

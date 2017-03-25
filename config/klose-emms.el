@@ -4,7 +4,7 @@
 
 (if *win* 
     (progn 
-      (add-to-list 'exec-path "d:/util/mplayer/") 
+      (add-to-list 'exec-path "d:/utils/mplayer/") 
       (emms-default-players))  
   (setq emms-player-mpg321-command-name "mpg123" 
 	emms-player-list '(emms-player-mpg321 
