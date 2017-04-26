@@ -51,7 +51,17 @@ var duoshuoQuery = {short_name:'klose911'};
 </script>
 "))
 
+(setq org-footnote-re
+      (concat "\\[\\(?:"
+          ;; Match inline footnotes.
+          (org-re "fn:\\([-_[:word:]]+\\)?:\\|")
+          ;; Match other footnotes.
+          ;; "\\(?:\\([0-9]+\\)\\]\\)\\|"
+          (org-re "\\(fn:[-_[:word:]]+\\)")
+          "\\)"))
 
+(setq org-footnote-definition-re
+      (org-re "^\\[\\(fn:[-_[:word:]]+\\)\\]"))
 
 (add-to-list 'auto-mode-alist '("\\.org\\'" . org-mode))
 (add-to-list 'auto-coding-alist '("\\.org\\'" . utf-8))
