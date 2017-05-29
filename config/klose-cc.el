@@ -18,9 +18,9 @@
   (define-key c-mode-base-map [(return)] 'newline-and-indent)
   (define-key c-mode-base-map [(f7)] 'compile)
   (define-key c-mode-base-map [(meta \`)] 'c-indent-command)
-;;  (define-key c-mode-base-map [(tab)] 'hippie-expand)
-  (define-key c-mode-base-map [(tab)] 'my-indent-or-complete)
-  (define-key c-mode-base-map [(meta ?/)] 'semantic-ia-complete-symbol-menu)
+  (define-key c-mode-base-map [(tab)] 'hippie-expand)
+  ;;(define-key c-mode-base-map [(tab)] 'my-indent-or-complete)
+  ;;(define-key c-mode-base-map [(meta ?/)] 'semantic-ia-complete-symbol-menu)
 
  ;;预处理设置
   (setq c-macro-shrink-window-flag t)
