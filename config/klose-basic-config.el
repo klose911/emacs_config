@@ -12,6 +12,13 @@
 ;;不要滚动栏，现在都用滚轴鼠标了，可以不用滚动栏了
 (scroll-bar-mode 0)
 
+(require 'highlight-parentheses)
+(require 'parenface) 
+(eval-after-load 'parenface
+  (progn
+    (set-face-foreground 'parenface-paren-face "DimGray")
+    (set-face-foreground 'parenface-bracket-face "SteelBlue4")
+    (set-face-foreground 'parenface-curly-face "IndianRed3")))
 
 (require 'redo)
 (require 'package)  
@@ -178,7 +185,11 @@
       (*mac* (setq  browse-url-generic-program "/Applications/Google Chrome.app/Contents/MacOS/Google Chrome"))
       (t nil))
 
-
+(autoload 'paredit-mode "paredit"
+  "Minor mode for pseudo-structurally editing Lisp code."
+  t)
 (autoload 'thumbs "thumbs" "Preview images in a directory." t)
 (autoload 'table-insert "table" "WYGIWYS table editor")
 (autoload 'mpg123 "mpg123" "A Front-end to mpg123/ogg123" t)
+
+
