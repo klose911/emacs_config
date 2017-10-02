@@ -1,7 +1,7 @@
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 ;;; Hans Ve Joanphan's dotemacs file
 ;;; Last modified time 
-;;; Time-stamp: <klose 05/29/2017 2002M02S>
+;;; Time-stamp: <klose 10/02/2017 1202M02S>
 ;;; Life is a box of chocalates,
 ;;; you never know what you're gonna get.
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
@@ -16,6 +16,7 @@
 
 (setq *win* (eq system-type 'windows-nt))
 (setq *linux* (eq system-type 'gnu/linux))
+(setq *bsd* (eq system-type 'berkeley-unix))
 (setq *mac* (eq system-type 'darwin))
 (setq *cygwin* (eq system-type 'cygwin))
 
@@ -44,7 +45,7 @@
 (load "~/.emacs.d/config/klose-ido")
 (load "~/.emacs.d/config/klose-function")
 (load "~/.emacs.d/config/klose-folding")
-(load "~/.emacs.d/config/klose-git")
+;;(load "~/.emacs.d/config/klose-git")
 (load "~/.emacs.d/config/klose-org-mode")
 (load "~/.emacs.d/config/klose-browser-kill-ring")
 (load "~/.emacs.d/config/klose-swbuff")
@@ -85,13 +86,12 @@
  ;; If you edit it by hand, you could mess it up, so be careful.
  ;; Your init file should contain only one such instance.
  ;; If there is more than one, they won't work right.
+ '(blink-cursor-mode nil)
+ '(column-number-mode t)
+ '(display-time-mode t)
  '(package-selected-packages
    (quote
     (racket-mode yaml-mode w3m slime session s psgml mpg123 mew markdown-preview-mode inf-ruby htmlize go-dlv go-autocomplete folding emms ecb dash cygwin-mount cider auctex)))
- '(session-use-package t nil (session)))
-(custom-set-faces
- ;; custom-set-faces was added by Custom.
- ;; If you edit it by hand, you could mess it up, so be careful.
- ;; Your init file should contain only one such instance.
- ;; If there is more than one, they won't work right.
- '(default ((t (:inherit nil :stipple nil :background "black" :foreground "white" :inverse-video nil :box nil :strike-through nil :overline nil :underline nil :slant normal :weight normal :height 159 :width normal :foundry "unknown" :family "DejaVu Sans Mono")))))
+ '(session-use-package t nil (session))
+ '(show-paren-mode t)
+ '(tool-bar-mode nil))
