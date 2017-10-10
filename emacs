@@ -45,7 +45,7 @@
 (load "~/.emacs.d/config/klose-ido")
 (load "~/.emacs.d/config/klose-function")
 (load "~/.emacs.d/config/klose-folding")
-;;(load "~/.emacs.d/config/klose-git")
+(load "~/.emacs.d/config/klose-git")
 (load "~/.emacs.d/config/klose-org-mode")
 (load "~/.emacs.d/config/klose-browser-kill-ring")
 (load "~/.emacs.d/config/klose-swbuff")
