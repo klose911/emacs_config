@@ -1,7 +1,7 @@
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 ;;; Hans Ve Joanphan's dotemacs file
 ;;; Last modified time 
-;;; Time-stamp: <klose 05/29/2017 2002M02S>
+;;; Time-stamp: <klose 10/10/2017 2202M02S>
 ;;; Life is a box of chocalates,
 ;;; you never know what you're gonna get.
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
@@ -87,7 +87,7 @@
  ;; If there is more than one, they won't work right.
  '(package-selected-packages
    (quote
-    (racket-mode yaml-mode w3m slime session s psgml mpg123 mew markdown-preview-mode inf-ruby htmlize go-dlv go-autocomplete folding emms ecb dash cygwin-mount cider auctex)))
+    (magit racket-mode yaml-mode w3m slime session s psgml mpg123 mew markdown-preview-mode inf-ruby htmlize go-dlv go-autocomplete folding emms ecb dash cygwin-mount cider auctex)))
  '(session-use-package t nil (session)))
 (custom-set-faces
  ;; custom-set-faces was added by Custom.
