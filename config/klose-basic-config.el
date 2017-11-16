@@ -29,6 +29,9 @@
 	     '("melpa" . "http://melpa.org/packages/") t)
 (package-initialize) 
 
+(require 'window-numbering)
+(window-numbering-mode 1)
+
 (if *cygwin*
     (progn 
       (require 'windows-path)

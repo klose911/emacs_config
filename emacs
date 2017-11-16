@@ -1,7 +1,7 @@
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 ;;; Hans Ve Joanphan's dotemacs file
 ;;; Last modified time 
-;;; Time-stamp: <klose 10/10/2017 2202M02S>
+;;; Time-stamp: <klose 11/15/2017 1602M02S>
 ;;; Life is a box of chocalates,
 ;;; you never know what you're gonna get.
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
@@ -45,7 +45,7 @@
 (load "~/.emacs.d/config/klose-ido")
 (load "~/.emacs.d/config/klose-function")
 (load "~/.emacs.d/config/klose-folding")
-(load "~/.emacs.d/config/klose-git")
+;;(load "~/.emacs.d/config/klose-git")
 (load "~/.emacs.d/config/klose-org-mode")
 (load "~/.emacs.d/config/klose-browser-kill-ring")
 (load "~/.emacs.d/config/klose-swbuff")
@@ -68,7 +68,8 @@
 (load "~/.emacs.d/config/klose-go")
 (load "~/.emacs.d/config/klose-cc")
 (load "~/.emacs.d/config/klose-cflow")
-(load "~/.emacs.d/config/klose-python") 
+(load "~/.emacs.d/config/klose-python")
+(load "~/.emacs.d/config/klose-virtualenv")
 (load "~/.emacs.d/config/klose-ruby") 
 (load "~/.emacs.d/config/klose-js")
 (load "~/.emacs.d/config/klose-yaml")
@@ -81,3 +82,16 @@
 (load "desktop")
 (desktop-load-default) 
 (desktop-read) 
+(custom-set-variables
+ ;; custom-set-variables was added by Custom.
+ ;; If you edit it by hand, you could mess it up, so be careful.
+ ;; Your init file should contain only one such instance.
+ ;; If there is more than one, they won't work right.
+ '(session-use-package t nil (session))
+ '(virtualenv-root "~/Documents/ml/graphlib/"))
+(custom-set-faces
+ ;; custom-set-faces was added by Custom.
+ ;; If you edit it by hand, you could mess it up, so be careful.
+ ;; Your init file should contain only one such instance.
+ ;; If there is more than one, they won't work right.
+ '(default ((t (:inherit nil :stipple nil :background "black" :foreground "white" :inverse-video nil :box nil :strike-through nil :overline nil :underline nil :slant normal :weight normal :height 159 :width normal :foundry "unknown" :family "DejaVu Sans Mono")))))
