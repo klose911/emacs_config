@@ -1,7 +1,7 @@
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 ;;; Hans Ve Joanphan's dotemacs file
 ;;; Last modified time 
-;;; Time-stamp: <klose 11/19/2017 2202M02S>
+;;; Time-stamp: <klose 03/09/2018 1702M02S>
 ;;; Life is a box of chocalates,
 ;;; you never know what you're gonna get.
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
@@ -63,8 +63,8 @@
 (load "~/.emacs.d/config/klose-clojure")
 (load "~/.emacs.d/config/klose-clojure-cider")
 (load "~/.emacs.d/config/klose-ctypes")
-;;(load "~/.emacs.d/config/klose-cedet")
-;;(load "~/.emacs.d/config/klose-ecb")
+(load "~/.emacs.d/config/klose-cedet")
+(load "~/.emacs.d/config/klose-ecb")
 (load "~/.emacs.d/config/klose-go")
 (load "~/.emacs.d/config/klose-cc")
 (load "~/.emacs.d/config/klose-cflow")
