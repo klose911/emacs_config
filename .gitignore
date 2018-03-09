@@ -9,3 +9,6 @@ ido.last
 srecode-map.el
 ac-comphist.dat
 /elpa/archives/*
+semanticdb/* 
+ede-projects.el
+/session.* 
