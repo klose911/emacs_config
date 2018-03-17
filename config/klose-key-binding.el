@@ -19,4 +19,5 @@
 (global-set-key (kbd "C-c m") 'comment-region)
 (global-set-key (kbd "C-c u") 'uncomment-region)
 
-	      
+;;(define-key global-map "\M-." 'ggtags-find-tag-dwim)
+(define-key global-map "\M-*" 'pop-tag-mark)
