@@ -19,10 +19,10 @@
 ;; Fixing another key binding bug in iedit mode
 (define-key global-map (kbd "C-c o") 'iedit-mode)
 
-(add-hook 'after-init-hook #'global-flycheck-mode);全局开启
-(when (require 'flycheck nil t)
-  (setq elpy-modules(delq 'elpy-module-flymake elpy-modules))
-  (add-hook 'elpy-mode-hook 'flycheck-mode))
+;; (add-hook 'after-init-hook #'global-flycheck-mode);全局开启
+;; (when (require 'flycheck nil t)
+;;   (setq elpy-modules(delq 'elpy-module-flymake elpy-modules))
+;;   (add-hook 'elpy-mode-hook 'flycheck-mode))
 
 (require 'virtualenvwrapper)
 (venv-initialize-interactive-shells)
