@@ -1,5 +1,7 @@
 ;;;; CC-mode配置  http://cc-mode.sourceforge.net/
 (require 'cc-mode)
+(require 'xcscope) 
+
 (c-set-offset 'inline-open 0)
 (c-set-offset 'friend '-)
 (c-set-offset 'substatement-open 0)
@@ -32,6 +34,20 @@
 )
 
 (add-hook 'c-mode-common-hook 'my-c-mode-common-hook)
+
+(defun my-find-tag(&optional prefix)
+  "union of `find-tag' alternatives. decides upon major-mode"
+  (interactive "P")
+  (if (and (boundp 'cscope-minor-mode)
+           cscope-minor-mode)
+      (progn
+        (ring-insert find-tag-marker-ring (point-marker))
+        (call-interactively
+         (if prefix
+             'cscope-find-this-symbol
+           'cscope-find-global-definition-no-prompting
+           )))
+    (call-interactively 'find-tag)))
 
 ;;;;我的C++语言编辑策略
 (defun my-c++-mode-hook()
