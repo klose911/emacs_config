@@ -13,12 +13,10 @@
 (scroll-bar-mode 0)
 
 (require 'highlight-parentheses)
-(require 'parenface) 
-(eval-after-load 'parenface
-  (progn
-    (set-face-foreground 'parenface-paren-face "DimGray")
-    (set-face-foreground 'parenface-bracket-face "SteelBlue4")
-    (set-face-foreground 'parenface-curly-face "IndianRed3")))
+;;(require 'parenface) 
+;;     (set-face-foreground 'parenface-paren-face "DimGray")
+;;     (set-face-foreground 'parenface-bracket-face "SteelBlue4")
+;;     (set-face-foreground 'parenface-curly-face "IndianRed3")))
 
 (require 'redo)
 (require 'package)  
