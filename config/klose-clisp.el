@@ -13,8 +13,7 @@
 	 (setq inferior-lisp-program "D:/utils/clisp/clisp.exe")
 	 (setq temporary-file-directory "C:/Users/klose.wu/AppData/Local/Temp") 
 	 (setq slime-net-coding-system 'utf-8-unix)))
-      (*bsd* (setq inferior-lisp-program "sbcl"))
-      (t (setq inferior-lisp-program "clisp")))  
+      (t (setq inferior-lisp-program "sbcl")))  
 
 (defun lisp-indent-or-complete (&optional arg)
   (interactive "p")
@@ -24,3 +23,5 @@
 (eval-after-load "lisp-mode"
   '(progn
      (define-key lisp-mode-map (kbd "TAB") 'lisp-indent-or-complete)))
+
+(setq slime-lisp-host "localhost") 
