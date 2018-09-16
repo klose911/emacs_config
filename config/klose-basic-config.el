@@ -1,7 +1,7 @@
 (require 'color-theme) 
 (color-theme-initialize)
 (color-theme-dark-laptop)
-
+(color-theme-deep-blue)
 ;;外观设置
 ;;去掉工具栏
 (tool-bar-mode 0)
@@ -13,10 +13,10 @@
 (scroll-bar-mode 0)
 
 (require 'highlight-parentheses)
-;;(require 'parenface) 
-;;     (set-face-foreground 'parenface-paren-face "DimGray")
-;;     (set-face-foreground 'parenface-bracket-face "SteelBlue4")
-;;     (set-face-foreground 'parenface-curly-face "IndianRed3")))
+(require 'parenface) 
+    ;; (set-face-foreground 'parenface-paren-face "DimGray")
+    ;; (set-face-foreground 'parenface-bracket-face "SteelBlue4")
+    ;; (set-face-foreground 'parenface-curly-face "IndianRed3")))
 
 (require 'redo)
 (require 'package)  
