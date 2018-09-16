@@ -1,6 +1,6 @@
 (require 'cedet)
-(semantic-mode 1)
-(global-ede-mode 1)
+(semantic-mode 0)
+(global-ede-mode 0)
 
 ;; (setq semanticdb-project-roots 
 ;;       (list
