@@ -19,13 +19,6 @@
     ;; (set-face-foreground 'parenface-curly-face "IndianRed3")))
 
 (require 'redo)
-(require 'package)  
-(add-to-list 'package-archives  
-	     ;;'("marmalade" . "http://marmalade-repo.org/packages/"))  
-	     ;; '("gnu" . "http://elpa.gnu.org/packages/"))
-	     ;; '("melpa-stable" . "https://stable.melpa.org/packages/") t)
-	     '("melpa" . "http://melpa.org/packages/") t)
-(package-initialize) 
 
 (require 'window-numbering)
 (window-numbering-mode 1)
@@ -182,7 +175,7 @@
 (setq browse-url-browser-function 'browse-url-generic) 
 (cond (*win* (setq browse-url-generic-program  "D:/Program Files/Mozilla Firefox/firefox.exe"))
       (*cygwin* (setq browse-url-generic-program  "/cygdrive/d/Program Files/Mozilla Firefox/firefox.exe"))
-      (*linux* (setq  browse-url-generic-program "/usr/bin/firefox"))
+      (*linux* (setq  browse-url-generic-program "/usr/bin/google-chrome"))
       (*bsd* (setq  browse-url-generic-program "/usr/local/bin/firefox"))
       (*mac* (setq  browse-url-generic-program "/Applications/Google Chrome.app/Contents/MacOS/Google Chrome"))
       (t nil))
