@@ -173,9 +173,9 @@
 (setq dired-recursive-deletes 'top)
 
 (setq browse-url-browser-function 'browse-url-generic) 
-(cond (*win* (setq browse-url-generic-program  "D:/Program Files/Mozilla Firefox/firefox.exe"))
+(cond (*win* (setq browse-url-generic-program  "C:/Program Files (x86)/Google/Chrome/Application/chrome.exe"))
       (*cygwin* (setq browse-url-generic-program  "/cygdrive/d/Program Files/Mozilla Firefox/firefox.exe"))
-      (*linux* (setq  browse-url-generic-program "/usr/bin/google-chrome"))
+      (*linux* (setq  browse-url-generic-program "/usr/bin/firefox"))
       (*bsd* (setq  browse-url-generic-program "/usr/local/bin/firefox"))
       (*mac* (setq  browse-url-generic-program "/Applications/Google Chrome.app/Contents/MacOS/Google Chrome"))
       (t nil))
