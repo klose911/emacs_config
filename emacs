@@ -14,6 +14,8 @@
 ;; You may delete these explanatory comments.
 ;;(setq package-archives '(("gnu"   . "http://mirrors4.tuna.tsinghua.edu.cn/elpa/gnu/")
 ;;                         ("melpa" . "http://mirrors4.tuna.tsinghua.edu.cn/elpa/melpa/")))
+(setq package-archives '(("gnu" . "https://elpa.gnu.org/packages/")
+                         ("melpa" . "https://melpa.org/packages/")))
 (package-initialize)
 
 (setq *win* (eq system-type 'windows-nt))
