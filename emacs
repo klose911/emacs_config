@@ -68,6 +68,7 @@
 (load "~/.emacs.d/config/klose-cedet")
 (load "~/.emacs.d/config/klose-ecb")
 (load "~/.emacs.d/config/klose-go")
+(load "~/.emacs.d/config/klose-rust")
 (load "~/.emacs.d/config/klose-cc")
 (load "~/.emacs.d/config/klose-cflow")
 (load "~/.emacs.d/config/klose-python")
