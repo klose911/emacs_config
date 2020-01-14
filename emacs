@@ -12,8 +12,8 @@
 ;; installed packages.  Don't delete this line.  If you don't want it,
 ;; just comment it out by adding a semicolon to the start of the line.
 ;; You may delete these explanatory comments.
-(setq package-archives '(("gnu"   . "http://mirrors4.tuna.tsinghua.edu.cn/elpa/gnu/")
-                         ("melpa" . "http://mirrors4.tuna.tsinghua.edu.cn/elpa/melpa/")))
+;;(setq package-archives '(("gnu"   . "http://mirrors4.tuna.tsinghua.edu.cn/elpa/gnu/")
+;;                         ("melpa" . "http://mirrors4.tuna.tsinghua.edu.cn/elpa/melpa/")))
 (package-initialize)
 
 (setq *win* (eq system-type 'windows-nt))
