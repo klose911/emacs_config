@@ -16,12 +16,6 @@
                          ("melpa" . "http://mirrors4.tuna.tsinghua.edu.cn/elpa/melpa/")))
 (package-initialize)
 
-;; (setq *win* (eq system-type 'windows-nt))
-;; (setq *linux* (eq system-type 'gnu/linux))
-;; (setq *bsd* (eq system-type 'berkeley-unix))
-;; (setq *mac* (eq system-type 'darwin))
-;; (setq *cygwin* (eq system-type 'cygwin))
-
 (setq user-full-name "Wu, Shanliang")
 (setq user-mail-address "klose911@gmail.com")
 ;;设置你的书签文件，默认是~/.emacs.bmk，我喜欢把有关emacs的文件尽量放在一个文件夹，所以就修改了。
