@@ -5,5 +5,4 @@
 (add-to-list 'auto-mode-alist
 	     '("\\(?:Brewfile\\|Capfile\\|Gemfile\\(?:\\.[a-zA-Z0-9._-]+\\)?\\|[rR]akefile\\)\\'" . ruby-mode))
 
-(if *win* 
-(setq ruby-program-name "D:/Program Files/Ruby193/bin/irb  --inf-ruby-mode"))
+(setq ruby-program-name "D:/Program Files/Ruby193/bin/irb  --inf-ruby-mode")
