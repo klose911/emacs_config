@@ -2,9 +2,9 @@
 (require 'go-autocomplete)
 (require 'go-dlv)
 
-(progn
-  (setenv "GOPATH" "/home/klose/Documents/goprojects/")
-  (setq exec-path (append exec-path '("/usr/local/go/bin") '("/home/klose/Documents/goprojects/bin") )))
+
+(setenv "GOPATH" "/home/klose/Documents/goprojects/")
+(setq exec-path (append exec-path '("/usr/local/go/bin") '("/home/klose/Documents/goprojects/bin")))
 
 (defun my-go-mode-hook ()
   ;; Use goimports instead of go-fmt
