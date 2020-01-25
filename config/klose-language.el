@@ -1,7 +1,7 @@
-;;------------è¯­è¨€çŽ¯å¢ƒå­—ç¬¦é›†è®¾ç½®(utf-8)-------------
+;;------------ÓïÑÔ»·¾³×Ö·û¼¯ÉèÖÃ(utf-8)-------------
 
-(setq locale-env (if  *win* 'Chinese-GBK 'utf-8))  
-(setq locale-code (if *win* 'gb2312 'utf-8)) 
+(setq locale-env 'Chinese-GBK)  
+(setq locale-code 'gb2312) 
 
 (set-language-environment locale-env)
 (set-keyboard-coding-system locale-code)

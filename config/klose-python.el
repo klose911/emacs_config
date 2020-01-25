@@ -1,11 +1,6 @@
 (require 'python)
 (autoload 'python-mode "python-mode" "Python Mode." t)
 (add-to-list 'auto-mode-alist '("\\.py\\'" . python-mode))
-(if *win*
-    (progn 
-      (setq python-shell-interpreter "D:/utils/python3/python.exe")
-      (add-to-list 'exec-path "D:/utils/python3") 
-      (add-to-list 'interpreter-mode-alist '("python.exe" . python-mode)))) 
 
 ;; (require 'elpy)
 ;; (elpy-enable)
@@ -20,7 +15,7 @@
 (require 'virtualenvwrapper)
 (venv-initialize-interactive-shells)
 (venv-initialize-eshell)
-(setq venv-location "~/.local/virtualenvs"); setup virtual environment folder
+(setq venv-location "D:/home/I514692/virtualenv"); setup virtual environment folder
 ;; if there multiple folder:
 ;; (setq venv-location '("~/myvenv-1/"
 ;;                       "~/myvenv-2/"))
