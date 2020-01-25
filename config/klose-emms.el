@@ -16,8 +16,7 @@
 			   emms-player-mplayer 
 			   emms-player-mplayer-playlist))
 
-(setq emms-source-file-default-directory
-      (if *win* "d:/My Documents/My Music" "~/Music"))
+(setq emms-source-file-default-directory "~/Music")
 
 (require 'emms-score)
 (emms-score 1)

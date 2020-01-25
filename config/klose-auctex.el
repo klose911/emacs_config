@@ -10,9 +10,9 @@
 (mapc (lambda (mode)
 	(add-hook 'LaTeX-mode-hook mode))
       (list ;;'auto-fill-mode
-            'LaTeX-math-mode
-            'turn-on-reftex
-            'linum-mode))
+       'LaTeX-math-mode
+       'turn-on-reftex
+       'linum-mode))
 
 (add-hook 'LaTeX-mode-hook
           (lambda ()
@@ -22,15 +22,8 @@
 		  LaTeX-document-regexp "document\\|CJK\\*?" ; display compilation windows
 		  LaTeX-fill-break-at-separators '(} \\\) \\\])) 
             (TeX-PDF-mode t)       ; PDF mode enable, not plain 
-	    ;; (cond (*win* (progn (setq TeX-view-program-list '(("SumatraPDF" "SumatraPDF.exe %o")))
-	    ;; 			(setq TeX-view-program-selection '((output-pdf "SumatraPDF"))))) 
-	    ;; 	  (*linux* (progn (setq TeX-view-program-list '(("Evince" "evince %o")))
-	    ;; 			  (setq TeX-view-program-selection '((output-pdf "Evince"))))) 
-	    ;; 	  (*mac* (progn  (setq TeX-view-program-list '(("PDF Viewer" "open %o")))
-	    ;; 			 (setq TeX-view-program-selection '((output-pdf "PDF Viewer"))))) 
-	    ;; 	  (t nil))
 	    (progn (setq TeX-view-program-list '(("Evince" "evince %o")))
-				  (setq TeX-view-program-selection '((output-pdf "Evince")))) 
+		   (setq TeX-view-program-selection '((output-pdf "Evince")))) 
             (setq TeX-save-query nil)
             (imenu-add-menubar-index)
 	    

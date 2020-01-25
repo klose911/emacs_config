@@ -7,14 +7,6 @@
 (require 'slime-autoloads)
 (slime-setup '(slime-fancy))
 
-
-;; (cond (*win* 
-;;        (progn
-;; 	 (setq inferior-lisp-program "D:/utils/clisp/clisp.exe")
-;; 	 (setq temporary-file-directory "C:/Users/klose.wu/AppData/Local/Temp") 
-;; 	 (setq slime-net-coding-system 'utf-8-unix)))
-;;       (t (setq inferior-lisp-program "sbcl")))  
-
 (setq inferior-lisp-program "sbcl")
 
 (defun lisp-indent-or-complete (&optional arg)

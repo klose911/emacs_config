@@ -23,33 +23,8 @@
 (require 'window-numbering)
 (window-numbering-mode 1)
 
-;; (if *cygwin*
-;;     (progn 
-;;       (require 'windows-path)
-;;       (windows-path-activate)))
-
-;; (cond (*win*
-;;        (progn
-;; 	 (setenv "PATH" (concat (getenv "PATH") ";d:\\utils\\cygwin\\bin;d:\\utils\\gnu\\GnuWin32\\bin;d:\\utils\\mingw\\bin"))
-;; 	 (setq exec-path (append exec-path '("d:\\utils\\cygwin\\bin" "d:\\utils\\gnu\\GnuWin32\\bin" "d:\\utils\\mingw\\bin")))))
-;;       (*cygwin*
-;;        (progn
-;; 	 (setenv "PATH" (concat (getenv "PATH") ":/bin"))
-;; 	 (setq exec-path (append exec-path '("/bin")))
-;; 	 (setq temporary-file-directory "/tmp")))
-;;       (*mac*
-;;        (progn
-;; 	 (setenv "PATH" (concat (getenv "PATH") ":/opt/local/bin:/Users/klose/Bin:/usr/local/texlive/2015/bin/x86_64-darwin"))
-;; 	 (setq exec-path (append exec-path '("/opt/local/bin" "/Users/klose/Bin" "/usr/local/texlive/2015/bin/x86_64-darwin")))))
-;;       (*linux*
-;;        (progn
-;; 	 (setenv "PATH" (concat (getenv "PATH") ":/home/klose/bin"))
-;; 	 (setq exec-path (append exec-path '("/home/klose/bin")))))
-;;       (t nil))
-
-(progn
-  (setenv "PATH" (concat (getenv "PATH") ":/home/klose/bin"))
-  (setq exec-path (append exec-path '("/home/klose/bin"))))
+(setenv "PATH" (concat (getenv "PATH") ":/home/klose/bin"))
+(setq exec-path (append exec-path '("/home/klose/bin")))
 
 ;;备份设置
 ;;emacs还有一个自动保存功能，默认在~/.emacs.d/auto-save-list里，这个非常有用，我这里没有改动，具体可以参见Sams teach yourself emacs in 24hours(我简称为sams24)
@@ -177,12 +152,6 @@
 (setq dired-recursive-deletes 'top)
 
 (setq browse-url-browser-function 'browse-url-generic) 
-;; (cond (*win* (setq browse-url-generic-program  "C:/Program Files (x86)/Google/Chrome/Application/chrome.exe"))
-;;       (*cygwin* (setq browse-url-generic-program  "/cygdrive/d/Program Files/Mozilla Firefox/firefox.exe"))
-;;       (*linux* (setq  browse-url-generic-program "/usr/bin/firefox"))
-;;       (*bsd* (setq  browse-url-generic-program "/usr/local/bin/firefox"))
-;;       (*mac* (setq  browse-url-generic-program "/Applications/Google Chrome.app/Contents/MacOS/Google Chrome"))
-;;       (t nil))
 (setq  browse-url-generic-program "/usr/bin/google-chrome-stable")
 
 (autoload 'paredit-mode "paredit"
