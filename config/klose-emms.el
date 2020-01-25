@@ -2,17 +2,11 @@
 (require 'emms-info-libtag)
 (emms-standard)
 
-(if *win* 
-    (progn 
-      (add-to-list 'exec-path "d:/utils/mplayer/") 
-      (emms-default-players))  
-  (setq emms-player-mpg321-command-name "mpg123" 
-	emms-player-list '(emms-player-mpg321 
-			   emms-player-mplayer 
-			   emms-player-mplayer-playlist)))
-
-(setq emms-source-file-default-directory
-      (if *win* "d:/My Documents/My Music" "~/Music"))
+(setq emms-player-mpg321-command-name "mpg123" 
+      emms-player-list '(emms-player-mpg321 
+			 emms-player-mplayer 
+			 emms-player-mplayer-playlist))
+(setq emms-source-file-default-directory "~/Music")
 
 (require 'emms-score)
 (emms-score 1)
