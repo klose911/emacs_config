@@ -1,7 +1,7 @@
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 ;;; Hans Ve Joanphan's dotemacs file
 ;;; Last modified time 
-;;; Time-stamp: <klose 03/09/2018 1702M02S>
+;;; Time-stamp: <klose 01/25/2020 1302M02S>
 ;;; Life is a box of chocalates,
 ;;; you never know what you're gonna get.
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
@@ -16,11 +16,11 @@
                          ("melpa" . "http://mirrors4.tuna.tsinghua.edu.cn/elpa/melpa/")))
 (package-initialize)
 
-(setq *win* (eq system-type 'windows-nt))
-(setq *linux* (eq system-type 'gnu/linux))
-(setq *bsd* (eq system-type 'berkeley-unix))
-(setq *mac* (eq system-type 'darwin))
-(setq *cygwin* (eq system-type 'cygwin))
+;; (setq *win* (eq system-type 'windows-nt))
+;; (setq *linux* (eq system-type 'gnu/linux))
+;; (setq *bsd* (eq system-type 'berkeley-unix))
+;; (setq *mac* (eq system-type 'darwin))
+;; (setq *cygwin* (eq system-type 'cygwin))
 
 (setq user-full-name "Wu, Shanliang")
 (setq user-mail-address "klose911@gmail.com")
@@ -57,8 +57,8 @@
 ;;(load "~/.emacs.d/config/klose-mew")
 (load "~/.emacs.d/config/klose-erc")
 ;;(load "~/.emacs.d/config/klose-gnus")
-(if (not *mac*) 
-    (load "~/.emacs.d/config/klose-emms"))
+;;(if (not *mac*) 
+;;    (load "~/.emacs.d/config/klose-emms"))
 (load "~/.emacs.d/config/klose-clisp")
 (load "~/.emacs.d/config/klose-scheme")
 (load "~/.emacs.d/config/klose-racket")
@@ -89,9 +89,10 @@
  ;; If you edit it by hand, you could mess it up, so be careful.
  ;; Your init file should contain only one such instance.
  ;; If there is more than one, they won't work right.
+ '(ecb-tip-of-the-day nil)
  '(package-selected-packages
    (quote
-    (py-autopep8 flycheck jedi elpy yaml-mode window-numbering w3m virtualenvwrapper virtualenv slime session racket-mode psgml mpg123 mew markdown-preview-mode magit inf-ruby htmlize go-dlv go-autocomplete folding emms ecb cygwin-mount cider auctex)))
+    (toml-mode py-autopep8 flycheck jedi elpy yaml-mode window-numbering w3m virtualenvwrapper virtualenv slime session racket-mode psgml mpg123 mew markdown-preview-mode magit inf-ruby htmlize go-dlv go-autocomplete folding emms ecb cygwin-mount cider auctex)))
  '(session-use-package t nil (session))
  '(virtualenv-root "~/Documents/ml/graphlib/"))
 (custom-set-faces
