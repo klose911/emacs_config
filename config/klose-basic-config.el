@@ -10,7 +10,7 @@
     (menu-bar-mode nil))
 ;;(menu-bar-mode nil)
 ;;不要滚动栏，现在都用滚轴鼠标了，可以不用滚动栏了
-(scroll-bar-mode 0)
+;;(scroll-bar-mode 0)
 
 (require 'highlight-parentheses)
 (require 'parenface) 
@@ -112,7 +112,7 @@
 ;;当指针到一个括号时，自动显示所匹配的另一个括号
 (show-paren-mode 1)
 ;;是用滚轴鼠标
-(mouse-wheel-mode t)
+;;(mouse-wheel-mode t)
 ;;去掉烦人的警告铃声
 (setq visible-bell nil)
 ;;滚动页面时比较舒服，不要整页的滚动
