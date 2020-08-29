@@ -12,8 +12,8 @@
 ;; installed packages.  Don't delete this line.  If you don't want it,
 ;; just comment it out by adding a semicolon to the start of the line.
 ;; You may delete these explanatory comments.
-(setq package-archives '(("gnu"   . "http://mirrors4.tuna.tsinghua.edu.cn/elpa/gnu/")
-                         ("melpa" . "http://mirrors4.tuna.tsinghua.edu.cn/elpa/melpa/")))
+(setq package-archives '(("gnu"   . "https://mirrors4.tuna.tsinghua.edu.cn/elpa/gnu/")
+                         ("melpa" . "https://mirrors4.tuna.tsinghua.edu.cn/elpa/melpa/")))
 (package-initialize)
 
 (setq user-full-name "Wu, Shanliang")
@@ -60,8 +60,8 @@
 (load "~/.emacs.d/config/klose-ctypes")
 (load "~/.emacs.d/config/klose-cedet")
 (load "~/.emacs.d/config/klose-ecb")
-(load "~/.emacs.d/config/klose-go")
-(load "~/.emacs.d/config/klose-rust")
+(;;load "~/.emacs.d/config/klose-go")
+;;(load "~/.emacs.d/config/klose-rust")
 (load "~/.emacs.d/config/klose-cc")
 (load "~/.emacs.d/config/klose-cflow")
 (load "~/.emacs.d/config/klose-python")
