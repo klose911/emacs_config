@@ -12,3 +12,5 @@ ac-comphist.dat
 semanticdb/* 
 ede-projects.el
 /session.* 
+/elpa/* 
+/transient
