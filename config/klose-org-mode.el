@@ -7,7 +7,7 @@
   "Insert a `SRC-CODE-TYPE' type source code block in org-mode."
   (interactive
    (let ((src-code-types
-	  '("emacs-lisp" "python" "C" "sh" "java" "js" "clojure" "C++" "css"
+	  '("emacs-lisp" "python" "C" "shell" "java" "js" "clojure" "C++" "css"
 	    "calc" "asymptote" "dot" "gnuplot" "ledger" "lilypond" "mscgen"
 	    "octave" "oz" "plantuml" "R" "sass" "screen" "sql" "awk" "ditaa"
 	    "haskell" "latex" "lisp" "matlab" "ocaml" "org" "perl" "ruby"
@@ -59,7 +59,7 @@
 (org-babel-do-load-languages
  'org-babel-load-languages
  '(
-   (sh . t) (python . t) (R . t)
+   (shell . t) (python . t) (R . t)
    (ruby . t) (perl . t) (C . t)))
 
 (add-to-list 'auto-mode-alist '("\\.org\\'" . org-mode))
