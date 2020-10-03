@@ -1,5 +1,6 @@
 (require 'org-install)
 (require 'htmlize) 
+(require 'org-tempo)
 (setq org-src-fontify-natively t)
 (setq org-image-actual-width nil)
 
