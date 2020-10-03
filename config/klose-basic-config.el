@@ -152,7 +152,7 @@
 (setq dired-recursive-deletes 'top)
 
 (setq browse-url-browser-function 'browse-url-generic) 
-(setq browse-url-generic-program "/usr/local/bin/firefox")
+(setq browse-url-generic-program "/usr/local/bin/chrome")
 
 (autoload 'paredit-mode "paredit"
   "Minor mode for pseudo-structurally editing Lisp code."
