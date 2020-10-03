@@ -1,7 +1,7 @@
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 ;;; Hans Ve Joanphan's dotemacs file
 ;;; Last modified time 
-;;; Time-stamp: <I514692 09/14/2020 1002M02S>
+;;; Time-stamp: <I514692 09/14/2020 1302M02S>
 ;;; Life is a box of chocalates,
 ;;; you never know what you're gonna get.
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
@@ -81,15 +81,20 @@
  ;; If you edit it by hand, you could mess it up, so be careful.
  ;; Your init file should contain only one such instance.
  ;; If there is more than one, they won't work right.
+ '(blink-cursor-mode nil)
+ '(column-number-mode t)
+ '(display-time-mode t)
  '(ecb-tip-of-the-day nil)
  '(package-selected-packages
    (quote
     (xcscope toml-mode toml cargo rust-mode groovy-mode py-autopep8 flycheck jedi elpy yaml-mode window-numbering w3m virtualenvwrapper virtualenv slime session racket-mode psgml mpg123 mew markdown-preview-mode magit inf-ruby htmlize go-dlv go-autocomplete folding emms ecb cygwin-mount cider auctex)))
  '(session-use-package t nil (session))
+ '(show-paren-mode t)
+ '(tool-bar-mode nil)
  '(virtualenv-root "~/Documents/ml/graphlib/"))
 (custom-set-faces
  ;; custom-set-faces was added by Custom.
  ;; If you edit it by hand, you could mess it up, so be careful.
  ;; Your init file should contain only one such instance.
  ;; If there is more than one, they won't work right.
- '(default ((t (:inherit nil :stipple nil :background "black" :foreground "white" :inverse-video nil :box nil :strike-through nil :overline nil :underline nil :slant normal :weight normal :height 158 :width normal :foundry "outline" :family "Microsoft Yahei")))))
+ '(default ((t (:inherit nil :stipple nil :background "black" :foreground "white" :inverse-video nil :box nil :strike-through nil :overline nil :underline nil :slant normal :weight normal :height 163 :width normal :foundry "outline" :family "Microsoft YaHei")))))
