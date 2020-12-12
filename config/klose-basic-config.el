@@ -8,7 +8,7 @@
 ;;去掉菜单栏，我将F10绑定为显示菜单栏，万一什么东西忘了，需要菜单栏了可以摁F10调出，再摁F10就去掉菜单
 (if (equal window-system nil)
     (menu-bar-mode nil))
-;;(menu-bar-mode nil)
+;;o(menu-bar-mode nil)
 ;;不要滚动栏，现在都用滚轴鼠标了，可以不用滚动栏了
 ;;(scroll-bar-mode 0)
 

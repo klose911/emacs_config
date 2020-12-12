@@ -1,7 +1,7 @@
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 ;;; Hans Ve Joanphan's dotemacs file
 ;;; Last modified time 
-;;; Time-stamp: <klose 12/12/2020 2002M02S>
+;;; Time-stamp: <i514692 09/30/2020 0902M02S>
 ;;; Life is a box of chocalates,
 ;;; you never know what you're gonna get.
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
@@ -72,6 +72,7 @@
 (load "~/.emacs.d/config/klose-ecb")
 (load "~/.emacs.d/config/klose-go")
 (load "~/.emacs.d/config/klose-rust")
+(load "~/.emacs.d/config/klose-erlang")
 (load "~/.emacs.d/config/klose-cc")
 (load "~/.emacs.d/config/klose-cflow")
 (load "~/.emacs.d/config/klose-python")
@@ -95,7 +96,7 @@
  '(ecb-tip-of-the-day nil)
  '(package-selected-packages
    (quote
-    (xcscope rust-mode cargo toml-mode py-autopep8 flycheck jedi elpy yaml-mode window-numbering w3m virtualenvwrapper virtualenv slime session racket-mode psgml mpg123 mew markdown-preview-mode magit inf-ruby htmlize go-dlv go-autocomplete folding emms ecb cygwin-mount cider auctex)))
+    (erlang xcscope rust-mode cargo toml toml-mode py-autopep8 flycheck jedi elpy yaml-mode window-numbering w3m virtualenvwrapper virtualenv slime session racket-mode psgml mpg123 mew markdown-preview-mode magit inf-ruby htmlize go-dlv go-autocomplete folding emms ecb cygwin-mount cider auctex)))
  '(session-use-package t nil (session))
  '(virtualenv-root "~/Documents/ml/graphlib/"))
 (custom-set-faces
