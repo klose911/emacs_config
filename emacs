@@ -1,7 +1,7 @@
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 ;;; Hans Ve Joanphan's dotemacs file
 ;;; Last modified time 
-;;; Time-stamp: <klose 09/12/2020 1302M02S>
+;;; Time-stamp: <klose 12/13/2020 2102M02S>
 ;;; Life is a box of chocalates,
 ;;; you never know what you're gonna get.
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
@@ -15,6 +15,16 @@
 (setq package-archives '(("gnu"   . "https://mirrors4.tuna.tsinghua.edu.cn/elpa/gnu/")
                          ("melpa" . "https://mirrors4.tuna.tsinghua.edu.cn/elpa/melpa/")))
 (package-initialize)
+
+(setq byte-compile-warnings '(not nresolved
+				  free-vars
+				  callargs
+				  redefine
+				  obsolete
+				  noruntime
+				  cl-functions
+				  interactive-only
+				  ))
 
 (setq user-full-name "Wu, Shanliang")
 (setq user-mail-address "klose911@gmail.com")
@@ -60,7 +70,7 @@
 (load "~/.emacs.d/config/klose-ctypes")
 (load "~/.emacs.d/config/klose-cedet")
 (load "~/.emacs.d/config/klose-ecb")
-(;;load "~/.emacs.d/config/klose-go")
+;;(load "~/.emacs.d/config/klose-go")
 ;;(load "~/.emacs.d/config/klose-rust")
 (load "~/.emacs.d/config/klose-cc")
 (load "~/.emacs.d/config/klose-cflow")
@@ -74,9 +84,9 @@
 ;;这个东西必须放在最后
 ;;desktop.el是一个可以保存你上次emacs关闭时的状态，下一次启动时恢复为上次关闭的状态。就和vmware的suspend一样。
 ;;因为我要使用sawfish-mode,wiki-mode,html-helper-mode，放在这里才能保证下次启动时能正确辨认文件需要的模式。
-(load "desktop")
-(desktop-load-default) 
-(desktop-read) 
+;;(load "desktop")
+;;(desktop-load-default) 
+;;(desktop-read) 
 (custom-set-variables
  ;; custom-set-variables was added by Custom.
  ;; If you edit it by hand, you could mess it up, so be careful.
