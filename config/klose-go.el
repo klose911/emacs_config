@@ -16,8 +16,8 @@
 	   ;; "go build -v && go test -v && go vet"))
 	   "go build "))
   ;; Godef jump key binding
-  (if (not *win*)
-      (local-set-key (kbd "M-.") 'godef-jump))
+  ;;(if (not *win*)
+  ;;    (local-set-key (kbd "M-.") 'godef-jump))
   (local-set-key (kbd "M-*") 'pop-tag-mark))
 
 (add-hook 'go-mode-hook 'my-go-mode-hook)
