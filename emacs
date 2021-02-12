@@ -64,6 +64,7 @@
 ;;(load "~/.emacs.d/config/klose-emms")
 (load "~/.emacs.d/config/klose-clisp")
 (load "~/.emacs.d/config/klose-scheme")
+(load "~/.emacs.d/config/klose-erlang")
 (load "~/.emacs.d/config/klose-racket")
 (load "~/.emacs.d/config/klose-clojure")
 (load "~/.emacs.d/config/klose-clojure-cider")
