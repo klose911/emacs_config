@@ -1,5 +1,6 @@
 (require 'org-install)
 (require 'htmlize) 
+(require 'org-tempo)
 (setq org-src-fontify-natively t)
 (setq org-image-actual-width nil)
 
@@ -11,7 +12,7 @@
 	    "calc" "asymptote" "dot" "gnuplot" "ledger" "lilypond" "mscgen"
 	    "octave" "oz" "plantuml" "R" "sass" "screen" "sql" "awk" "ditaa"
 	    "haskell" "latex" "lisp" "matlab" "ocaml" "org" "perl" "ruby"
-	    "scheme" "sqlite")))
+	    "scheme" "sqlite" "kotlin")))
      (list (ido-completing-read "Source code type: " src-code-types))))
   (progn
     (newline-and-indent)
