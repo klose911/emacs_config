@@ -1,7 +1,7 @@
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 ;;; Hans Ve Joanphan's dotemacs file
 ;;; Last modified time 
-;;; Time-stamp: <I514692 09/14/2020 1302M02S>
+;;; Time-stamp: <I514692 11/19/2021 1802M02S>
 ;;; Life is a box of chocalates,
 ;;; you never know what you're gonna get.
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
@@ -12,14 +12,27 @@
 ;; installed packages.  Don't delete this line.  If you don't want it,
 ;; just comment it out by adding a semicolon to the start of the line.
 ;; You may delete these explanatory comments.
-(setq package-archives '(("gnu"   . "http://mirrors4.tuna.tsinghua.edu.cn/elpa/gnu/")
-                         ("melpa" . "http://mirrors4.tuna.tsinghua.edu.cn/elpa/melpa/")))
+;; (setq package-archives '(("gnu"   . "http://mirrors4.tuna.tsinghua.edu.cn/elpa/gnu/")
+;;                          ("melpa" . "http://mirrors4.tuna.tsinghua.edu.cn/elpa/melpa/")))
 (package-initialize)
+
+(setq byte-compile-warnings '(not nresolved
+                                  free-vars
+                                  callargs
+                                  redefine
+                                  obsolete
+                                  noruntime
+                                  cl-functions
+                                  interactive-only
+                                  ))
 
 (setq user-full-name "Wu, Shanliang")
 (setq user-mail-address "klose911@gmail.com")
 ;;设置你的书签文件，默认是~/.emacs.bmk，我喜欢把有关emacs的文件尽量放在一个文件夹，所以就修改了。
 (setq bookmark-default-file "~/.emacs.d/.emacs.bmk")
+
+(setq *win* (eq system-type 'windows-nt))
+
 ;;设置缩略词的文件？不大记得了
 (setq abbrev-file-name "~/.emacs.d/.abbrev_defs")
 ;;load-path就同bash中的$PATH相似，emacs所需要的Elisp包都得在load-path里的文件夹中，~/.emacs.d/elisp是我自己添加的Elisp包
@@ -73,9 +86,9 @@
 ;;这个东西必须放在最后
 ;;desktop.el是一个可以保存你上次emacs关闭时的状态，下一次启动时恢复为上次关闭的状态。就和vmware的suspend一样。
 ;;因为我要使用sawfish-mode,wiki-mode,html-helper-mode，放在这里才能保证下次启动时能正确辨认文件需要的模式。
-(load "desktop")
-(desktop-load-default) 
-(desktop-read) 
+;; (load "desktop")
+;; (desktop-load-default) 
+;; (desktop-read) 
 (custom-set-variables
  ;; custom-set-variables was added by Custom.
  ;; If you edit it by hand, you could mess it up, so be careful.
