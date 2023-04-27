@@ -1,21 +1,22 @@
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 ;;; Hans Ve Joanphan's dotemacs file
 ;;; Last modified time 
-;;; Time-stamp: <klose 09/12/2020 1302M02S>
+;;; Time-stamp: <klose 04/27/2023 0902M02S>
 ;;; Life is a box of chocalates,
 ;;; you never know what you're gonna get.
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 ;;以上是我得time stamp，在后面将有详细讲解
 ;;设置你的全名和邮件，在发邮件时可以用到
 
-;; Added by Package.el.  This must come before configurations of
-;; installed packages.  Don't delete this line.  If you don't want it,
-;; just comment it out by adding a semicolon to the start of the line.
-;; You may delete these explanatory comments.
-(setq package-archives '(("gnu"   . "http://mirrors4.tuna.tsinghua.edu.cn/elpa/gnu/")
-                         ("melpa" . "http://mirrors4.tuna.tsinghua.edu.cn/elpa/melpa/")))
-(package-initialize)
-
+(setq byte-compile-warnings '(not nresolved
+                                  free-vars
+                                  callargs
+                                  redefine
+                                  obsolete
+                                  noruntime
+                                  cl-functions
+                                  interactive-only
+                                  ))
 (setq user-full-name "Wu, Shanliang")
 (setq user-mail-address "klose911@gmail.com")
 ;;设置你的书签文件，默认是~/.emacs.bmk，我喜欢把有关emacs的文件尽量放在一个文件夹，所以就修改了。
@@ -31,6 +32,7 @@
 ;;设置gnus启动的文件。默认是为~/.gnus.el
 ;;(setq gnus-init-file "~/.emacs.d/elisp/klose-gnus.el")
 ;;由于我的配置文件很长，所以按照分类分别放在不同的文件里，方便管理
+(load "~/.emacs.d/config/klose-package")
 (load "~/.emacs.d/config/klose-basic-config")
 (load "~/.emacs.d/config/klose-language")
 (load "~/.emacs.d/config/klose-font")
@@ -74,22 +76,20 @@
 ;;这个东西必须放在最后
 ;;desktop.el是一个可以保存你上次emacs关闭时的状态，下一次启动时恢复为上次关闭的状态。就和vmware的suspend一样。
 ;;因为我要使用sawfish-mode,wiki-mode,html-helper-mode，放在这里才能保证下次启动时能正确辨认文件需要的模式。
-(load "desktop")
-(desktop-load-default) 
-(desktop-read) 
+;; (load "desktop")
+;; (desktop-load-default) 
+;; (desktop-read) 
 (custom-set-variables
  ;; custom-set-variables was added by Custom.
  ;; If you edit it by hand, you could mess it up, so be careful.
  ;; Your init file should contain only one such instance.
  ;; If there is more than one, they won't work right.
- '(package-selected-packages
-   (quote
-    (xcscope toml-mode rust-mode magit-popup cargo py-autopep8 flycheck jedi elpy yaml-mode window-numbering w3m virtualenvwrapper virtualenv slime session racket-mode psgml mpg123 mew markdown-preview-mode magit inf-ruby htmlize go-dlv go-autocomplete folding emms ecb cygwin-mount cider auctex)))
- '(session-use-package t nil (session))
- '(virtualenv-root "~/Documents/ml/graphlib/"))
+ '(ecb-tip-of-the-day nil)
+ '(package-selected-packages '(chatgpt-shell session-use-package t nil (session)))
+ '(session-use-package t nil (session)))
 (custom-set-faces
  ;; custom-set-faces was added by Custom.
  ;; If you edit it by hand, you could mess it up, so be careful.
  ;; Your init file should contain only one such instance.
  ;; If there is more than one, they won't work right.
- '(default ((t (:inherit nil :stipple nil :background "black" :foreground "white" :inverse-video nil :box nil :strike-through nil :overline nil :underline nil :slant normal :weight normal :height 159 :width normal :foundry "unknown" :family "DejaVu Sans Mono")))))
+ '(default ((t (:inherit nil :stipple nil :background "black" :foreground "white" :inverse-video nil :box nil :strike-through nil :overline nil :underline nil :slant normal :weight normal :height 158 :width normal :foundry "outline" :family "Microsoft Yahei")))))
