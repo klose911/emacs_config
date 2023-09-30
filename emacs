@@ -1,7 +1,7 @@
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 ;;; Hans Ve Joanphan's dotemacs file
 ;;; Last modified time 
-;;; Time-stamp: <klose 04/29/2023 1002M02S>
+;;; Time-stamp: <klose 09/30/2023 1202M02S>
 ;;; Life is a box of chocalates,
 ;;; you never know what you're gonna get.
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
@@ -63,7 +63,7 @@
 (load "~/.emacs.d/config/klose-clojure-cider")
 (load "~/.emacs.d/config/klose-ctypes")
 (load "~/.emacs.d/config/klose-cedet")
-(load "~/.emacs.d/config/klose-ecb")
+;;(load "~/.emacs.d/config/klose-ecb")
 (load "~/.emacs.d/config/klose-go")
 (load "~/.emacs.d/config/klose-rust")
 (load "~/.emacs.d/config/klose-cc")
@@ -87,6 +87,8 @@
  ;; Your init file should contain only one such instance.
  ;; If there is more than one, they won't work right.
  '(ecb-tip-of-the-day nil)
+ '(package-selected-packages
+   '(kotlin-mode erlang xcscope rust-mode cargo toml-mode py-autopep8 flycheck jedi elpy yaml-mode window-numbering w3m virtualenvwrapper virtualenv slime session racket-mode psgml mpg123 mew markdown-preview-mode magit inf-ruby htmlize go-dlv go-autocomplete folding emms cygwin-mount cider auctex))
  '(session-use-package t nil (session))
  '(virtualenv-root "~/Documents/ml/graphlib/"))
 (custom-set-faces
