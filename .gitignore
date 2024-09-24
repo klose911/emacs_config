@@ -14,3 +14,6 @@ ede-projects.el
 /session.* 
 /elpa/* 
 /transient
+/rime
+/eln-cache
+/tutorial
