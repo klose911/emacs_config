@@ -7,11 +7,6 @@
 
 (package-initialize)
 
-(custom-set-variables
- '(package-selected-packages
-   (quote
-    (kotlin-mode erlang xcscope rust-mode cargo toml-mode py-autopep8 flycheck jedi elpy yaml-mode window-numbering w3m virtualenvwrapper virtualenv slime session racket-mode psgml mpg123 mew markdown-preview-mode magit inf-ruby htmlize go-dlv go-autocomplete folding emms cygwin-mount cider auctex))))
-
 ;; fetch the list of packages available 
 (unless package-archive-contents
   (package-refresh-contents))
