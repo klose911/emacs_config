@@ -1,7 +1,7 @@
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 ;;; Hans Ve Joanphan's dotemacs file
 ;;; Last modified time 
-;;; Time-stamp: <klose 09/30/2023 1202M02S>
+;;; Time-stamp: <i514692 09/24/2024 1702M02S>
 ;;; Life is a box of chocalates,
 ;;; you never know what you're gonna get.
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
@@ -28,6 +28,23 @@
 (setq load-path (cons "~/.emacs.d/elisp" load-path))
 ;;设置info的路径，也可通过Shell的全局变量$INFOPATH设置
 (add-to-list 'Info-default-directory-list "~/local/info/")
+(custom-set-variables
+ ;; custom-set-variables was added by Custom.
+ ;; If you edit it by hand, you could mess it up, so be careful.
+ ;; Your init file should contain only one such instance.
+ ;; If there is more than one, they won't work right.
+ '(ecb-tip-of-the-day nil)
+ '(package-selected-packages
+   '(nix-mode kotlin-mode erlang xcscope rust-mode cargo toml-mode py-autopep8 flycheck jedi elpy yaml-mode window-numbering w3m virtualenvwrapper virtualenv slime session racket-mode psgml mpg123 mew markdown-preview-mode magit inf-ruby htmlize go-dlv go-autocomplete folding emms cygwin-mount cider auctex))
+ '(session-use-package t nil (session))
+ '(virtualenv-root "~/Documents/ml/graphlib/"))
+(custom-set-faces
+ ;; custom-set-faces was added by Custom.
+ ;; If you edit it by hand, you could mess it up, so be careful.
+ ;; Your init file should contain only one such instance.
+ ;; If there is more than one, they won't work right.
+ '(default ((t (:inherit nil :stipple nil :background "black" :foreground "white" :inverse-video nil :box nil :strike-through nil :overline nil :underline nil :slant normal :weight normal :height 159 :width normal :foundry "unknown" :family "DejaVu Sans Mono")))))
+
 ;;由菜单修改配置的东西将会保存在custom-file里，这里我设置他在我的elisp的集中营里
 ;;(setq custom-file "~/.emacs.d/elisp/klose-custom.el")
 ;;设置gnus启动的文件。默认是为~/.gnus.el
@@ -36,6 +53,7 @@
 (load "~/.emacs.d/config/klose-package")
 (load "~/.emacs.d/config/klose-basic-config")
 (load "~/.emacs.d/config/klose-language")
+(load "~/.emacs.d/config/klose-rime")
 (load "~/.emacs.d/config/klose-font")
 (load "~/.emacs.d/config/klose-session")
 (load "~/.emacs.d/config/klose-eshell")
@@ -81,19 +99,3 @@
 ;; (load "desktop")
 ;; (desktop-load-default) 
 ;; (desktop-read) 
-(custom-set-variables
- ;; custom-set-variables was added by Custom.
- ;; If you edit it by hand, you could mess it up, so be careful.
- ;; Your init file should contain only one such instance.
- ;; If there is more than one, they won't work right.
- '(ecb-tip-of-the-day nil)
- '(package-selected-packages
-   '(kotlin-mode erlang xcscope rust-mode cargo toml-mode py-autopep8 flycheck jedi elpy yaml-mode window-numbering w3m virtualenvwrapper virtualenv slime session racket-mode psgml mpg123 mew markdown-preview-mode magit inf-ruby htmlize go-dlv go-autocomplete folding emms cygwin-mount cider auctex))
- '(session-use-package t nil (session))
- '(virtualenv-root "~/Documents/ml/graphlib/"))
-(custom-set-faces
- ;; custom-set-faces was added by Custom.
- ;; If you edit it by hand, you could mess it up, so be careful.
- ;; Your init file should contain only one such instance.
- ;; If there is more than one, they won't work right.
- '(default ((t (:inherit nil :stipple nil :background "black" :foreground "white" :inverse-video nil :box nil :strike-through nil :overline nil :underline nil :slant normal :weight normal :height 159 :width normal :foundry "unknown" :family "DejaVu Sans Mono")))))
