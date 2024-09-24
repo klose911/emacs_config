@@ -1,7 +1,7 @@
 (require 'color-theme) 
 (color-theme-initialize)
-;;(color-theme-dark-laptop)
-(color-theme-deep-blue)
+(color-theme-dark-laptop)
+;;(color-theme-deep-blue)
 ;;外观设置
 ;;去掉工具栏
 (tool-bar-mode 0)
