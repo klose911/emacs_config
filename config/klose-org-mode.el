@@ -3,6 +3,19 @@
 (require 'org-tempo)
 (setq org-src-fontify-natively t)
 (setq org-image-actual-width nil)
+(setq org-descriptive-links nil)
+
+(defun org-toggle-link-display ()
+  "Toggle the literal or descriptive display of links."
+  (interactive)
+  (if org-descriptive-links
+      (progn (org-remove-from-invisibility-spec '(org-link))
+         (org-restart-font-lock)
+         (setq org-descriptive-links nil))
+    (progn (add-to-invisibility-spec '(org-link))
+       (org-restart-font-lock)
+       (setq org-descriptive-links t))))
+
 
 (defun org-insert-src-block (src-code-type)
   "Insert a `SRC-CODE-TYPE' type source code block in org-mode."
@@ -12,7 +25,7 @@
 	    "calc" "asymptote" "dot" "gnuplot" "ledger" "lilypond" "mscgen"
 	    "octave" "oz" "plantuml" "R" "sass" "screen" "sql" "awk" "ditaa"
 	    "haskell" "latex" "lisp" "matlab" "ocaml" "org" "perl" "ruby"
-	    "scheme" "sqlite" "kotlin")))
+	    "scheme" "sqlite" "kotlin" "nix")))
      (list (ido-completing-read "Source code type: " src-code-types))))
   (progn
     (newline-and-indent)
@@ -21,6 +34,7 @@
     (insert "#+END_SRC\n")
     (previous-line 1)
     (org-edit-src-code)))
+
 
 (defun klose-html-postamble (info)
   "Org-mode website HTML export preamble."
@@ -85,3 +99,6 @@
 	    (local-set-key (kbd "C-c s b")
 			   'org-iswitchb)
 	    ))
+
+(load "~/Documents/programming/html/klose911.github.io/src/elisp/manual/manual")
+(load "~/Documents/programming/html/klose911.github.io/src/nixos/nixos")
