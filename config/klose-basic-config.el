@@ -161,4 +161,4 @@
 (autoload 'table-insert "table" "WYGIWYS table editor")
 (autoload 'mpg123 "mpg123" "A Front-end to mpg123/ogg123" t)
 
-
+(setq server-socket-dir "~/.emacs.d/server")
