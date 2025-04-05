@@ -17,3 +17,10 @@ ede-projects.el
 /rime
 /eln-cache
 /tutorial
+.cache
+.dap-breakpoints
+.lsp-session-v1
+librime
+projects
+tramp
+
