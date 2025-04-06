@@ -7,7 +7,6 @@
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 ;;以上是我得time stamp，在后面将有详细讲解
 ;;设置你的全名和邮件，在发邮件时可以用到
-
 (setq byte-compile-warnings '(not nresolved
                                   free-vars
                                   callargs
@@ -17,6 +16,8 @@
                                   cl-functions
                                   interactive-only
                                   ))
+(setq *win* (eq system-type 'windows-nt))
+
 
 (setq user-full-name "Wu, Shanliang")
 (setq user-mail-address "klose911@gmail.com")
@@ -56,6 +57,7 @@
 (load "~/.emacs.d/config/klose-rime")
 (load "~/.emacs.d/config/klose-font")
 (load "~/.emacs.d/config/klose-session")
+(load "~/.emacs.d/config/klose-font")
 (load "~/.emacs.d/config/klose-eshell")
 (load "~/.emacs.d/config/klose-calendar")
 (load "~/.emacs.d/config/klose-ibuffer")
@@ -70,10 +72,11 @@
 (load "~/.emacs.d/config/klose-rect-mark")
 (load "~/.emacs.d/config/klose-setnu")
 ;;(load "~/.emacs.d/config/klose-mew")
-(load "~/.emacs.d/config/klose-erc")
+;;(load "~/.emacs.d/config/klose-erc")
 ;;(load "~/.emacs.d/config/klose-gnus")
 ;;(load "~/.emacs.d/config/klose-emms")
 (load "~/.emacs.d/config/klose-lsp")
+(load "~/.emacs.d/config/klose-w3m")
 (load "~/.emacs.d/config/klose-clisp")
 (load "~/.emacs.d/config/klose-scheme")
 (load "~/.emacs.d/config/klose-racket")
@@ -86,7 +89,9 @@
 ;;(load "~/.emacs.d/config/klose-ecb")
 (load "~/.emacs.d/config/klose-go")
 (load "~/.emacs.d/config/klose-rust")
-;; (load "~/.emacs.d/config/klose-cc")
+(load "~/.emacs.d/config/klose-erlang")
+;; (load "~/.emacs.d/config/klose-kotlin")
+(load "~/.emacs.d/config/klose-cc")
 (load "~/.emacs.d/config/klose-cflow")
 (load "~/.emacs.d/config/klose-python")
 (load "~/.emacs.d/config/klose-ruby") 
