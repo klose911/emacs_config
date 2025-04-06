@@ -8,7 +8,7 @@
 ;;去掉菜单栏，我将F10绑定为显示菜单栏，万一什么东西忘了，需要菜单栏了可以摁F10调出，再摁F10就去掉菜单
 (if (equal window-system nil)
     (menu-bar-mode nil))
-;;(menu-bar-mode nil)
+;;o(menu-bar-mode nil)
 ;;不要滚动栏，现在都用滚轴鼠标了，可以不用滚动栏了
 ;;(scroll-bar-mode 0)
 
@@ -23,9 +23,8 @@
 (require 'window-numbering)
 (window-numbering-mode 1)
 
-(progn
-  (setenv "PATH" (concat (getenv "PATH") ":/home/klose/bin"))
-  (setq exec-path (append exec-path '("/home/klose/bin"))))
+(setenv "PATH" (concat (getenv "PATH") ":/home/klose/bin"))
+(setq exec-path (append exec-path '("/home/klose/bin")))
 
 ;;备份设置
 ;;emacs还有一个自动保存功能，默认在~/.emacs.d/auto-save-list里，这个非常有用，我这里没有改动，具体可以参见Sams teach yourself emacs in 24hours(我简称为sams24)

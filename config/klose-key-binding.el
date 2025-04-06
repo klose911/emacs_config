@@ -5,8 +5,8 @@
 (global-set-key [f5] 'eshell) 
 (global-set-key [f6] 'dired) 
 (global-set-key [f7] 'compile) 
-(global-set-key [f8] 'org-show-all) 
-(global-set-key [f9] 'ecb-activate) 
+(global-set-key [f8] 'gdb) 
+(global-set-key [f9] 'menu-bar-open) 
 
 
 (global-set-key [(home)] 'beginning-of-buffer) 

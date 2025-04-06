@@ -2,9 +2,8 @@
 (require 'go-autocomplete)
 (require 'go-dlv)
 
-(progn
-  (setenv "GOPATH" "/home/klose/Documents/goprojects/")
-  (setq exec-path (append exec-path '("/usr/local/go/bin") '("/home/klose/Documents/goprojects/bin") )))
+(setenv "GOPATH" "/home/klose/Documents/goprojects/")
+(setq exec-path (append exec-path '("/usr/local/go/bin") '("/home/klose/Documents/goprojects/bin")))
 
 (defun my-go-mode-hook ()
   ;; Use goimports instead of go-fmt
@@ -17,7 +16,8 @@
 	   ;; "go build -v && go test -v && go vet"))
 	   "go build "))
   ;; Godef jump key binding
-  (local-set-key (kbd "M-.") 'godef-jump)
+  ;;(if (not *win*)
+  ;;    (local-set-key (kbd "M-.") 'godef-jump))
   (local-set-key (kbd "M-*") 'pop-tag-mark))
 
 (add-hook 'go-mode-hook 'my-go-mode-hook)
