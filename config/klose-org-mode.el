@@ -25,7 +25,7 @@
 	    "calc" "asymptote" "dot" "gnuplot" "ledger" "lilypond" "mscgen"
 	    "octave" "oz" "plantuml" "R" "sass" "screen" "sql" "awk" "ditaa"
 	    "haskell" "latex" "lisp" "matlab" "ocaml" "org" "perl" "ruby"
-	    "scheme" "sqlite" "kotlin" "nix" "haskell")))
+	    "scheme" "sqlite" "kotlin" "nix" "haskell" "dot")))
      (list (ido-completing-read "Source code type: " src-code-types))))
   (progn
     (newline-and-indent)
@@ -75,7 +75,7 @@
  'org-babel-load-languages
  '(
    (shell . t) (python . t) (R . t)
-   (ruby . t) (perl . t) (C . t)))
+   (ruby . t) (perl . t) (C . t) (dot . t)))
 
 (add-to-list 'auto-mode-alist '("\\.org\\'" . org-mode))
 (add-to-list 'auto-coding-alist '("\\.org\\'" . utf-8))
@@ -99,6 +99,7 @@
 	    (local-set-key (kbd "C-c s b")
 			   'org-iswitchb)
 	    ))
-
-(load "~/Documents/programming/html/klose911.github.io/src/elisp/manual/manual")
-(load "~/Documents/programming/html/klose911.github.io/src/nixos/nixos")
+(load "~/Documents/programming/html/klose911.github.io/src/linux/kernel/kernel")
+;; (load "~/Documents/programming/html/klose911.github.io/src/elisp/manual/manual")
+;; (load "~/Documents/programming/html/klose911.github.io/src/freebsd/freebsd")
+;; (load "~/Documents/programming/html/klose911.github.io/src/export") 
