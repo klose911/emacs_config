@@ -1,7 +1,7 @@
 (require 'color-theme) 
 (color-theme-initialize)
-;;(color-theme-dark-laptop)
-(color-theme-deep-blue)
+(color-theme-dark-laptop)
+;;(color-theme-deep-blue)
 ;;外观设置
 ;;去掉工具栏
 (tool-bar-mode 0)
@@ -23,9 +23,8 @@
 (require 'window-numbering)
 (window-numbering-mode 1)
 
-(progn
-  (setenv "PATH" (concat (getenv "PATH") ":/home/klose/bin"))
-  (setq exec-path (append exec-path '("/home/klose/bin"))))
+(setenv "PATH" (concat (getenv "PATH") ":/home/klose/bin"))
+(setq exec-path (append exec-path '("/home/klose/bin")))
 
 ;;备份设置
 ;;emacs还有一个自动保存功能，默认在~/.emacs.d/auto-save-list里，这个非常有用，我这里没有改动，具体可以参见Sams teach yourself emacs in 24hours(我简称为sams24)
@@ -153,7 +152,7 @@
 (setq dired-recursive-deletes 'top)
 
 (setq browse-url-browser-function 'browse-url-generic) 
-(setq  browse-url-generic-program "/usr/bin/google-chrome")
+(setq  browse-url-generic-program "/usr/bin/google-chrome-stable")
 
 (autoload 'paredit-mode "paredit"
   "Minor mode for pseudo-structurally editing Lisp code."

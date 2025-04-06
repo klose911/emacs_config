@@ -10,9 +10,9 @@
 (mapc (lambda (mode)
 	(add-hook 'LaTeX-mode-hook mode))
       (list ;;'auto-fill-mode
-            'LaTeX-math-mode
-            'turn-on-reftex
-            'linum-mode))
+       'LaTeX-math-mode
+       'turn-on-reftex
+       'linum-mode))
 
 (add-hook 'LaTeX-mode-hook
           (lambda ()
@@ -23,7 +23,7 @@
 		  LaTeX-fill-break-at-separators '(} \\\) \\\])) 
             (TeX-PDF-mode t)       ; PDF mode enable, not plain 
 	    (progn (setq TeX-view-program-list '(("Evince" "evince %o")))
-				  (setq TeX-view-program-selection '((output-pdf "Evince")))) 
+		   (setq TeX-view-program-selection '((output-pdf "Evince")))) 
             (setq TeX-save-query nil)
             (imenu-add-menubar-index)
 	    

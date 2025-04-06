@@ -14,3 +14,13 @@ ede-projects.el
 /session.* 
 /elpa/* 
 /transient
+/rime
+/eln-cache
+/tutorial
+.cache
+.dap-breakpoints
+.lsp-session-v1
+librime
+projects
+tramp
+

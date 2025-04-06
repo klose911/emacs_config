@@ -7,7 +7,6 @@
 (require 'slime-autoloads)
 (slime-setup '(slime-fancy))
 
-
 (setq inferior-lisp-program "sbcl")
 
 (defun lisp-indent-or-complete (&optional arg)
