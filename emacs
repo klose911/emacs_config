@@ -1,7 +1,7 @@
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 ;;; Hans Ve Joanphan's dotemacs file
 ;;; Last modified time 
-;;; Time-stamp: <klose 04/28/2023 1702M02S>
+;;; Time-stamp: <klose 09/14/2024 1202M02S>
 ;;; Life is a box of chocalates,
 ;;; you never know what you're gonna get.
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
@@ -35,7 +35,7 @@
 (load "~/.emacs.d/config/klose-ido")
 (load "~/.emacs.d/config/klose-function")
 (load "~/.emacs.d/config/klose-folding")
-(load "~/.emacs.d/config/klose-git")
+;; (load "~/.emacs.d/config/klose-git")
 (load "~/.emacs.d/config/klose-org-mode")
 (load "~/.emacs.d/config/klose-browser-kill-ring")
 (load "~/.emacs.d/config/klose-swbuff")
@@ -54,7 +54,7 @@
 (load "~/.emacs.d/config/klose-clojure-cider")
 (load "~/.emacs.d/config/klose-ctypes")
 (load "~/.emacs.d/config/klose-cedet")
-(load "~/.emacs.d/config/klose-ecb")
+;; (load "~/.emacs.d/config/klose-ecb")
 (load "~/.emacs.d/config/klose-go")
 (load "~/.emacs.d/config/klose-rust")
 (load "~/.emacs.d/config/klose-cc")
@@ -69,15 +69,17 @@
 ;;这个东西必须放在最后
 ;;desktop.el是一个可以保存你上次emacs关闭时的状态，下一次启动时恢复为上次关闭的状态。就和vmware的suspend一样。
 ;;因为我要使用sawfish-mode,wiki-mode,html-helper-mode，放在这里才能保证下次启动时能正确辨认文件需要的模式。
-(load "desktop")
-(desktop-load-default) 
-(desktop-read) 
+;;(load "desktop")
+;;(desktop-load-default) 
+;;(desktop-read) 
 (custom-set-variables
  ;; custom-set-variables was added by Custom.
  ;; If you edit it by hand, you could mess it up, so be careful.
  ;; Your init file should contain only one such instance.
  ;; If there is more than one, they won't work right.
  '(ecb-tip-of-the-day nil)
+ '(package-selected-packages
+   '(erlang kotlin-mode xcscope rust-mode cargo toml-mode py-autopep8 flycheck jedi elpy yaml-mode window-numbering w3m virtualenvwrapper virtualenv slime session racket-mode psgml mpg123 mew markdown-preview-mode inf-ruby htmlize go-dlv go-autocomplete folding emms cygwin-mount cider auctex))
  '(session-use-package t nil (session))
  '(virtualenv-root "~/.local/virtualenvs/wechat/"))
 (custom-set-faces

@@ -8,7 +8,8 @@
 (slime-setup '(slime-fancy))
 
 
-(setq inferior-lisp-program "sbcl")
+;;(setq inferior-lisp-program "sbcl")
+(setq inferior-lisp-program "clisp")
 
 (defun lisp-indent-or-complete (&optional arg)
   (interactive "p")
