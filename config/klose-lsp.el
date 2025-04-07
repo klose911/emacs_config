@@ -23,15 +23,17 @@
 ;; (use-package lsp-ivy :commands lsp-ivy-workspace-symbol)
 (use-package lsp-treemacs :commands lsp-treemacs-errors-list)
 
-;; optionally if you want to use debugger
-;; (use-package dap-mode)
-;; (use-package dap-LANGUAGE) to load the dap adapter for your language
-
 ;; optional if you want which-key integration
 (use-package which-key
     :config
     (which-key-mode))
 
-;; (with-eval-after-load 'lsp-mode
-;;   (require 'dap-gdb)
-;;   (yas-global-mode))
+(use-package company
+;;  :hook (after-init . global-company-mode)
+  :config
+  (setq company-minimum-prefix-length 1
+        company-idle-delay 0.0))  ;; 实时补全
+
+(with-eval-after-load 'lsp-mode
+  (company-mode 1)
+  (yas-global-mode))
