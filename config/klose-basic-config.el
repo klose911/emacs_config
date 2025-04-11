@@ -1,14 +1,14 @@
 (require 'color-theme) 
 (color-theme-initialize)
 (color-theme-dark-laptop)
-(color-theme-deep-blue)
+;;(color-theme-deep-blue)
 ;;外观设置
 ;;去掉工具栏
 (tool-bar-mode 0)
 ;;去掉菜单栏，我将F10绑定为显示菜单栏，万一什么东西忘了，需要菜单栏了可以摁F10调出，再摁F10就去掉菜单
 (if (equal window-system nil)
     (menu-bar-mode nil))
-;;(menu-bar-mode nil)
+;;o(menu-bar-mode nil)
 ;;不要滚动栏，现在都用滚轴鼠标了，可以不用滚动栏了
 ;;(scroll-bar-mode 0)
 
@@ -23,6 +23,7 @@
 (require 'window-numbering)
 (window-numbering-mode 1)
 
+(setq exec-path (append exec-path '("/home/klose/bin")))
 
 (setenv "PATH" (concat (getenv "PATH") ":/home/klose/bin"))
 (setq exec-path (append exec-path '("/home/klose/bin")))
@@ -113,7 +114,7 @@
 ;;当指针到一个括号时，自动显示所匹配的另一个括号
 (show-paren-mode 1)
 ;;是用滚轴鼠标
-(mouse-wheel-mode t)
+;;(mouse-wheel-mode t)
 ;;去掉烦人的警告铃声
 (setq visible-bell nil)
 ;;滚动页面时比较舒服，不要整页的滚动

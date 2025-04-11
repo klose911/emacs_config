@@ -22,8 +22,8 @@
 		  LaTeX-document-regexp "document\\|CJK\\*?" ; display compilation windows
 		  LaTeX-fill-break-at-separators '(} \\\) \\\])) 
             (TeX-PDF-mode t)       ; PDF mode enable, not plain 
-	    (setq TeX-view-program-list '(("Evince" "evince %o")))
-	    (setq TeX-view-program-selection '((output-pdf "Evince")))
+	    (progn (setq TeX-view-program-list '(("Evince" "evince %o")))
+		   (setq TeX-view-program-selection '((output-pdf "Evince")))) 
             (setq TeX-save-query nil)
             (imenu-add-menubar-index)
 	    

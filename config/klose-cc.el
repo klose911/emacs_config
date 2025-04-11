@@ -82,4 +82,3 @@
   (setq tab-width 4 indent-tabs-mode nil)
   (c-set-style "linux")
   )
-

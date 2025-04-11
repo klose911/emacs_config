@@ -2,6 +2,15 @@
 (require 'emms-info-libtag)
 (emms-standard)
 
+;; (if *win* 
+;;     (progn 
+;;       (add-to-list 'exec-path "d:/utils/mplayer/") 
+;;       (emms-default-players))  
+;;   (setq emms-player-mpg321-command-name "mpg123" 
+;; 	emms-player-list '(emms-player-mpg321 
+;; 			   emms-player-mplayer 
+;; 			   emms-player-mplayer-playlist)))
+
 (setq emms-player-mpg321-command-name "mpg123" 
       emms-player-list '(emms-player-mpg321 
 			 emms-player-mplayer 
