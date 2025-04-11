@@ -1,7 +1,7 @@
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 ;;; Hans Ve Joanphan's dotemacs file
 ;;; Last modified time 
-;;; Time-stamp: <klose 04/07/2025 2102M02S>
+;;; Time-stamp: <klose 04/11/2025 2102M02S>
 ;;; Life is a box of chocalates,
 ;;; you never know what you're gonna get.
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
@@ -34,11 +34,10 @@
  ;; If you edit it by hand, you could mess it up, so be careful.
  ;; Your init file should contain only one such instance.
  ;; If there is more than one, they won't work right.
- '(ecb-tip-of-the-day nil)
  '(package-selected-packages
    '(lsp-ui dap-mode helm-xref helm-lsp which-key rime nix-mode kotlin-mode erlang xcscope rust-mode cargo toml-mode py-autopep8 flycheck jedi elpy yaml-mode window-numbering w3m virtualenvwrapper virtualenv slime session racket-mode psgml mpg123 mew markdown-preview-mode magit inf-ruby htmlize go-dlv go-autocomplete folding emms cygwin-mount cider auctex))
  '(session-use-package t nil (session))
- '(virtualenv-root "~/Documents/ml/graphlib/"))
+ '(virtualenv-root "~/Documents/ml/"))
 (custom-set-faces
  ;; custom-set-faces was added by Custom.
  ;; If you edit it by hand, you could mess it up, so be careful.
@@ -90,7 +89,6 @@
 ;;(load "~/.emacs.d/config/klose-ecb")
 (load "~/.emacs.d/config/klose-go")
 (load "~/.emacs.d/config/klose-rust")
-(load "~/.emacs.d/config/klose-erlang")
 ;; (load "~/.emacs.d/config/klose-kotlin")
 (load "~/.emacs.d/config/klose-python")
 (load "~/.emacs.d/config/klose-ruby") 
