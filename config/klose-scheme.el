@@ -3,7 +3,7 @@
 (autoload 'scheme-mode "cmuscheme" "Major mode for Scheme." t) 
 (autoload 'run-scheme "cmuscheme" "Switch to interactive Scheme buffer." t) 
 
-(setq scheme-program-name "mit-scheme")
+(setq scheme-program-name "chez-scheme")
 
 (add-hook 'scheme-mode-hook 'turn-on-font-lock)
 

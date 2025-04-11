@@ -10,7 +10,7 @@
     (menu-bar-mode nil))
 ;;(menu-bar-mode nil)
 ;;不要滚动栏，现在都用滚轴鼠标了，可以不用滚动栏了
-(scroll-bar-mode 0)
+;;(scroll-bar-mode 0)
 
 (require 'highlight-parentheses)
 (require 'parenface) 

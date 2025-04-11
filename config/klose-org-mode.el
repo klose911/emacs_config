@@ -1,4 +1,4 @@
-(require 'org-install)
+;;(require 'org-install)			
 (require 'org-tempo)
 (require 'htmlize) 
 (setq org-src-fontify-natively t)
