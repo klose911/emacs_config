@@ -1,7 +1,7 @@
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 ;;; Hans Ve Joanphan's dotemacs file
 ;;; Last modified time 
-;;; Time-stamp: <klose 04/05/2025 2002M02S>
+;;; Time-stamp: <klose 04/07/2025 2102M02S>
 ;;; Life is a box of chocalates,
 ;;; you never know what you're gonna get.
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
@@ -55,9 +55,8 @@
 (load "~/.emacs.d/config/klose-basic-config")
 (load "~/.emacs.d/config/klose-language")
 (load "~/.emacs.d/config/klose-rime")
-(load "~/.emacs.d/config/klose-font")
 (load "~/.emacs.d/config/klose-session")
-(load "~/.emacs.d/config/klose-font")
+;; (load "~/.emacs.d/config/klose-font")
 (load "~/.emacs.d/config/klose-eshell")
 (load "~/.emacs.d/config/klose-calendar")
 (load "~/.emacs.d/config/klose-ibuffer")
@@ -75,7 +74,6 @@
 ;;(load "~/.emacs.d/config/klose-erc")
 ;;(load "~/.emacs.d/config/klose-gnus")
 ;;(load "~/.emacs.d/config/klose-emms")
-(load "~/.emacs.d/config/klose-lsp")
 (load "~/.emacs.d/config/klose-w3m")
 (load "~/.emacs.d/config/klose-clisp")
 (load "~/.emacs.d/config/klose-scheme")
@@ -83,7 +81,10 @@
 (load "~/.emacs.d/config/klose-erlang")
 (load "~/.emacs.d/config/klose-clojure")
 (load "~/.emacs.d/config/klose-clojure-cider")
-(load "~/.emacs.d/config/klose-cc")
+(load "~/.emacs.d/config/klose-lsp")
+(load "~/.emacs.d/config/klose-gdb")
+(load "~/.emacs.d/config/klose-cflow")
+;; (load "~/.emacs.d/config/klose-cc")
 ;; (load "~/.emacs.d/config/klose-ctypes")
 ;; (load "~/.emacs.d/config/klose-cedet")
 ;;(load "~/.emacs.d/config/klose-ecb")
@@ -91,8 +92,6 @@
 (load "~/.emacs.d/config/klose-rust")
 (load "~/.emacs.d/config/klose-erlang")
 ;; (load "~/.emacs.d/config/klose-kotlin")
-(load "~/.emacs.d/config/klose-cc")
-(load "~/.emacs.d/config/klose-cflow")
 (load "~/.emacs.d/config/klose-python")
 (load "~/.emacs.d/config/klose-ruby") 
 (load "~/.emacs.d/config/klose-js")

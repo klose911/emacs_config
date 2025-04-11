@@ -1,3 +1,7 @@
+(require 'dap-cpptools)
+
+(setq dap-auto-configure-features '(sessions locals controls tooltip))
+
 (dap-mode 1)
 
 ;; The modes below are optional
