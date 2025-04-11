@@ -10,7 +10,6 @@
 ;;  :hook (after-init . global-company-mode)
   :config
   (setq company-minimum-prefix-length 1
-        company-idle-delay 0.0))  ;; 实时补全
 
 ;; 快捷键提示（非必须但推荐）
 (use-package which-key
