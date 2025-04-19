@@ -1,7 +1,7 @@
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 ;;; Hans Ve Joanphan's dotemacs file
 ;;; Last modified time 
-;;; Time-stamp: <klose 04/27/2023 0902M02S>
+;;; Time-stamp: <klose 07/26/2024 1202M02S>
 ;;; Life is a box of chocalates,
 ;;; you never know what you're gonna get.
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
@@ -31,6 +31,21 @@
 ;;(setq custom-file "~/.emacs.d/elisp/klose-custom.el")
 ;;设置gnus启动的文件。默认是为~/.gnus.el
 ;;(setq gnus-init-file "~/.emacs.d/elisp/klose-gnus.el")
+(custom-set-variables
+ ;; custom-set-variables was added by Custom.
+ ;; If you edit it by hand, you could mess it up, so be careful.
+ ;; Your init file should contain only one such instance.
+ ;; If there is more than one, they won't work right.
+ '(ecb-tip-of-the-day nil)
+ '(package-selected-packages
+    '(erlang xcscope toml-mode rust-mode cargo py-autopep8 flycheck jedi elpy yaml-mode window-numbering w3m virtualenvwrapper virtualenv slime session racket-mode psgml mew markdown-preview-mode magit inf-ruby htmlize go-dlv go-autocomplete folding ecb cider auctex))
+ '(session-use-package t nil (session)))
+(custom-set-faces
+ ;; custom-set-faces was added by Custom.
+ ;; If you edit it by hand, you could mess it up, so be careful.
+ ;; Your init file should contain only one such instance.
+ ;; If there is more than one, they won't work right.
+ '(default ((t (:inherit nil :stipple nil :background "black" :foreground "white" :inverse-video nil :box nil :strike-through nil :overline nil :underline nil :slant normal :weight normal :height 158 :width normal :foundry "outline" :family "Microsoft Yahei")))))
 ;;由于我的配置文件很长，所以按照分类分别放在不同的文件里，方便管理
 (load "~/.emacs.d/config/klose-package")
 (load "~/.emacs.d/config/klose-basic-config")
@@ -61,7 +76,7 @@
 (load "~/.emacs.d/config/klose-clojure-cider")
 (load "~/.emacs.d/config/klose-ctypes")
 (load "~/.emacs.d/config/klose-cedet")
-(load "~/.emacs.d/config/klose-ecb")
+;; (load "~/.emacs.d/config/klose-ecb")
 (load "~/.emacs.d/config/klose-go")
 (load "~/.emacs.d/config/klose-rust")
 (load "~/.emacs.d/config/klose-cc")
@@ -79,17 +94,3 @@
 ;; (load "desktop")
 ;; (desktop-load-default) 
 ;; (desktop-read) 
-(custom-set-variables
- ;; custom-set-variables was added by Custom.
- ;; If you edit it by hand, you could mess it up, so be careful.
- ;; Your init file should contain only one such instance.
- ;; If there is more than one, they won't work right.
- '(ecb-tip-of-the-day nil)
- '(package-selected-packages '(chatgpt-shell session-use-package t nil (session)))
- '(session-use-package t nil (session)))
-(custom-set-faces
- ;; custom-set-faces was added by Custom.
- ;; If you edit it by hand, you could mess it up, so be careful.
- ;; Your init file should contain only one such instance.
- ;; If there is more than one, they won't work right.
- '(default ((t (:inherit nil :stipple nil :background "black" :foreground "white" :inverse-video nil :box nil :strike-through nil :overline nil :underline nil :slant normal :weight normal :height 158 :width normal :foundry "outline" :family "Microsoft Yahei")))))
