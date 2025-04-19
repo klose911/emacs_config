@@ -2,7 +2,6 @@
 ;;   :hook ((c-mode c++-mode objc-mode cuda-mode) .
 ;;          (lambda () (require 'ccls) (lsp))))
 
-;; (setq ccls-executable "/usr/bin/ccls")
 ;; (setq ccls-args '("--log-file=/tmp/ccls.log"))
 
 (use-package lsp-mode
@@ -13,6 +12,7 @@
          (c-mode . lsp)
          ;; if you want which-key integration
          (lsp-mode . lsp-enable-which-key-integration))
+  :config (setq lsp-clients-clangd-executable "/usr/local/bin/clangd")
   :commands lsp)
 
 ;; optionally
