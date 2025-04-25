@@ -1,16 +1,16 @@
 (require 'color-theme) 
 (color-theme-initialize)
 (color-theme-dark-laptop)
-(color-theme-deep-blue)
+;; (color-theme-deep-blue)
 ;;外观设置
 ;;去掉工具栏
-(tool-bar-mode 0)
+;;(tool-bar-mode 0)
 ;;去掉菜单栏，我将F10绑定为显示菜单栏，万一什么东西忘了，需要菜单栏了可以摁F10调出，再摁F10就去掉菜单
 (if (equal window-system nil)
     (menu-bar-mode nil))
 ;;(menu-bar-mode nil)
 ;;不要滚动栏，现在都用滚轴鼠标了，可以不用滚动栏了
-(scroll-bar-mode 0)
+;;(scroll-bar-mode 0)
 
 (require 'highlight-parentheses)
 (require 'parenface) 
@@ -20,8 +20,8 @@
 
 (require 'redo)
 
-(require 'window-numbering)
-(window-numbering-mode 1)
+;; (require 'window-numbering)
+;; (window-numbering-mode 1)
 
 (setenv "PATH" (concat (getenv "PATH") ";d:\\utils\\cygwin\\bin;d:\\utils\\gnu\\GnuWin32\\bin;d:\\utils\\mingw\\bin"))
 (setq exec-path (append exec-path '("d:\\utils\\cygwin\\bin" "d:\\utils\\gnu\\GnuWin32\\bin" "d:\\utils\\mingw\\bin")))
