@@ -1,7 +1,7 @@
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 ;;; Hans Ve Joanphan's dotemacs file
 ;;; Last modified time 
-;;; Time-stamp: <klose 04/11/2025 2102M02S>
+;;; Time-stamp: <klose 02/19/2026 2102M02S>
 ;;; Life is a box of chocalates,
 ;;; you never know what you're gonna get.
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
@@ -35,7 +35,14 @@
  ;; Your init file should contain only one such instance.
  ;; If there is more than one, they won't work right.
  '(package-selected-packages
-   '(lsp-ui dap-mode helm-xref helm-lsp which-key rime nix-mode kotlin-mode erlang xcscope rust-mode cargo toml-mode py-autopep8 flycheck jedi elpy yaml-mode window-numbering w3m virtualenvwrapper virtualenv slime session racket-mode psgml mpg123 mew markdown-preview-mode magit inf-ruby htmlize go-dlv go-autocomplete folding emms cygwin-mount cider auctex))
+   '(auctex cargo cider cygwin-mount dap-mode dirvish elpy emms erlang
+	    flycheck folding go-autocomplete go-dlv helm-lsp helm-xref
+	    htmlize inf-ruby jedi kotlin-mode lsp-ui magit
+	    markdown-preview-mode mew mpg123 nix-mode psgml
+	    py-autopep8 racket-mode rime rust-mode session slime
+	    sr-speedbar toml-mode treemacs-magit treemacs-projectile
+	    virtualenv virtualenvwrapper vterm w3m which-key
+	    window-numbering xcscope yaml-mode))
  '(session-use-package t nil (session))
  '(virtualenv-root "~/Documents/ml/"))
 (custom-set-faces
@@ -54,6 +61,8 @@
 (load "~/.emacs.d/config/klose-basic-config")
 (load "~/.emacs.d/config/klose-language")
 (load "~/.emacs.d/config/klose-rime")
+(load "~/.emacs.d/config/klose-treemacs")
+(load "~/.emacs.d/config/klose-vterm")
 (load "~/.emacs.d/config/klose-session")
 ;; (load "~/.emacs.d/config/klose-font")
 (load "~/.emacs.d/config/klose-eshell")
@@ -82,6 +91,7 @@
 (load "~/.emacs.d/config/klose-clojure-cider")
 (load "~/.emacs.d/config/klose-lsp")
 (load "~/.emacs.d/config/klose-gdb")
+(load "~/.emacs.d/config/klose-dap")
 (load "~/.emacs.d/config/klose-cflow")
 ;; (load "~/.emacs.d/config/klose-cc")
 ;; (load "~/.emacs.d/config/klose-ctypes")
