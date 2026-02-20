@@ -1,7 +1,7 @@
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 ;;; Hans Ve Joanphan's dotemacs file
 ;;; Last modified time 
-;;; Time-stamp: <klose 01/30/2026 2202M02S>
+;;; Time-stamp: <klose 02/20/2026 2102M02S>
 ;;; Life is a box of chocalates,
 ;;; you never know what you're gonna get.
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
@@ -34,7 +34,6 @@
  ;; If you edit it by hand, you could mess it up, so be careful.
  ;; Your init file should contain only one such instance.
  ;; If there is more than one, they won't work right.
- '(ecb-tip-of-the-day nil)
  '(package-selected-packages
    '(auctex cargo ccls cider cygwin-mount dap-mode eglot elpy emms erlang
 	    flycheck folding go-autocomplete go-dlv helm-lsp helm-xref
@@ -44,7 +43,7 @@
 	    toml-mode use-package virtualenv virtualenvwrapper w3m
 	    which-key window-numbering xcscope yaml-mode))
  '(session-use-package t nil (session))
- '(virtualenv-root "~/Documents/ml/graphlib/"))
+ '(virtualenv-root "~/Documents/ml/"))
 (custom-set-faces
  ;; custom-set-faces was added by Custom.
  ;; If you edit it by hand, you could mess it up, so be careful.
@@ -61,9 +60,10 @@
 (load "~/.emacs.d/config/klose-basic-config")
 (load "~/.emacs.d/config/klose-language")
 (load "~/.emacs.d/config/klose-rime")
-(load "~/.emacs.d/config/klose-font")
+(load "~/.emacs.d/config/klose-treemacs")
+;;(load "~/.emacs.d/config/klose-vterm")
 (load "~/.emacs.d/config/klose-session")
-(load "~/.emacs.d/config/klose-font")
+;; (load "~/.emacs.d/config/klose-font")
 (load "~/.emacs.d/config/klose-eshell")
 (load "~/.emacs.d/config/klose-calendar")
 (load "~/.emacs.d/config/klose-ibuffer")
@@ -81,7 +81,7 @@
 ;;(load "~/.emacs.d/config/klose-erc")
 ;;(load "~/.emacs.d/config/klose-gnus")
 ;;(load "~/.emacs.d/config/klose-emms")
-;; (load "~/.emacs.d/config/klose-w3m")
+(load "~/.emacs.d/config/klose-w3m")
 (load "~/.emacs.d/config/klose-clisp")
 (load "~/.emacs.d/config/klose-scheme")
 (load "~/.emacs.d/config/klose-racket")
@@ -94,12 +94,10 @@
 ;; (load "~/.emacs.d/config/klose-cc")
 (load "~/.emacs.d/config/klose-eglot")
 (load "~/.emacs.d/config/klose-gdb")
+(load "~/.emacs.d/config/klose-dap")
 (load "~/.emacs.d/config/klose-go")
 (load "~/.emacs.d/config/klose-rust")
-(load "~/.emacs.d/config/klose-erlang")
 ;; (load "~/.emacs.d/config/klose-kotlin")
-;; (load "~/.emacs.d/config/klose-cc")
-(load "~/.emacs.d/config/klose-cflow")
 (load "~/.emacs.d/config/klose-python")
 (load "~/.emacs.d/config/klose-ruby") 
 (load "~/.emacs.d/config/klose-js")

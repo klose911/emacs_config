@@ -32,7 +32,13 @@
     :config
     (which-key-mode))
 
-;; (with-eval-after-load 'lsp-mode
-;;   (require 'dap-gdb)
-;;   (yas-global-mode))
+(use-package company
+;;  :hook (after-init . global-company-mode)
+  :config
+  (setq company-minimum-prefix-length 1
+        company-idle-delay 0.0))  ;; 实时补全
+
+(with-eval-after-load 'lsp-mode
+  (company-mode 1)
+  (yas-global-mode))
 

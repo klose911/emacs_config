@@ -161,6 +161,7 @@
 (autoload 'table-insert "table" "WYGIWYS table editor")
 (autoload 'mpg123 "mpg123" "A Front-end to mpg123/ogg123" t)
 
+
 (setq byte-compile-warnings '(not nresolved
                                   free-vars
                                   callargs
@@ -170,4 +171,3 @@
                                   cl-functions
                                   interactive-only
                                   ))
-
