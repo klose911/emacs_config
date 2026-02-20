@@ -1,7 +1,7 @@
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 ;;; Hans Ve Joanphan's dotemacs file
 ;;; Last modified time 
-;;; Time-stamp: <klose 01/30/2026 2202M02S>
+;;; Time-stamp: <klose 02/20/2026 1502M02S>
 ;;; Life is a box of chocalates,
 ;;; you never know what you're gonna get.
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
@@ -38,8 +38,9 @@
 	    htmlize inf-ruby jedi kotlin-mode lsp-ui magit
 	    markdown-preview-mode mew mpg123 nix-mode psgml
 	    py-autopep8 racket-mode realgud-lldb rime rust-mode
-	    session slime toml-mode virtualenv virtualenvwrapper w3m
-	    which-key window-numbering xcscope yaml-mode))
+	    session slime toml-mode treemacs-magit treemacs-projectile
+	    virtualenv virtualenvwrapper w3m which-key
+	    window-numbering xcscope yaml-mode))
  '(session-use-package t nil (session))
  '(virtualenv-root "~/Documents/ml/"))
 (custom-set-faces
@@ -60,6 +61,8 @@
 ;; (load "~/.emacs.d/config/klose-rime")
 (load "~/.emacs.d/config/klose-session")
 ;; (load "~/.emacs.d/config/klose-font")
+(load "~/.emacs.d/config/klose-treemacs")
+(load "~/.emacs.d/config/klose-vterm")
 (load "~/.emacs.d/config/klose-eshell")
 (load "~/.emacs.d/config/klose-calendar")
 (load "~/.emacs.d/config/klose-ibuffer")
@@ -92,7 +95,7 @@
 ;; (load "~/.emacs.d/config/klose-cedet")
 ;;(load "~/.emacs.d/config/klose-ecb")
 (load "~/.emacs.d/config/klose-go")
-;; (load "~/.emacs.d/config/klose-rust")
+(load "~/.emacs.d/config/klose-rust")
 ;; (load "~/.emacs.d/config/klose-kotlin")
 (load "~/.emacs.d/config/klose-python")
 ;; (load "~/.emacs.d/config/klose-ruby") 
