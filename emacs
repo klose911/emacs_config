@@ -1,7 +1,7 @@
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 ;;; Hans Ve Joanphan's dotemacs file
 ;;; Last modified time 
-;;; Time-stamp: <klose 04/06/2025 2102M02S>
+;;; Time-stamp: <klose 01/30/2026 2202M02S>
 ;;; Life is a box of chocalates,
 ;;; you never know what you're gonna get.
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
@@ -36,7 +36,13 @@
  ;; If there is more than one, they won't work right.
  '(ecb-tip-of-the-day nil)
  '(package-selected-packages
-   '(eglot lsp-ui dap-mode helm-xref helm-lsp which-key rime nix-mode kotlin-mode erlang xcscope rust-mode cargo toml-mode py-autopep8 flycheck jedi elpy yaml-mode window-numbering w3m virtualenvwrapper virtualenv slime session racket-mode psgml mpg123 mew markdown-preview-mode magit inf-ruby htmlize go-dlv go-autocomplete folding emms cygwin-mount cider auctex))
+   '(auctex cargo ccls cider cygwin-mount dap-mode eglot elpy emms erlang
+	    flycheck folding go-autocomplete go-dlv helm-lsp helm-xref
+	    htmlize inf-ruby jedi kotlin-mode lsp-ui magit
+	    markdown-preview-mode mew mpg123 nix-mode psgml
+	    py-autopep8 racket-mode rime rust-mode session slime
+	    toml-mode use-package virtualenv virtualenvwrapper w3m
+	    which-key window-numbering xcscope yaml-mode))
  '(session-use-package t nil (session))
  '(virtualenv-root "~/Documents/ml/graphlib/"))
 (custom-set-faces
@@ -87,6 +93,7 @@
 ;; (load "~/.emacs.d/config/klose-ecb")
 ;; (load "~/.emacs.d/config/klose-cc")
 (load "~/.emacs.d/config/klose-eglot")
+(load "~/.emacs.d/config/klose-gdb")
 (load "~/.emacs.d/config/klose-go")
 (load "~/.emacs.d/config/klose-rust")
 (load "~/.emacs.d/config/klose-erlang")

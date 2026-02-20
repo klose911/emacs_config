@@ -2,8 +2,10 @@
   :hook ((c-mode c++-mode) . eglot-ensure)
   :config
   ;; 如果 clangd 不在 PATH 中可以手动指定路径：
-  ;; (setq eglot-server-programs '((c++-mode c-mode) . ("/path/to/clangd")))
+  ;;(setq eglot-server-programs '((c++-mode c-mode) . ("/usr/bin/ccls")))
   )
+
+;;(require 'ccls)
 
 ;; 自动补全
  (use-package company
@@ -13,8 +15,8 @@
          company-idle-delay 0.0))  ;; 实时补全
 
 ;; 快捷键提示（非必须但推荐）
-(use-package which-key
-  :config (which-key-mode))
+;; (use-package which-key
+;;  :config (which-key-mode))
 
 ;; 项目管理（eglot 会自动使用 Emacs 内置的 project.el）
 (use-package project
@@ -36,6 +38,3 @@
 
 (with-eval-after-load 'eglot
   (company-mode))
-
-(setq gdb-many-windows t)        ;; 开启多窗口模式
-(setq gdb-show-main t)           ;; 启动时自动跳到 main
