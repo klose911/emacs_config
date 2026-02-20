@@ -16,4 +16,3 @@
 ;; requies emacs 26+
 (dap-ui-controls-mode 1)
 
-
