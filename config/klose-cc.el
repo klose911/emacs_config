@@ -2,9 +2,9 @@
 (require 'cc-mode)
 (require 'xcscope)
 
-(c-set-offset 'inline-open 0)
-(c-set-offset 'friend '-)
-(c-set-offset 'substatement-open 0)
+;; (c-set-offset 'inline-open 0)
+;; (c-set-offset 'friend '-)
+;; (c-set-offset 'substatement-open 0)
 
 (setq-default compile-command "make")
 
@@ -14,13 +14,13 @@
   (setq tab-width 4 indent-tabs-mode nil)
   (c-set-style "linux")
   ;;; hungry-delete and auto-newline
-  (c-toggle-auto-hungry-state 1)
+  ;; (c-toggle-auto-hungry-state 1)
   ;;按键定义
   (define-key c-mode-base-map [(control \`)] 'hs-toggle-hiding)
-  (define-key c-mode-base-map [(return)] 'newline-and-indent)
-  (define-key c-mode-base-map [(f7)] 'compile)
+  ;; (define-key c-mode-base-map [(return)] 'newline-and-indent)
+  ;; (define-key c-mode-base-map [(f7)] 'compile)
   (define-key c-mode-base-map [(meta \`)] 'c-indent-command)
-  (define-key c-mode-base-map [(tab)] 'hippie-expand)
+  ;; (define-key c-mode-base-map [(tab)] 'hippie-expand)
   ;;(define-key c-mode-base-map [(tab)] 'my-indent-or-complete)
   ;;(define-key c-mode-base-map [(meta ?/)] 'semantic-ia-complete-symbol-menu)
 
@@ -55,7 +55,7 @@
   "Create tags file."
   (interactive "DDirectory: ")
   (eshell-command 
-   (format "find %s -type f -name \"*.[ch]\" | etags -" dir-name)))
+   (format "find %s -type f -name \"*.[sSch]\" | etags -" dir-name)))
 
 (defadvice find-tag (around refresh-etags activate)
   "Rerun etags and reload tags if tag not found and redo find-tag.              

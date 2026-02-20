@@ -1,13 +1,12 @@
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 ;;; Hans Ve Joanphan's dotemacs file
 ;;; Last modified time 
-;;; Time-stamp: <i514692 04/07/2025 1802M02S>
+;;; Time-stamp: <i514692 01/30/2026 1602M02S>
 ;;; Life is a box of chocalates,
 ;;; you never know what you're gonna get.
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 ;;以上是我得time stamp，在后面将有详细讲解
 ;;设置你的全名和邮件，在发邮件时可以用到
-
 (setq byte-compile-warnings '(not nresolved
                                   free-vars
                                   callargs
@@ -17,6 +16,8 @@
                                   cl-functions
                                   interactive-only
                                   ))
+(setq *win* (eq system-type 'windows-nt))
+
 
 (setq user-full-name "Wu, Shanliang")
 (setq user-mail-address "klose911@gmail.com")
@@ -35,15 +36,22 @@
  ;; If there is more than one, they won't work right.
  '(ecb-tip-of-the-day nil)
  '(package-selected-packages
-   '(lsp-ui dap-mode helm-xref helm-lsp which-key graphviz-dot-mode haskell-mode nix-mode rime kotlin-mode erlang xcscope rust-mode cargo toml-mode py-autopep8 flycheck jedi elpy yaml-mode window-numbering w3m virtualenvwrapper virtualenv slime session racket-mode psgml mpg123 mew markdown-preview-mode magit inf-ruby htmlize go-dlv go-autocomplete folding emms cygwin-mount cider auctex))
+   '(auctex cargo cider cygwin-mount dap-mode eglot elpy emms erlang
+	    flycheck folding go-autocomplete go-dlv graphviz-dot-mode
+	    haskell-mode helm-lsp helm-xref htmlize inf-ruby jedi
+	    kotlin-mode lsp-ui magit markdown-preview-mode mew mpg123
+	    nix-mode projectile psgml py-autopep8 racket-mode rime
+	    rust-mode session slime toml-mode virtualenv
+	    virtualenvwrapper w3m which-key window-numbering xcscope
+	    yaml-mode yasnippet lsp-treemacs hydra avy dap-mode))
  '(session-use-package t nil (session))
- '(virtualenv-root "~/Documents/ml/graphlib/"))
+ '(virtualenv-root ".local/virtualenvs/ml/"))
 (custom-set-faces
  ;; custom-set-faces was added by Custom.
  ;; If you edit it by hand, you could mess it up, so be careful.
  ;; Your init file should contain only one such instance.
  ;; If there is more than one, they won't work right.
- '(default ((t (:inherit nil :stipple nil :background "black" :foreground "white" :inverse-video nil :box nil :strike-through nil :overline nil :underline nil :slant normal :weight normal :height 200 :width normal :foundry "unknown" :family "DejaVu Sans Mono")))))
+ '(default ((t (:inherit nil :stipple nil :background "black" :foreground "white" :inverse-video nil :box nil :strike-through nil :overline nil :underline nil :slant normal :weight normal :height 240 :width normal :foundry "unknown" :family "DejaVu Sans Mono")))))
 
 ;;由菜单修改配置的东西将会保存在custom-file里，这里我设置他在我的elisp的集中营里
 ;;(setq custom-file "~/.emacs.d/elisp/klose-custom.el")
@@ -56,13 +64,14 @@
 (load "~/.emacs.d/config/klose-rime")
 ;; (load "~/.emacs.d/config/klose-font")
 (load "~/.emacs.d/config/klose-session")
+;; (load "~/.emacs.d/config/klose-font")
 (load "~/.emacs.d/config/klose-eshell")
 (load "~/.emacs.d/config/klose-calendar")
 (load "~/.emacs.d/config/klose-ibuffer")
 (load "~/.emacs.d/config/klose-ido")
 (load "~/.emacs.d/config/klose-function")
 (load "~/.emacs.d/config/klose-folding")
-(load "~/.emacs.d/config/klose-git")
+;; (load "~/.emacs.d/config/klose-git")
 (load "~/.emacs.d/config/klose-org-mode")
 (load "~/.emacs.d/config/klose-browser-kill-ring")
 (load "~/.emacs.d/config/klose-swbuff")
@@ -70,9 +79,10 @@
 (load "~/.emacs.d/config/klose-rect-mark")
 (load "~/.emacs.d/config/klose-setnu")
 ;;(load "~/.emacs.d/config/klose-mew")
-(load "~/.emacs.d/config/klose-erc")
+;;(load "~/.emacs.d/config/klose-erc")
 ;;(load "~/.emacs.d/config/klose-gnus")
 ;;(load "~/.emacs.d/config/klose-emms")
+(load "~/.emacs.d/config/klose-w3m")
 (load "~/.emacs.d/config/klose-clisp")
 (load "~/.emacs.d/config/klose-scheme")
 (load "~/.emacs.d/config/klose-racket")
@@ -82,13 +92,15 @@
 ;; (load "~/.emacs.d/config/klose-cc")
 ;; (load "~/.emacs.d/config/klose-ctypes")
 ;; (load "~/.emacs.d/config/klose-cedet")
-;;(load "~/.emacs.d/config/klose-ecb")
-(load "~/.emacs.d/config/klose-lsp")
+;; (load "~/.emacs.d/config/klose-ecb")
+;; (load "~/.emacs.d/config/klose-lsp")
 (load "~/.emacs.d/config/klose-dap")
+(load "~/.emacs.d/config/klose-eglot")
 (load "~/.emacs.d/config/klose-gdb")
 (load "~/.emacs.d/config/klose-go")
 (load "~/.emacs.d/config/klose-rust")
-;; (load "~/.emacs.d/config/klose-cc")
+(load "~/.emacs.d/config/klose-erlang")
+;; (load "~/.emacs.d/config/klose-kotlin")
 (load "~/.emacs.d/config/klose-cflow")
 (load "~/.emacs.d/config/klose-python")
 (load "~/.emacs.d/config/klose-ruby") 

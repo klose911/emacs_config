@@ -1,7 +1,7 @@
 (global-set-key [f1] 'info) 
 (global-set-key [f2] 'undo) 
 (global-set-key [f3] 'redo) 
-(global-set-key [f4] 'kill-this-buffer) 
+(global-set-key [f4] 'kill-buffer) 
 (global-set-key [f5] 'eshell) 
 (global-set-key [f6] 'dired) 
 (global-set-key [f7] 'compile) 

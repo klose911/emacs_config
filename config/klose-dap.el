@@ -1,7 +1,8 @@
 (require 'dap-cpptools)
-(dap-mode 1)
 
 (setq dap-auto-configure-features '(sessions locals controls tooltip))
+
+(dap-mode 1)
 
 ;; The modes below are optional
 
@@ -14,4 +15,5 @@
 ;; displays floating panel with debug buttons
 ;; requies emacs 26+
 (dap-ui-controls-mode 1)
+
 

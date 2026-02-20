@@ -1,4 +1,4 @@
-(add-to-list 'load-path "~/.emacs.d/elisp/emacs-w3m")
+;; (add-to-list 'load-path "~/.emacs.d/elisp/emacs-w3m")
 ;;启动和初始化w3m.el 
 (autoload 'w3m "w3m" "Interface for w3m on Emacs." t) 
 (autoload 'w3m-browse-url "w3m" "Ask a WWW browser to show a URL." t) 
@@ -19,9 +19,9 @@
 ;;书签解码设置 
 (setq w3m-bookmark-file-coding-system 'gbk) 
 
-(setq w3m-command-arguments
-                (nconc w3m-command-arguments
-                       '("-o" "http_proxy=http://127.0.0.1:8080/")))
+;; (setq w3m-command-arguments
+;;                 (nconc w3m-command-arguments
+;;                        '("-o" "http_proxy=http://127.0.0.1:8080/")))
 
 ;;w3m的解码设置，后面最好都有，我也不详解了 
 ;(setq w3m-coding-system 'chinese-iso-8bit) 
