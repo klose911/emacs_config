@@ -1,7 +1,7 @@
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 ;;; Hans Ve Joanphan's dotemacs file
 ;;; Last modified time 
-;;; Time-stamp: <klose 02/20/2026 1502M02S>
+;;; Time-stamp: <klose 02/20/2026 1602M02S>
 ;;; Life is a box of chocalates,
 ;;; you never know what you're gonna get.
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
@@ -58,11 +58,11 @@
 (load "~/.emacs.d/config/klose-package")
 (load "~/.emacs.d/config/klose-basic-config")
 (load "~/.emacs.d/config/klose-language")
-;; (load "~/.emacs.d/config/klose-rime")
+(load "~/.emacs.d/config/klose-treemacs")
+;;(load "~/.emacs.d/config/klose-vterm")
 (load "~/.emacs.d/config/klose-session")
 ;; (load "~/.emacs.d/config/klose-font")
-(load "~/.emacs.d/config/klose-treemacs")
-(load "~/.emacs.d/config/klose-vterm")
+
 (load "~/.emacs.d/config/klose-eshell")
 (load "~/.emacs.d/config/klose-calendar")
 (load "~/.emacs.d/config/klose-ibuffer")
