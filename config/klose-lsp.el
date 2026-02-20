@@ -3,6 +3,8 @@
 ;;          (lambda () (require 'ccls) (lsp))))
 
 ;; (setq ccls-args '("--log-file=/tmp/ccls.log"))
+(require 'ccls)
+;; (setq ccls-executable "/path/to/ccls/Release/ccls")
 
 (use-package lsp-mode
   :init
@@ -12,7 +14,7 @@
          (c-mode . lsp)
          ;; if you want which-key integration
          (lsp-mode . lsp-enable-which-key-integration))
-  :config (setq lsp-clients-clangd-executable "/usr/local/bin/clangd")
+  ;;:config (setq lsp-clients-clangd-executable "/usr/local/bin/clangd")
   :commands lsp)
 
 ;; optionally

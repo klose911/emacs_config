@@ -1,7 +1,7 @@
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 ;;; Hans Ve Joanphan's dotemacs file
 ;;; Last modified time 
-;;; Time-stamp: <klose 04/12/2025 1402M02S>
+;;; Time-stamp: <klose 01/30/2026 2202M02S>
 ;;; Life is a box of chocalates,
 ;;; you never know what you're gonna get.
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
@@ -33,9 +33,9 @@
  ;; Your init file should contain only one such instance.
  ;; If there is more than one, they won't work right.
  '(package-selected-packages
-   '(auctex cargo cider cygwin-mount dap-mode elpy emms erlang flycheck
-	    folding go-autocomplete go-dlv helm-lsp helm-xref htmlize
-	    inf-ruby jedi kotlin-mode lsp-ui magit
+   '(auctex cargo ccls cider cygwin-mount dap-mode elpy emms erlang
+	    flycheck folding go-autocomplete go-dlv helm-lsp helm-xref
+	    htmlize inf-ruby jedi kotlin-mode lsp-ui magit
 	    markdown-preview-mode mew mpg123 nix-mode psgml
 	    py-autopep8 racket-mode realgud-lldb rime rust-mode
 	    session slime toml-mode virtualenv virtualenvwrapper w3m
