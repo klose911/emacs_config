@@ -2,7 +2,7 @@
 (global-set-key [f2] 'undo) 
 (global-set-key [f3] 'redo) 
 (global-set-key [f4] 'treemacs) 
-(global-set-key [f5] 'eshell) 
+(global-set-key [f5] 'vterm) 
 (global-set-key [f6] 'dired) 
 (global-set-key [f7] 'compile) 
 (global-set-key [f8] 'gdb) 
