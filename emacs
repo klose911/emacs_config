@@ -1,7 +1,7 @@
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 ;;; Hans Ve Joanphan's dotemacs file
 ;;; Last modified time 
-;;; Time-stamp: <klose 02/19/2026 2102M02S>
+;;; Time-stamp: <klose 06/22/2026 2002M02S>
 ;;; Life is a box of chocalates,
 ;;; you never know what you're gonna get.
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
@@ -35,14 +35,13 @@
  ;; Your init file should contain only one such instance.
  ;; If there is more than one, they won't work right.
  '(package-selected-packages
-   '(auctex cargo cider cygwin-mount dap-mode dirvish elpy emms erlang
-	    flycheck folding go-autocomplete go-dlv helm-lsp helm-xref
-	    htmlize inf-ruby jedi kotlin-mode lsp-ui magit
-	    markdown-preview-mode mew mpg123 nix-mode psgml
-	    py-autopep8 racket-mode rime rust-mode session slime
+   '(auctex cider elpy erlang flycheck folding 
+	    htmlize inf-ruby magit
+	    markdown-preview-mode mew mpg123  psgml
+	    py-autopep8 racket-mode session slime
 	    sr-speedbar toml-mode treemacs-magit treemacs-projectile
-	    virtualenv virtualenvwrapper vterm w3m which-key
-	    window-numbering xcscope yaml-mode))
+	    virtualenv virtualenvwrapper w3m which-key
+	    window-numbering yaml-mode))
  '(session-use-package t nil (session))
  '(virtualenv-root "~/Documents/ml/"))
 (custom-set-faces
@@ -60,9 +59,9 @@
 (load "~/.emacs.d/config/klose-package")
 (load "~/.emacs.d/config/klose-basic-config")
 (load "~/.emacs.d/config/klose-language")
-(load "~/.emacs.d/config/klose-rime")
+;; (load "~/.emacs.d/config/klose-rime")
 (load "~/.emacs.d/config/klose-treemacs")
-(load "~/.emacs.d/config/klose-vterm")
+;; (load "~/.emacs.d/config/klose-vterm")
 (load "~/.emacs.d/config/klose-session")
 ;; (load "~/.emacs.d/config/klose-font")
 (load "~/.emacs.d/config/klose-eshell")
@@ -87,21 +86,21 @@
 (load "~/.emacs.d/config/klose-scheme")
 (load "~/.emacs.d/config/klose-racket")
 (load "~/.emacs.d/config/klose-erlang")
-(load "~/.emacs.d/config/klose-clojure")
-(load "~/.emacs.d/config/klose-clojure-cider")
-(load "~/.emacs.d/config/klose-lsp")
-(load "~/.emacs.d/config/klose-gdb")
-(load "~/.emacs.d/config/klose-dap")
-(load "~/.emacs.d/config/klose-cflow")
+;; (load "~/.emacs.d/config/klose-clojure")
+;; (load "~/.emacs.d/config/klose-clojure-cider")
+;; (load "~/.emacs.d/config/klose-lsp")
+;; (load "~/.emacs.d/config/klose-gdb")
+;; (load "~/.emacs.d/config/klose-dap")
+;; (load "~/.emacs.d/config/klose-cflow")
 ;; (load "~/.emacs.d/config/klose-cc")
 ;; (load "~/.emacs.d/config/klose-ctypes")
 ;; (load "~/.emacs.d/config/klose-cedet")
 ;;(load "~/.emacs.d/config/klose-ecb")
-(load "~/.emacs.d/config/klose-go")
-(load "~/.emacs.d/config/klose-rust")
+;; (load "~/.emacs.d/config/klose-go")
+;; (load "~/.emacs.d/config/klose-rust")
 ;; (load "~/.emacs.d/config/klose-kotlin")
 (load "~/.emacs.d/config/klose-python")
-(load "~/.emacs.d/config/klose-ruby") 
+;; (load "~/.emacs.d/config/klose-ruby") 
 (load "~/.emacs.d/config/klose-js")
 (load "~/.emacs.d/config/klose-yaml")
 (load "~/.emacs.d/config/klose-md")

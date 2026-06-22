@@ -100,5 +100,5 @@
 			   'org-iswitchb)
 	    ))
 
-(load "~/Documents/programming/html/klose911.github.io/src/elisp/manual/manual")
-(load "~/Documents/programming/html/klose911.github.io/src/nixos/nixos")
+;; (load "~/Documents/programming/html/klose911.github.io/src/elisp/manual/manual")
+;; (load "~/Documents/programming/html/klose911.github.io/src/nixos/nixos")
