@@ -1,7 +1,7 @@
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 ;;; Hans Ve Joanphan's dotemacs file
 ;;; Last modified time 
-;;; Time-stamp: <klose 03/28/2026 1002M02S>
+;;; Time-stamp: <klose 09/26/2026 1202M02S>
 ;;; Life is a box of chocalates,
 ;;; you never know what you're gonna get.
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
@@ -16,8 +16,9 @@
                                   cl-functions
                                   interactive-only
                                   ))
+(setq warning-suppress-types '((lexical-binding)))
+(add-to-list 'warning-suppress-log-types '(files missing-lexbind-cookie))
 (setq *win* (eq system-type 'windows-nt))
-
 
 (setq user-full-name "Wu, Shanliang")
 (setq user-mail-address "klose911@gmail.com")
@@ -35,14 +36,14 @@
  ;; Your init file should contain only one such instance.
  ;; If there is more than one, they won't work right.
  '(package-selected-packages
-   '(auctex cargo centaur-tabs cider dap-mode dirvish elpy
-	    emms erlang flycheck folding go-autocomplete go-dlv
-	    helm-lsp helm-xref htmlize inf-ruby jedi kotlin-mode
-	    lsp-ui magit markdown-preview-mode mew mpg123 nix-mode
-	    psgml py-autopep8 racket-mode rime rust-mode session slime
+   '(auctex cargo centaur-tabs cider dap-mode dirvish elpy emms erlang
+	    flycheck folding go-autocomplete go-dlv helm-lsp helm-xref
+	    htmlize inf-ruby jedi kotlin-mode lsp-ui magit
+	    markdown-preview-mode mew mpg123 nix-mode psgml
+	    py-autopep8 racket-mode rime rust-mode session slime
 	    sr-speedbar toml-mode treemacs-magit treemacs-projectile
 	    virtualenv virtualenvwrapper vterm w3m which-key
-	    window-numbering xcscope yaml-mode))
+	    window-numbering xcscope xterm-color yaml-mode))
  '(session-use-package t nil (session))
  '(virtualenv-root "~/Documents/ml/"))
 (custom-set-faces
